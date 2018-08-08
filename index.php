@@ -17,7 +17,7 @@
 echo "php is running";
 echo "git is under controll";
 
-echo "test phpstrom git functionallity"
-?>
+echo "test phpstrom git functionallity";
+echo "<br> edit in github" ;?>
 </body>
 </html>
