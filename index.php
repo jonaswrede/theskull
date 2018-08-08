@@ -10,12 +10,14 @@
 <h1><center> THE SKULL <3 </center></h1>
 <H2>version 0.1</h2>
     
-    Git hat geklappt
-
 <?php
-$handle = fopen("\\counter.txt", "r");
-
-var_dump($handle)
+$handle = fopen("counter.txt", "r");
+$counter = intval(fgets($handle))+1;
+fclose($handle);
+$handle = fopen("counter.txt", "w");
+echo $counter;
+fputs($handle,(string)$counter);
+fclose($handle);
 
 ?>
 </body>
