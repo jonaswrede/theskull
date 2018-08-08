@@ -11,5 +11,10 @@
 <H2>version 0.1</h2>
     
     Git hat geklappt
+
+<?php
+
+echo "php is running";
+?>
 </body>
 </html>
