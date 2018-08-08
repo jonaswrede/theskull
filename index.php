@@ -13,11 +13,10 @@
     Git hat geklappt
 
 <?php
+$handle = fopen("\\counter.txt", "r");
 
-echo "php is running";
-echo "git is under controll";
+var_dump($handle)
 
-echo "test phpstrom git functionallity";
-echo "<br> edit in github" ;?>
+?>
 </body>
 </html>
