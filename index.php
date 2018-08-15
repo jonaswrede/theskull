@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1><center> THE SKULL <3 </center></h1>
+<h1><center> THE SKULL  </center></h1>
 <H2>version 0.1</h2>
     
 <?php
