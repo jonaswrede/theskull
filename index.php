@@ -7,17 +7,30 @@
 </head>
 <body>
 
-<h1><center> THE SKULL  </center></h1>
+<h1><div style="text-align: center;"> THE SKULL  </div></h1>
 <H2>version 0.1</h2>
     
 <?php
-$handle = fopen("counter.txt", "r");
-$counter = intval(fgets($handle))+1;
-fclose($handle);
-$handle = fopen("counter.txt", "w");
-echo $counter;
-fputs($handle,(string)$counter);
-fclose($handle);
+    session_start();
+
+
+    if(!$_SESSION['logged']){
+        header("Location: login_page.php");
+        exit;
+    }
+    echo 'Welcome, '.$_SESSION['username']."<br><br>";
+
+    $handle = fopen("counter.txt", "r");
+    $counter = intval(fgets($handle))+1;
+    fclose($handle);
+
+    $handle = fopen("counter.txt", "w");
+    fputs($handle,(string)$counter);
+    fclose($handle);
+
+    echo $counter;
+?>
+
 
 ?>
 </body>
