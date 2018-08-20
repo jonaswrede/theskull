@@ -9,6 +9,5 @@
 if(isset($_POST["login"]))
     $_SESSION["logged"] = "yes";
 
-
-header("Location: index.php");
+var_dump($_SESSION);
 
