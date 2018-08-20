@@ -7,5 +7,5 @@
  */
 
 if(isset($_POST["login"]))
-    echo "Login button clicked";
-    else echo "not clicked";
+    $_SESSION["logged"] = "yes";
+    header("Location: index.php");
