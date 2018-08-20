@@ -31,7 +31,7 @@
 </form>
 
 <?php
-    echo 'Welcome, '.$_SESSION['username']."<br><br>";
+    echo 'Welcome, '.$_SESSION['name']."<br><br>";
 
     $handle = fopen("counter.txt", "r");
     $counter = intval(fgets($handle))+1;
@@ -42,6 +42,7 @@
     fclose($handle);
 
     echo $counter;
-?>
+
+    ?>
 </body>
 </html>
