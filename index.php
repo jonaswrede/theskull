@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+
+    if(!$_SESSION['logged']){
+        header("Location: login_page.php");
+        exit;
+    }
+    ?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
        "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -11,13 +21,6 @@
 <H2>version 0.1</h2>
     
 <?php
-    session_start();
-
-
-    if(!$_SESSION['logged']){
-        header("Location: login_page.php");
-        exit;
-    }
     echo 'Welcome, '.$_SESSION['username']."<br><br>";
 
     $handle = fopen("counter.txt", "r");
