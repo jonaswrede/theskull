@@ -1,8 +1,8 @@
 <?php
     session_start();
+    var_dump($_SESSION);
 
-
-    if(!$_SESSION['logged']){
+    if(!$_SESSION['logged']=="yes"){
        header("Location: login_page.php");
         exit;
     }
