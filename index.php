@@ -1,9 +1,9 @@
 <?php
     session_start();
 
+    $_SESSION["logged"] = "yes";
     if(!$_SESSION['logged']=="yes")
     {
-        echo" <script> alert('no session'); </script>";
         header("Location: login_page.php");
         exit;
     }
