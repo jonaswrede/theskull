@@ -12,7 +12,7 @@
       echo "<input type='button' value='activate session' name='session'></form>";
 
       if (isset($_POST["session"])){
-        $_SESSION["logged"] = true;
+        $_SESSION["logged"] = "set";
       }
 
     }
