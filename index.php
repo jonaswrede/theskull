@@ -25,7 +25,7 @@
 <h1><div style="text-align: center;"> THE SKULL  </div></h1>
 <H2>version 0.1</h2>
 <form action="session_info.php" method="post">
-    <input type="submit" name="name" value="name">
+    <input type="input" name="name" value="name">
     <input type="submit" name="login" value="Login">
 </form>
 
