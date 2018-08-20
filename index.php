@@ -3,21 +3,8 @@
 
 
     if(!$_SESSION['logged']){
-      /*  header("Location: login_page.php");
-        exit;*/
-
-
-      echo "keine session!";
-      echo "<form method='post'>";
-      echo "<input type='button' value='activate session' name='session'></form>";
-
-      if (isset($_POST["session"])){
-        $_SESSION["logged"] = "set";
-      }
-
-    }
-    else {
-        echo "active session";
+       header("Location: login_page.php");
+        exit;
     }
     ?>
 
@@ -48,6 +35,6 @@
 ?>
 
 
-
+?>
 </body>
 </html>
