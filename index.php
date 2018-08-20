@@ -8,6 +8,13 @@
 
 
       echo "keine session!";
+      echo "<form method='post'>";
+      echo "<input type='button' value='activate session' name='session'></form>";
+
+      if (isset($_POST["session"])){
+        $_SESSION["logged"] = true;
+      }
+
     }
     else {
         echo "active session";
@@ -41,6 +48,6 @@
 ?>
 
 
-?>
+
 </body>
 </html>
