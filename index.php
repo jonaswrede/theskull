@@ -2,6 +2,7 @@
     session_start();
 
     $_SESSION["logged"] = "yes";
+    $_SESSION["time"] = date('m/d/Y h:i:s a', time());
 
     var_dump($_SESSION["logged"]);
 
@@ -23,7 +24,8 @@
 
 <h1><div style="text-align: center;"> THE SKULL  </div></h1>
 <H2>version 0.1</h2>
-<form action="verify.php" method="post">
+<form action="session_info.php" method="post">
+    <input type="submit" name="name" value="name">
     <input type="submit" name="login" value="Login">
 </form>
 
