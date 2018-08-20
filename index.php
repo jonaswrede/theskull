@@ -2,6 +2,9 @@
     session_start();
 
     $_SESSION["logged"] = "yes";
+
+    var_dump($_SESSION["logged"]);
+
     if(!$_SESSION['logged']=="yes")
     {
         header("Location: login_page.php");
