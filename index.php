@@ -3,8 +3,14 @@
 
 
     if(!$_SESSION['logged']){
-        header("Location: login_page.php");
-        exit;
+      /*  header("Location: login_page.php");
+        exit;*/
+
+
+      echo "keine session!";
+    }
+    else {
+        echo "active session";
     }
     ?>
 
