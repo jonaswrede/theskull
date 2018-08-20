@@ -23,7 +23,10 @@
 
 <h1><div style="text-align: center;"> THE SKULL  </div></h1>
 <H2>version 0.1</h2>
-    
+<form action="verify.php" method="post">
+    <input type="submit" name="login" value="Login">
+</form>
+
 <?php
     echo 'Welcome, '.$_SESSION['username']."<br><br>";
 
