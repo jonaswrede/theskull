@@ -2,12 +2,9 @@
     session_start();
 
     if(!$_SESSION['logged']=="yes")
-    {?>
-        <script>
-        alert("no session");
-        </script>
-<?php
-       header("Location: login_page.php");
+    {
+        echo" <script> alert('no session'); </script>";
+        header("Location: login_page.php");
         exit;
     }
     ?>
