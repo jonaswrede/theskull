@@ -5,7 +5,7 @@
  * Date: 15.08.18
  * Time: 11:49
  */
-
+var_dump($_SESSION)
 ?>
 
 <h1> Login V 0.1</h1>
