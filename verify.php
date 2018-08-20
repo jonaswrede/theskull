@@ -9,7 +9,6 @@
 if(isset($_POST["login"]))
     $_SESSION["logged"] = "yes";
 
-echo "session should be set";
 
+header("Location: index.php");
 
-var_dump($_SESSION);
