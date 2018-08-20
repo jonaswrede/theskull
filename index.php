@@ -34,8 +34,5 @@
 
     echo $counter;
 ?>
-
-
-?>
 </body>
 </html>
