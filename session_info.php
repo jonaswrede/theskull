@@ -14,3 +14,9 @@ echo "Hello ". $_SESSION["name"]."<br>";
 
 echo "Your session was started at ". $_SESSION["time"];
 
+?>
+
+<form action="index.php" method="post">
+    <input type="cancel" name="back" value="back">
+</form>
+
