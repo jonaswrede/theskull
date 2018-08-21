@@ -9,6 +9,11 @@
         $_SESSION["time"] = (string)$time;
     }
 
+
+    if($_SESSION["name"]=="jonas")
+    {
+        $_SESSION["admin"]="true";
+    }
     var_dump($_SESSION["logged"]);
 
     if(!$_SESSION['logged']=="yes")
