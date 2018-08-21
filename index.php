@@ -16,6 +16,11 @@
         header("Location: login_page.php");
         exit;
     }
+
+
+    $pass = crypt("Toshibalol80!")
+    echo $pass;
+
     ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
