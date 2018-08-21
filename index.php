@@ -2,8 +2,12 @@
     session_start();
 
     $_SESSION["logged"] = "yes";
-    $time = date('m/d/Y h:i:s a', time());
-    $_SESSION["time"] = (string)$time;
+
+    if(!$_SESSION["time"])
+    {
+        $time = date('m/d/Y h:i:s a', time());
+        $_SESSION["time"] = (string)$time;
+    }
 
     var_dump($_SESSION["logged"]);
 
