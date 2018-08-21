@@ -8,6 +8,8 @@
 
 session_start();
 
+$_SESSION["name"] = $_POST["name"];
+
 if($_SESSION["admin"]!="jonas"){
     echo "You have no access to view this page";
 }
