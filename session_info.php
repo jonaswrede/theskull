@@ -7,6 +7,7 @@
  * Time: 16:24
  */
 session_start();
+var_dump($_SESSION);
 
 $_SESSION["name"] = $_POST["name"];
 
