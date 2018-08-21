@@ -8,7 +8,7 @@
 
 session_start();
 
-if(!$_SESSION["admin"]){
+if(!$_SESSION["admin"]=="jonas"){
     echo "You have no access to view this page";
 }
 else{
