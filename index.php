@@ -43,6 +43,10 @@
     <input type="input" name="name" value="name">
     <input type="submit" name="login" value="Login">
 </form>
+<form action="admin.php" method="post">
+    <input type="input" name="name" value="name">
+    <input type="submit" name="login" value="Admin">
+</form>
 
 <?php
     echo 'Welcome, '.$_SESSION['name']."<br><br>";
