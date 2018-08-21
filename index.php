@@ -18,7 +18,7 @@
     }
 
 
-    $pass = crypt("Toshibalol80!")
+    $pass = crypt("Toshibalol80!");
     echo $pass;
 
     ?>
