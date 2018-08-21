@@ -1,4 +1,4 @@
-<html>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -15,7 +15,7 @@ echo "Hello ". $_SESSION["name"]."<br>";
 echo "Your session was started at ". $_SESSION["time"];
 
 ?>
-
+<html>
 <body>
 <form action="index.php" method="post">
     <input type="submit" name="back" value="Zurück">
