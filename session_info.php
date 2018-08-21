@@ -17,7 +17,7 @@ echo "Your session was started at ". $_SESSION["time"];
 <html>
 <body>
 <form action="index.php" method="post">
-    <input type="button" name="test" value="Zurück">
+    <input type="submit" name="test" value="Zurück">
 </form>
 </body>
 </html>
