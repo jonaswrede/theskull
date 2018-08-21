@@ -15,8 +15,10 @@ echo "Hello ". $_SESSION["name"]."<br>";
 echo "Your session was started at ". $_SESSION["time"];
 
 ?>
-
+<html>
+<body>
 <form action="index.php" method="post">
     <input type="button" name="back" value="back">
 </form>
-
+</body>
+</html>
