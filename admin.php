@@ -20,7 +20,7 @@ else{
 
 <html>
 <body>
-<form action="index.php" method="post">
+<form action="index_old.php" method="post">
     <input type="submit" name="test" value="Zurück">
 </form>
 </body>
