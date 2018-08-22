@@ -10,7 +10,7 @@ session_start();
 
 var_dump($_SESSION);
 
-if($_SESSION["admin"]!="jonas"){
+if($_SESSION["name"]!="jonas"){
     echo "You have no access to view this page";
 }
 else{

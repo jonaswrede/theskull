@@ -23,8 +23,19 @@
     }
 
 
-    $pass = crypt("Toshibalol80!");
+    $pass = "Toshibalol80!";
+    $hash= '$1$QNiYVT2j$IQJ2wLmFZku/E5QC1LNJa/';
     echo $pass;
+    echo "<br>". $hash;
+
+    if(password_verify($pass,$hash))
+    {
+        echo "verify works";
+    }
+    else
+    {
+        echo "verify does not work";
+    }
 
     ?>
 
