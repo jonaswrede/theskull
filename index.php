@@ -16,7 +16,7 @@ if($_SESSION["login"]){
 
 <html>
     <body>
-        <form action="index_old.php" method="post">
+        <form action="index.php" method="post">
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="pass" placeholder="Password">
             <input type="Submit" name="login" value="Login">
