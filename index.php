@@ -23,7 +23,7 @@
     }
 
 
-    $pass = "Toshibalol80!";
+    $pass = "Toshibalol80";
     $hash= '$1$QNiYVT2j$IQJ2wLmFZku/E5QC1LNJa/';
     echo $pass;
     echo "<br>". $hash;
