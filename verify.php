@@ -3,6 +3,7 @@
 if(isset($_POST["login"])) {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
         echo "<script> alert('Username or password not set!') </script>";
+        header("location: login_page.php");
     }
     else{
         $host_name = 'db748804796.db.1and1.com';
