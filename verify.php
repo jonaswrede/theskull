@@ -20,7 +20,7 @@ if(isset($_POST["login"])) {
         }
 
         if(password_verify($_POST["pass"],$pass)){
-          #  $_SESSION["login"]=true;
+            $_SESSION["login"]=true;
             header("location: index.php");
         }
         else{
