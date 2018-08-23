@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/login_page.php" afterPath="$PROJECT_DIR$/login_page.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="session_info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session_info.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -86,13 +85,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verify.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <marker date="1535026171883" expanded="true" signature="486:521" ph="SELECT pass login" />
+                <marker date="1535026289484" expanded="true" signature="480:515" ph="SELECT pass login" />
               </folding>
             </state>
           </provider>
@@ -120,8 +119,8 @@
         <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/index_new.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/verify.php" />
         <option value="$PROJECT_DIR$/login_page.php" />
+        <option value="$PROJECT_DIR$/verify.php" />
       </list>
     </option>
   </component>
@@ -209,7 +208,7 @@
       <workItem from="1533760563541" duration="867000" />
       <workItem from="1534319039127" duration="865000" />
       <workItem from="1534757254911" duration="12954000" />
-      <workItem from="1535025301861" duration="631000" />
+      <workItem from="1535025301861" duration="755000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -222,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15783000" />
+    <option name="totallyTimeSpent" value="15907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,7 +316,7 @@
         <state relative-caret-position="90">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1535026171883" expanded="true" signature="486:521" ph="SELECT pass login" />
+            <marker date="1535026289484" expanded="true" signature="480:515" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>
@@ -450,13 +449,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/verify.php">
+    <entry file="file://$PROJECT_DIR$/session_info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <marker date="1535026171883" expanded="true" signature="486:521" ph="SELECT pass login" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -468,11 +465,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session_info.php">
+    <entry file="file://$PROJECT_DIR$/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1535026289484" expanded="true" signature="480:515" ph="SELECT pass login" />
+          </folding>
         </state>
       </provider>
     </entry>
