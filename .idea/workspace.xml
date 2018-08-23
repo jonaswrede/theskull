@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/verify.php" afterPath="$PROJECT_DIR$/verify.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,10 +89,10 @@
       <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
-                <marker date="1535026289484" expanded="true" signature="480:515" ph="SELECT pass login" />
+                <marker date="1535026534850" expanded="true" signature="493:528" ph="SELECT pass login" />
               </folding>
             </state>
           </provider>
@@ -208,7 +209,7 @@
       <workItem from="1533760563541" duration="867000" />
       <workItem from="1534319039127" duration="865000" />
       <workItem from="1534757254911" duration="12954000" />
-      <workItem from="1535025301861" duration="755000" />
+      <workItem from="1535025301861" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -221,7 +222,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15907000" />
+    <option name="totallyTimeSpent" value="16096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,7 +317,7 @@
         <state relative-caret-position="90">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1535026289484" expanded="true" signature="480:515" ph="SELECT pass login" />
+            <marker date="1535026534850" expanded="true" signature="493:528" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>
@@ -467,10 +468,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
-            <marker date="1535026289484" expanded="true" signature="480:515" ph="SELECT pass login" />
+            <marker date="1535026534850" expanded="true" signature="493:528" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>

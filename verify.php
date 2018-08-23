@@ -17,3 +17,6 @@ if(isset($_POST["login"])) {
         var_dump($result);
     }
 }
+else{
+    header("location: login_page.php");
+}
