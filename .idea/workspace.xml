@@ -89,15 +89,16 @@
       <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+            <state relative-caret-position="315">
+              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding>
-                <marker date="1535035828664" expanded="true" signature="493:528" ph="SELECT pass login" />
-                <marker date="1535035828664" expanded="true" signature="493:529" ph="SELECT pass login" />
-                <marker date="1535035828664" expanded="true" signature="493:532" ph="SELECT pass login" />
-                <marker date="1535035828664" expanded="true" signature="493:551" ph="SELECT pass login" />
-                <marker date="1535035828664" expanded="true" signature="493:553" ph="SELECT pass login" />
-                <marker date="1535035828664" expanded="true" signature="493:554" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:545" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:550" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:568" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:569" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:570" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:572" ph="SELECT pass login" />
+                <marker date="1535036048012" expanded="true" signature="510:600" ph="SELECT pass login" />
               </folding>
             </state>
           </provider>
@@ -216,7 +217,7 @@
       <workItem from="1534757254911" duration="12954000" />
       <workItem from="1535025301861" duration="1279000" />
       <workItem from="1535027873917" duration="1089000" />
-      <workItem from="1535035441905" duration="387000" />
+      <workItem from="1535035441905" duration="576000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -229,7 +230,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17907000" />
+    <option name="totallyTimeSpent" value="18096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,12 +341,13 @@
         <state relative-caret-position="315">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <marker date="1535035828664" expanded="true" signature="493:528" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:529" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:532" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:551" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:553" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:554" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:545" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:550" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:568" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:569" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:570" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:572" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:600" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>
@@ -411,12 +413,13 @@
         <state relative-caret-position="180">
           <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="67" />
           <folding>
-            <marker date="1535035828664" expanded="true" signature="493:528" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:529" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:532" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:551" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:553" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:554" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:545" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:550" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:568" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:569" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:570" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:572" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:600" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>
@@ -466,12 +469,13 @@
         <state relative-caret-position="90">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1535035828664" expanded="true" signature="493:528" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:529" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:532" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:551" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:553" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:554" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:545" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:550" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:568" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:569" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:570" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:572" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:600" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>
@@ -622,15 +626,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        <state relative-caret-position="315">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
-            <marker date="1535035828664" expanded="true" signature="493:528" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:529" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:532" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:551" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:553" ph="SELECT pass login" />
-            <marker date="1535035828664" expanded="true" signature="493:554" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:545" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:550" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:568" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:569" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:570" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:572" ph="SELECT pass login" />
+            <marker date="1535036048012" expanded="true" signature="510:600" ph="SELECT pass login" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if(isset($_POST["login"])) {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
@@ -15,7 +16,15 @@ if(isset($_POST["login"])) {
         var_dump($result);
 
         foreach ($result as $value){
-            echo $value["pass"];
+            $pass = $value["pass"];
+        }
+
+        if(password_verify($_POST["pass"],$pass)){
+            $_SESSION["login"]=true;
+            header("location: index.php");
+        }
+        else{
+            echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
         }
     }
 }
