@@ -14,6 +14,10 @@ if(isset($_POST["login"])) {
         $result = $connect->query("SELECT pass from login where lname='Jonas'");
 
         var_dump($result);
+
+        foreach ($result as $value){
+            echo $value["pass"];
+        }
     }
 }
 else{
