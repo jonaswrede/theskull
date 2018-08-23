@@ -10,8 +10,7 @@ if(isset($_POST["login"])) {
         $user_name = 'dbo748804796';
         $password = 'Tml321Bmg()=';
         $connect = new mysqli($host_name, $user_name, $password, $database);
-
-        $result = $connect->query("SELECT pass from login where lname=".$_POST["username"]);
+        $result = $connect->query("SELECT pass from login where lname= '".$_POST['username']."'");
 
         var_dump($result);
 
