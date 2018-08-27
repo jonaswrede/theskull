@@ -13,7 +13,7 @@ if(isset($_POST["login"])) {
         $connect = new mysqli($host_name, $user_name, $password, $database);
         $result = $connect->query("SELECT pass from login where lname= '".$_POST['username']."'");
 
-        var_dump($result);
+        #var_dump($result);
 
         foreach ($result as $value){
             $pass = $value["pass"];

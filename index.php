@@ -10,7 +10,7 @@ if(!$_SESSION["login"])
 
 <html>
     <body>
-        <form method ="POST" action="kill_session.php"
+        <form method ="POST" action="kill_session.php">
               <input type="SUBMIT" value="Logout" name="loggout">
         </form>
     </body>
