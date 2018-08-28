@@ -8,17 +8,33 @@ if(!$_SESSION["login"])
 ?>
 
 
+
 <html>
-    <body>
-    <?php
+    <head>
+        <style>
+            .tsa{
+                display: none;
+            }
+        </style>
+    </head>
 
-    if($_SESSION["usrgrp"]=="tsa"){
-        echo "Hello Admin";
-    }
+        <body>
+        <?php
 
-    ?>
-        <form method ="POST" action="kill_session.php">
-              <input type="SUBMIT" value="Logout" name="loggout">
-        </form>
-    </body>
+        if($_SESSION["usrgrp"]=="tsa"){
+            echo "Hello Admin";
+            echo "document.getElementsByClassName('tsa').display:inline";
+
+        }
+
+        ?>
+            <form method ="POST" action="kill_session.php">
+                  <input type="SUBMIT" value="Logout" name="loggout">
+            </form>
+
+        <div class="tsa">
+          <br>  Only visible for admins!
+        </div>
+
+        </body>
 </html>
