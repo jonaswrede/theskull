@@ -12,7 +12,7 @@ if(!$_SESSION["login"])
 <html>
     <head>
         <style>
-            .tsa{
+            #tsa{
                 display: none;
             }
         </style>
@@ -25,11 +25,9 @@ if(!$_SESSION["login"])
             echo "Hello Admin";
 
         echo "<script>
-                   var x = document.getElementsByClassName('tsa');
-                   var i;
-                   for (i = 0; i < x.length; i++) {
-                        x[i].style.display = inline;
-                    }
+                    document.getElementById('tsa').style.display=inline;
+                    
+                    alert(document.getElementById('tsa').style);
               </script>
                 ";
         }
@@ -39,7 +37,7 @@ if(!$_SESSION["login"])
                   <input type="SUBMIT" value="Logout" name="loggout">
             </form>
 
-        <div class="tsa">
+        <div id="tsa">
           <br>  Only visible for admins!
         </div>
 
