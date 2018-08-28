@@ -13,7 +13,7 @@ if(!$_SESSION["login"])
     <head>
         <style>
             .tsa{
-                display: inline;
+                display: none;
             }
         </style>
     </head>
@@ -24,8 +24,14 @@ if(!$_SESSION["login"])
         if($_SESSION["usrgrp"]=="tsa"){
             echo "Hello Admin";
 
-        echo "<script>document.getElementsByClassName('tsa').style.display=none</script>";
-
+        echo "<script>
+                   var x = document.getElementsByClassName('tsa');
+                   var i;
+                   for (i = 0; i < x.length; i++) {
+                        x[i].style.display = 'inline';
+                    }
+              </script>
+                ";
         }
 
         ?>
