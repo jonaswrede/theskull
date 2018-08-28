@@ -22,10 +22,10 @@ if(!$_SESSION["login"])
         <?php
 
         if($_SESSION["usrgrp"]=="tsa"){
-            echo "Hello Admin";?>
+            echo "Hello Admin";
 
-        document.getElementsByClassName('tsa').display:inline";
-<?
+        echo "<script>document.getElementsByClassName('tsa').display=inline</script>";
+
         }
 
         ?>
