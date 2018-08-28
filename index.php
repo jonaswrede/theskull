@@ -28,7 +28,7 @@ if(!$_SESSION["login"])
                    var x = document.getElementsByClassName('tsa');
                    var i;
                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = 'inline';
+                        x[i].style.display = inline;
                     }
               </script>
                 ";
