@@ -10,6 +10,13 @@ if(!$_SESSION["login"])
 
 <html>
     <body>
+    <?php
+
+    if($_SESSION["usrgrp"]=="tsa"){
+        echo "Hello Admin";
+    }
+
+    ?>
         <form method ="POST" action="kill_session.php">
               <input type="SUBMIT" value="Logout" name="loggout">
         </form>

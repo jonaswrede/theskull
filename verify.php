@@ -11,16 +11,24 @@ if(isset($_POST["login"])) {
         $user_name = 'dbo748804796';
         $password = 'Tml321Bmg()=';
         $connect = new mysqli($host_name, $user_name, $password, $database);
-        $result = $connect->query("SELECT pass from login where lname= '".$_POST['username']."'");
+        $result = $connect->query("SELECT id,pass from login where lname= '".$_POST['username']."'");
 
         #var_dump($result);
 
         foreach ($result as $value){
             $pass = $value["pass"];
+            $id = $value["id"];
         }
 
         if(password_verify($_POST["pass"],$pass)){
             $_SESSION["login"]=true;
+
+            $result = $connect->query("SELECT * FROM user_to_group WHERE id_user='".$id."' AND id_group= '1'");
+
+            if(mysqli_num_rows($result)>0){
+                $_SESSION["usrgrp"]="tsa";
+            }
+
             header("location: index.php");
         }
         else{
