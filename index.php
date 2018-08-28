@@ -25,8 +25,6 @@ if(!$_SESSION["login"])
             echo "Hello Admin";
 
         echo "<script>
-                    document.getElementById('tsa').style.display=inline;
-                    
                     alert(document.getElementById('tsa').style);
               </script>
                 ";
