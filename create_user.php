@@ -8,7 +8,7 @@
 
 session_start();
 
-if($_SESSION["login"]==true&&$_SESSION["usrgrp"=="tsa"]){
+if($_SESSION["login"]==true&&$_SESSION["usrgrp"]=="tsa"){
     echo "please wait";
 }
 else
