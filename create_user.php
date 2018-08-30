@@ -8,8 +8,19 @@
 
 session_start();
 
-if($_SESSION["login"]==true&&$_SESSION["usrgrp"]=="tsa"){
-    echo "please wait";
+if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa"){
+    ?>
+    <html>
+        <body>
+            <form method="post" action="user/create.php">
+                <input type="text" placeholder="Username" name="user">
+                <input type="password" placeholder="Password" name="password">
+                <input type="submit" value="Create" name="create">
+            </form>
+
+        </body>
+    </html>
+<?php
 }
 else
 {

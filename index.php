@@ -29,7 +29,6 @@ if(!$_SESSION["login"])
             <form method="post" action="create_user.php">
                 <input type="Submit" value="Create User" name="create_user">
             </form>
-
         <?php
         }
         echo "<br> Session started at ". $_SESSION["time"];
