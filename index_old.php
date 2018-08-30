@@ -3,11 +3,7 @@
 
     $_SESSION["logged"] = "yes";
 
-    if(!$_SESSION["time"])
-    {
-        $time = date('m/d/Y h:i:s a', time());
-        $_SESSION["time"] = (string)$time;
-    }
+
 
 
     if($_SESSION["name"]=="jonas")

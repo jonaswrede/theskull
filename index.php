@@ -17,23 +17,17 @@ if(!$_SESSION["login"])
             }
         </style>
     </head>
-
         <body>
+        <form method ="POST" action="kill_session.php">
+            <input type="SUBMIT" value="Logout" name="loggout">
+        </form>
         <?php
 
         if($_SESSION["usrgrp"]=="tsa"){
             echo "Hello Admin";
-
-        echo "<script>
-                    alert(document.getElementById('tsa').style);
-              </script>
-                ";
         }
-
+        echo "<br> Session started at ". $_SESSION["time"];
         ?>
-            <form method ="POST" action="kill_session.php">
-                  <input type="SUBMIT" value="Logout" name="loggout">
-            </form>
 
         <div id="tsa">
           <br>  Only visible for admins!

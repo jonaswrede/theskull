@@ -23,12 +23,21 @@ if(isset($_POST["login"])) {
         if(password_verify($_POST["pass"],$pass)){
             $_SESSION["login"]=true;
 
+            /**
+             *
+             * @CHECK Admin Access
+             */
             $result = $connect->query("SELECT * FROM user_to_group WHERE id_user='".$id."' AND id_group= '1'");
+            $connect->close();
 
             if(mysqli_num_rows($result)>0){
                 $_SESSION["usrgrp"]="tsa";
             }
-
+            if(!$_SESSION["time"])
+            {
+                $time = date('m/d/Y h:i:s a', time());
+                $_SESSION["time"] = (string)$time;
+            }
             header("location: index.php");
         }
         else{
