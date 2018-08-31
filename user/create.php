@@ -8,6 +8,7 @@
 
 if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
 
+    echo "1";
 
     $host_name = 'db748804796.db.1and1.com';
     $database = 'db748804796';
@@ -17,11 +18,12 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
     $result = $connect->query("SELECT id,pass from login where lname= '" . $_POST['uname'] . "'");
 
     if (mysqli_num_rows($result) == 0) {
+        echo "2";
         $password = password_hash($_POST["password"]);
         $result = $connect->query("INSERT INTO login (id,pass) VALUES ('" . $_POST['uname'] . "','" . $password . "'");
 
         if ($result) {
-
+            echo "3";
             echo "Account is created";
         } else {
             echo "error";

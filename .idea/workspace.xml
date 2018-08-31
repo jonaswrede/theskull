@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/session/login_page.php" afterPath="$PROJECT_DIR$/session/login_page.php" />
       <change beforePath="$PROJECT_DIR$/user/create.php" afterPath="$PROJECT_DIR$/user/create.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,19 +49,19 @@
       <file leaf-file-name="create.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+            <state relative-caret-position="341">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <marker date="1535717800582" expanded="true" signature="401:461" ph="SELECT id,pa... login" />
-                <marker date="1535717800582" expanded="true" signature="593:629" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:630" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:631" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:647" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:651" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:653" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:665" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:666" ph="INSERT INTO login... " />
-                <marker date="1535717800582" expanded="true" signature="593:667" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="401:465" ph="SELECT id,pa... login" />
+                <marker date="1535717885535" expanded="true" signature="601:637" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:638" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:639" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:657" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:663" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:665" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:681" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:682" ph="INSERT INTO login... " />
+                <marker date="1535717885535" expanded="true" signature="601:683" ph="INSERT INTO login... " />
               </folding>
             </state>
           </provider>
@@ -233,7 +232,7 @@
       <workItem from="1535456778041" duration="3324000" />
       <workItem from="1535530074372" duration="473000" />
       <workItem from="1535553478624" duration="388000" />
-      <workItem from="1535636499974" duration="7281000" />
+      <workItem from="1535636499974" duration="7374000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -246,7 +245,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32604000" />
+    <option name="totallyTimeSpent" value="32697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,19 +766,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        <state relative-caret-position="341">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1535717800582" expanded="true" signature="401:461" ph="SELECT id,pa... login" />
-            <marker date="1535717800582" expanded="true" signature="593:629" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:630" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:631" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:647" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:651" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:653" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:665" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:666" ph="INSERT INTO login... " />
-            <marker date="1535717800582" expanded="true" signature="593:667" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="401:465" ph="SELECT id,pa... login" />
+            <marker date="1535717885535" expanded="true" signature="601:637" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:638" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:639" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:657" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:663" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:665" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:681" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:682" ph="INSERT INTO login... " />
+            <marker date="1535717885535" expanded="true" signature="601:683" ph="INSERT INTO login... " />
           </folding>
         </state>
       </provider>
