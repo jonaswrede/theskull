@@ -17,7 +17,7 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
     $user_name = 'dbo748804796';
     $password = 'Tml321Bmg()=';
     $connect = new mysqli($host_name, $user_name, $password, $database);
-    $result = $connect->query("SELECT id,pass from login where lname= '" . $_POST['uname'] . "'");
+    $result = $connect->query("SELECT id,pass from login where lname= '" . $_POST['username'] . "'");
 
     if (mysqli_num_rows($result) == 0) {
         echo "2";
