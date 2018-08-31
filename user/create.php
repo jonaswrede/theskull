@@ -14,27 +14,25 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
     $user_name = 'dbo748804796';
     $password = 'Tml321Bmg()=';
     $connect = new mysqli($host_name, $user_name, $password, $database);
-    $result = $connect->query("SELECT id,pass from login where lname= '".$_POST['uname']."'");
+    $result = $connect->query("SELECT id,pass from login where lname= '" . $_POST['uname'] . "'");
 
-    if(mysqli_num_rows($result)==0){
+    if (mysqli_num_rows($result) == 0) {
         $password = password_hash($_POST["password"]);
-        $result = $connect->query("INSERT INTO login (id,pass) VALUES ('".$_POST['uname']."','".$password."'");
+        $result = $connect->query("INSERT INTO login (id,pass) VALUES ('" . $_POST['uname'] . "','" . $password . "'");
 
-        if($result){
+        if ($result) {
 
             echo "Account is created";
-        }
-        else
-        {
+        } else {
             echo "error";
         }
+    } else {
+        echo "<script> alert ('Username bereits vorhanden!')</script>";
     }
-    else{
-       echo "<script> alert ('Username bereits vorhanden!')</script>";
-    }
 
+}
+else{
 
-
-
+        echo "error";
 
 }
