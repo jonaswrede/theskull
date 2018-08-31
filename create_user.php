@@ -11,8 +11,8 @@ session_start();
 
 <script>
 
-    var uname = document.getElementsByTagName("user");
-    var pw = document.getElementsByTagName("password");
+    var uname = document.getElementsByTagName("user").item(0);
+    var pw = document.getElementsByTagName("password").item(0);
 
     if(uname == null || pw == null){
 
