@@ -50,19 +50,19 @@
         <entry file="file://$PROJECT_DIR$/user/create.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <caret line="26" column="79" lean-forward="true" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
               <folding>
-                <marker date="1535718830969" expanded="true" signature="433:497" ph="SELECT id,pa... login" />
-                <marker date="1535718830969" expanded="true" signature="651:687" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:688" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:689" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:710" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:716" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:718" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:734" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:735" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:736" ph="INSERT INTO login... " />
-                <marker date="1535718830969" expanded="true" signature="651:737" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="433:500" ph="SELECT id,pa... login" />
+                <marker date="1535718904000" expanded="true" signature="654:690" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:691" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:692" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:713" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:719" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:721" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:737" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:738" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:739" ph="INSERT INTO login... " />
+                <marker date="1535718904000" expanded="true" signature="654:740" ph="INSERT INTO login... " />
               </folding>
             </state>
           </provider>
@@ -233,7 +233,7 @@
       <workItem from="1535456778041" duration="3324000" />
       <workItem from="1535530074372" duration="473000" />
       <workItem from="1535553478624" duration="388000" />
-      <workItem from="1535636499974" duration="8073000" />
+      <workItem from="1535636499974" duration="8138000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -246,7 +246,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33396000" />
+    <option name="totallyTimeSpent" value="33461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,19 +768,19 @@
     <entry file="file://$PROJECT_DIR$/user/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <caret line="26" column="79" lean-forward="true" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
           <folding>
-            <marker date="1535718830969" expanded="true" signature="433:497" ph="SELECT id,pa... login" />
-            <marker date="1535718830969" expanded="true" signature="651:687" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:688" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:689" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:710" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:716" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:718" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:734" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:735" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:736" ph="INSERT INTO login... " />
-            <marker date="1535718830969" expanded="true" signature="651:737" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="433:500" ph="SELECT id,pa... login" />
+            <marker date="1535718904000" expanded="true" signature="654:690" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:691" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:692" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:713" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:719" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:721" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:737" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:738" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:739" ph="INSERT INTO login... " />
+            <marker date="1535718904000" expanded="true" signature="654:740" ph="INSERT INTO login... " />
           </folding>
         </state>
       </provider>

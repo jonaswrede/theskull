@@ -19,6 +19,8 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
     $connect = new mysqli($host_name, $user_name, $password, $database);
     $result = $connect->query("SELECT id,pass from login where lname= '" . $_POST['username'] . "'");
 
+    var_dump($result);
+
     if (mysqli_num_rows($result) == 0) {
         echo "2";
         $password = password_hash($_POST["password"]);
