@@ -24,13 +24,10 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
         $password = password_hash($_POST["password"]);
         $result = $connect->query("INSERT INTO login (id,pass) VALUES ('" . $_POST['uname'] . "','" . $password . "'");
 
-        if ($result) {
-            echo "3";
-            echo "Account is created";
-        } else {
-            echo "error";
-        }
-    } else {
+        var_dump($result);
+
+    }
+    else {
         echo "<script> alert ('Username bereits vorhanden!')</script>";
     }
 
