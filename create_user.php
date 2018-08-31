@@ -11,11 +11,11 @@ session_start();
 
 <script>
 function checkinput() {
-    var uname = document.forms["create_user_form"]["user"].value;
-    var pw = document.forms["create_user_form"]["password"].value;
+    var uname = document.getElementsByName("user").value;
+    var pw = document.getElementsByName("password").value;
 
     if (uname == null || pw == null) {
-        alert("Username or password not set!");
+        alert(uname);
         window.location.href = 'create_user.php';
     }
     else
@@ -32,7 +32,7 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa"){
     <html>
         <body>
         <h2>Create User</h2>
-            <form name="create_user_form" onsubmit="checkinput()" method="post" action="user/create.php">
+            <form method="post" onsubmit="checkinput()" action="user/create.php">
                 <input type="text" placeholder="Username" name="user"><br>
                 <input type="password" placeholder="Password" name="password"><br>
                 <input type="submit" value="Create" name="create">
