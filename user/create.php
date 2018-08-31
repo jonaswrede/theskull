@@ -22,7 +22,9 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
     if (mysqli_num_rows($result) == 0) {
         echo "2";
         $password = password_hash($_POST["password"]);
-        $result = $connect->query("INSERT INTO login (id,pass) VALUES ('" . $_POST['uname'] . "','" . $password . "')");
+        $result = $connect->query("INSERT INTO login (id,pass) VALUES ('" . $_POST['username'] . "','" . $password . "')");
+
+        echo "<br>User ".$_POST["username"]." is created, with pw ". $password;
 
         var_dump($result);
 
