@@ -6,6 +6,7 @@
  * Time: 18:40
  */
 
+echo "0";
 if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
 
     echo "1";
