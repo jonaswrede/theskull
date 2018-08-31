@@ -14,7 +14,7 @@ function checkinput() {
     var uname = document.forms["create_user_form"]["user"].value;
     var pw = document.forms["create_user_form"]["password"].value;
 
-    if (uname == "" || pw == "") {
+    if (uname == null || pw == null) {
         alert("Username or password not set!");
         window.location.href = 'create_user.php';
     }
