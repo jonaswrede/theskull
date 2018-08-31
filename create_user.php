@@ -7,6 +7,22 @@
  */
 
 session_start();
+?>
+
+<script>
+
+    var uname = document.getElementsByTagName("user");
+    var pw = document.getElementsByTagName("password");
+
+    if(uname == null || pw == null){
+
+        alert("Username or password not set!");
+        window.location.href='create_user.php';
+    }
+
+</script>
+
+<?php
 
 if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa"){
     ?>
