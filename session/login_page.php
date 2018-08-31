@@ -17,7 +17,7 @@ if($_SESSION["login"]){
 
 <html>
 <body>
-<form action="verify.php" method="post">
+<form action="/session/verify.php" method="post">
     <input type="text" name="username" placeholder="Username">
     <input type="password" name="pass" placeholder="Password">
     <input type="Submit" name="login" value="Login">

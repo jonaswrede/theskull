@@ -18,7 +18,7 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa"){
     <html>
         <body>
         <h2>Create User</h2>
-            <form method="post" action="user/create.php">
+            <form method="post" action="create.php">
                 <input type="text" placeholder="Username" name="user" required><br>
                 <input type="password" placeholder="Password" name="password" required><br>
                 <input type="submit" value="Create" name="create">

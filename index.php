@@ -3,7 +3,7 @@ session_start();
 
 if(!$_SESSION["login"])
 {
-    header("location: login_page.php");
+    header("location: session/login_page.php");
 }
 ?>
 
@@ -18,7 +18,7 @@ if(!$_SESSION["login"])
         </style>
     </head>
         <body>
-        <form method ="POST" action="kill_session.php">
+        <form method ="POST" action="session/kill_session.php">
             <input type="SUBMIT" value="Logout" name="loggout">
         </form>
         <?php
@@ -26,7 +26,7 @@ if(!$_SESSION["login"])
         if($_SESSION["usrgrp"]=="tsa"){
             echo "Hello Admin";
             ?>
-            <form method="post" action="create_user.php">
+            <form method="post" action="user/create_user.php">
                 <input type="Submit" value="Create User" name="create_user">
             </form>
         <?php
