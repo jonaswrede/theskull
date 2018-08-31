@@ -11,8 +11,8 @@ session_start();
 
 <script>
 function checkinput() {
-    var uname = document.getElementsByTagName("user").item(0);
-    var pw = document.getElementsByTagName("password").item(0);
+    var uname = document.getElementsByTagName("user").value;
+    var pw = document.getElementsByTagName("password").value;
 
     if (uname == null || pw == null) {
 
