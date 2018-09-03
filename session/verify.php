@@ -40,7 +40,7 @@ if(isset($_POST["login"])) {
                     $_SESSION["time"] = (string)$time;
                 }
 
-                header("location: index.php");
+                header("location: ../index.php");
             }
             else{
                 $_SESSION["STATUS"] = 200;
