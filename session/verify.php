@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+/**
+ * @TODO: ADD User Status
+ */
 if(isset($_POST["login"])) {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
         echo "<script> alert('Username or password not set!'); window.location.href='login_page.php'</script>";
@@ -11,40 +13,47 @@ if(isset($_POST["login"])) {
         $user_name = 'dbo748804796';
         $password = 'Tml321Bmg()=';
         $connect = new mysqli($host_name, $user_name, $password, $database);
-        $result = $connect->query("SELECT id,pass from login where lname= '".$_POST['username']."'");
+        $result = $connect->query("SELECT lname,pass,id_group from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
+        $connect->close();
 
-        #var_dump($result);
+        if (mysqli_num_rows($result)>0){
 
-        foreach ($result as $value){
-            $pass = $value["pass"];
-            $id = $value["id"];
-        }
-
-        if(password_verify($_POST["pass"],$pass)){
-            $_SESSION["login"]=true;
-
-            /**
-             *
-             * @CHECK Admin Access
-             */
-            $result = $connect->query("SELECT * FROM user_to_group WHERE id_user='".$id."' AND id_group= '1'");
-            $connect->close();
-
-            if(mysqli_num_rows($result)>0){
-                $_SESSION["usrgrp"]="tsa";
+            foreach ($result as $value){
+                $pass = $value["pass"];
+                $group = $value["id_group"];
+                $uname = $value["lname"];
             }
-            if(!$_SESSION["time"])
-            {
-                $time = date('m/d/Y h:i:s a', time());
-                $_SESSION["time"] = (string)$time;
+
+            if(password_verify($_POST["pass"],$pass)){
+                $_SESSION["login"] = true;
+                $_SESSION["uname"] = $uname;
+                $_SESSION["status"] = 100;
+
+                if($group == 1){
+                    $_SESSION["usrgrp"] = "TSA";
+                }
+                else{
+                    $_SESSION["usrgrp"]= "Standard User";
+                }
+                if(!$_SESSION["time"]) {
+                    $time = date('m/d/Y h:i:s a', time());
+                    $_SESSION["time"] = (string)$time;
+                }
+
+                header("location: index.php");
             }
-            header("location: index.php");
+            else{
+                $_SESSION["STATUS"] = 200;
+                echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
+            }
         }
         else{
+            $_SESSION["STATUS"] = 250;
             echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
+
         }
     }
 }
 else{
-    header("location: login_page.php");
+    echo"<script>alert('Please login'); window.location.href='login_page.php'</script>";
 }
