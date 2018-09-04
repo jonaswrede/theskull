@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/log_parser/log_status" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log_parser/login_log_parser.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/login_log.txt" afterPath="$PROJECT_DIR$/web_logs/login_log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,7 +72,7 @@
         </entry>
       </file>
       <file leaf-file-name="login_log.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/login_log.txt">
+        <entry file="file://$PROJECT_DIR$/web_logs/login_log.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -234,7 +233,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38052000" />
+    <option name="totallyTimeSpent" value="38215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,7 +479,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/login_log.txt">
+    <entry file="file://$PROJECT_DIR$/web_logs/login_log.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
