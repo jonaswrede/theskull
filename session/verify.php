@@ -22,9 +22,6 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true) {
                 $pass = $value["pass"];
                 $group = (int)$value["id_group"];
                 $uname = $value["lname"];
-
-                var_dump($value);
-                echo "<br>";
             }
 
             if(password_verify($_POST["pass"],$pass)){
@@ -43,9 +40,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true) {
                     $_SESSION["time"] = (string)$time;
                 }
 
-              #  header("location: ../index.php");
-
-                var_dump($_SESSION);
+                header("location: ../index.php");
             }
             else{
                 $_SESSION["STATUS"] = 200;
