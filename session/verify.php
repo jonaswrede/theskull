@@ -31,7 +31,7 @@ if(isset($_POST["login"])) {
                 $_SESSION["uname"] = $uname;
                 $_SESSION["status"] = 100;
 
-                if($group == 1{
+                if($group == 1){
                     $_SESSION["usrgrp"] = "TSA";
                 }
                 else{
