@@ -3,7 +3,7 @@ session_start();
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
-if(isset($_POST["login"])) {
+if(isset($_POST["login"]) || $_SESSION["login"]!= true) {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
         echo "<script> alert('Username or password not set!'); window.location.href='login_page.php'</script>";
     }
@@ -24,6 +24,7 @@ if(isset($_POST["login"])) {
                 $uname = $value["lname"];
 
                 var_dump($value);
+                echo "<br>";
             }
 
             if(password_verify($_POST["pass"],$pass)){
@@ -43,6 +44,8 @@ if(isset($_POST["login"])) {
                 }
 
               #  header("location: ../index.php");
+
+                var_dump($_SESSION);
             }
             else{
                 $_SESSION["STATUS"] = 200;
