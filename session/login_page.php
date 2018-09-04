@@ -9,7 +9,7 @@
 session_start();
 
 if($_SESSION["login"]){
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 
 
