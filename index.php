@@ -23,7 +23,7 @@ if($_SESSION["login"]!= true)
         </form>
         <?php
 
-        if($_SESSION["usrgrp"]=="tsa"){
+        if($_SESSION["usrgrp"]=="TSA"){
             echo "Hello Admin";
             ?>
             <form method="post" action="user/create_user.php">
