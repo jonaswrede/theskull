@@ -1,7 +1,7 @@
 <?php
 session_start();
 /**
- * @TODO: ADD User Status
+ * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
 if(isset($_POST["login"])) {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
@@ -22,6 +22,8 @@ if(isset($_POST["login"])) {
                 $pass = $value["pass"];
                 $group = $value["id_group"];
                 $uname = $value["lname"];
+
+                var_dump($value);
             }
 
             if(password_verify($_POST["pass"],$pass)){
@@ -40,7 +42,7 @@ if(isset($_POST["login"])) {
                     $_SESSION["time"] = (string)$time;
                 }
 
-                header("location: ../index.php");
+              #  header("location: ../index.php");
             }
             else{
                 $_SESSION["STATUS"] = 200;
