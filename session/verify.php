@@ -3,6 +3,17 @@ session_start();
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
+
+?>
+<html>
+<head>
+    <title>
+        Verify
+    </title>
+</head>
+</html>
+
+<?php
 if(isset($_POST["login"]) || $_SESSION["login"]!= true) {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
         echo "<script> alert('Username or password not set!'); window.location.href='login_page.php'</script>";

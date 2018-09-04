@@ -9,14 +9,18 @@
 session_start();
 ?>
 
+    <html>
+    <title>
+        Create User
+    </title>
 
+<body>
 
 <?php
 
-if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa"){
+if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="TSA"){
     ?>
-    <html>
-        <body>
+
         <h2>Create User</h2>
             <form method="post" action="create.php">
                 <input type="text" placeholder="Username" name="user" required><br>
@@ -24,12 +28,14 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa"){
                 <input type="submit" value="Create" name="create">
             </form>
 
-        </body>
-    </html>
 <?php
 }
 else
 {
-    header("location: login_page.php");
+    header("location: ../session/login_page.php");
 }
 
+?>
+
+</body>
+    </html>

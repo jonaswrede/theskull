@@ -8,6 +8,7 @@
 
 session_start();
 
+
 if($_SESSION["login"]){
     header('Location: ../index.php');
 }
@@ -16,6 +17,11 @@ if($_SESSION["login"]){
 ?>
 
 <html>
+<head>
+    <title>
+        Login
+    </title>
+</head>
     <body>
         <form action="/session/verify.php"  method="post">
             <input type="text" name="username" placeholder="Username" required>
