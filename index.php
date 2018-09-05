@@ -6,7 +6,7 @@ if($_SESSION["login"]!= true)
     header("location: session/login_page.php");
 }
 
-include "web_log_creator/login_log_creator.php"
+include "web_log_creator/log_creator.php"
 ?>
 
 
@@ -23,7 +23,6 @@ include "web_log_creator/login_log_creator.php"
                 <input type="SUBMIT" value="Logout" name="loggout">
             </form>
             <?php
-
             create_log();
             if($_SESSION["usrgrp"]=="TSA"){
                 echo "Hello Admin";
