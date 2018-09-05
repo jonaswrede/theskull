@@ -13,11 +13,11 @@ function create_log($action,$user,$status){
 
     if(file_put_contents($path,$log,true, FILE_APPEND))
     {
-        echo "work";
+        echo "work\t\t";
     }
     else
     {
-        echo "not work";
+        echo "not work\t\t";
     }
 
     $handle1 = file_get_contents($path,true);
