@@ -23,7 +23,7 @@ include "web_log_creator/log_creator.php"
                 <input type="SUBMIT" value="Logout" name="loggout">
             </form>
             <?php
-            create_log();
+            create_log("login");
             if($_SESSION["usrgrp"]=="TSA"){
                 echo "Hello Admin";
                 ?>
