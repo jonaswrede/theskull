@@ -11,14 +11,7 @@ function create_log($action,$user,$status){
     $path = "web_logs/".$action."_log.txt";
     $log = $time."\t".$user."\t".$status;
 
-    if(file_put_contents($path,$log,true, FILE_APPEND))
-    {
-        echo "work\t\t";
-    }
-    else
-    {
-        echo "not work\t\t";
-    }
+    var_dump(file_put_contents($path,$log,true, FILE_APPEND));
 
     $handle1 = file_get_contents($path,true);
 
