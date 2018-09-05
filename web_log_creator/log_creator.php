@@ -8,14 +8,14 @@
 
 function create_log($action/**,$user,$status**/){
     $time = date('m/d/Y h:i:s a', time());
-    $path = "weblogs/".$action."_log.txt";
+    $path = "web_logs/".$action."_log.txt";
 
 
     $handle = file_get_contents($path, true);
 
     echo $path."<br>";
 
-    echo $time." ".$handle;
+    echo $time." ".$handle."<br>";
 
 
 }
