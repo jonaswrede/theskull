@@ -11,12 +11,11 @@ function create_log($action,$user,$status){
     $path = "web_logs/".$action."_log.txt";
     $log = $time."\t".$user."\t".$status;
 
-    $handle2 = file_put_contents($path,$log,true, FILE_APPEND);
+    file_put_contents($path,$log,true, FILE_APPEND);
     $handle1 = file_get_contents($path,true);
 
     echo $path."<br>";
 
-    echo $handle2."\t\t\t";
 
     echo $handle1."\t\t\t";
 
