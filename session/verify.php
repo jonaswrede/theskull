@@ -53,8 +53,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
                     $_SESSION["time"] = (string)$time;
                 }
 
-                var_dump($_SESSION);
-                header("location: ../index.php");
+                echo "<script>window.location.href='../index.php'</script>";
             }
             else{
                 $_SESSION["STATUS"] = 200;
