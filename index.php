@@ -20,7 +20,7 @@ include "web_log_creator/log_creator.php"
         <body>
 
             <form method ="POST" action="session/kill_session.php">
-                <input type="SUBMIT" value="Logout" name="loggout">
+                <input type="SUBMIT" value="Logout" name="logout">
             </form>
             <?php
             create_log("login");
