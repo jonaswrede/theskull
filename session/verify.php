@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION["last_action"] = "login";
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
@@ -31,7 +32,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true) {
 
             foreach ($result as $value){
                 $pass = $value["pass"];
-                $group = (int)$value["id_group"];
+                $group = $value["id_group"];
                 $uname = $value["lname"];
             }
 
@@ -40,7 +41,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true) {
                 $_SESSION["uname"] = $uname;
                 $_SESSION["status"] = 100;
 
-                if($group == 1){
+                if($group == "1"){
                     $_SESSION["usrgrp"] = "TSA";
                 }
                 else{

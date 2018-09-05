@@ -6,9 +6,10 @@
  * Time: 18:16
  */
 
-$time             = date('m/d/Y h:i:s a', time());
+function create_log(){
+    echo "hallo";
+}
 
-$user             = $_SESSION["uname"];
 
 
 

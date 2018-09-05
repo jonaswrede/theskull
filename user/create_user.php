@@ -18,7 +18,7 @@ session_start();
 
 <?php
 
-if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="TSA"){
+if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="TSA"  && isset($_POST["create_user"])){
     ?>
 
         <h2>Create User</h2>
@@ -32,7 +32,7 @@ if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="TSA"){
 }
 else
 {
-    header("location: ../session/login_page.php");
+    header("location: ../../index.php");
 }
 
 ?>
