@@ -1,6 +1,6 @@
 <?php
 session_start();
-ob_start();
+#ob_start();
 #$_SESSION["last_action"] = "login";
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
