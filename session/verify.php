@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 #$_SESSION["last_action"] = "login";
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
@@ -53,6 +54,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
                     $_SESSION["time"] = (string)$time;
                 }
 
+                ob_start();
 
                 header("location: ../index.php");
                 #echo "<script>window.location.href='../index.php'</script>";
