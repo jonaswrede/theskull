@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-if($_SESSION["login"]!= true)
-{
-    header("location: session/login_page.php");
-}
-
-include "web_log_creator/log_creator.php"
 ?>
 
 
@@ -18,6 +12,15 @@ include "web_log_creator/log_creator.php"
         </title>
     </head>
         <body>
+        <?php
+        if($_SESSION["login"]!= true)
+        {
+            echo"haha";
+        header("location: session/login_page.php");
+        }
+
+        include "web_log_creator/log_creator.php"
+        ?>
 
             <form method ="POST" action="session/kill_session.php">
                 <input type="SUBMIT" value="Logout" name="logout">

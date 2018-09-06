@@ -44,10 +44,7 @@ session_start();
                         $_SESSION["time"] = (string)$time;
                     }
 
-                   # ob_start();
-
                     header("location: ../index.php");
-                    #echo "<script>window.location.href='../index.php'</script>";
                 }
                 else{
                     $_SESSION["STATUS"] = 200;
