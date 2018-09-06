@@ -6,11 +6,6 @@ session_start();
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
 
-?>
-<html>
-
-
-<?php
     if(isset($_POST["login"]) || $_SESSION["login"]!= true)
     {
         if(empty($_POST["username"]) || empty($_POST["pass"])){
@@ -70,4 +65,3 @@ session_start();
         echo"<script>alert('Please login'); window.location.href='login_page.php'</script>";
     }
 ?>
-</html>
