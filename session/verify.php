@@ -8,11 +8,7 @@ session_start();
 
 ?>
 <html>
-<head>
-    <title>
-        Verify
-    </title>
-</head>
+
 
 <?php
     if(isset($_POST["login"]) || $_SESSION["login"]!= true)
