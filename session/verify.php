@@ -54,7 +54,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
                     $_SESSION["time"] = (string)$time;
                 }
 
-                ob_start();
+               # ob_start();
 
                 header("location: ../index.php");
                 #echo "<script>window.location.href='../index.php'</script>";
