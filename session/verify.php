@@ -22,12 +22,12 @@ session_start();
 
             if (mysqli_num_rows($result)>0){
 
-             #   foreach ($result as $value){
-                    $pass = $result[0]["pass"];
-                    $group = $result[0]["id_group"];
-                    $uname = $result[0]["lname"];
-                    $uid = $result[0]["id_user"];
-             #   }
+                foreach ($result as $value){
+                    $pass = $value["pass"];
+                    $group = $value["id_group"];
+                    $uname = $value["lname"];
+                    $uid = $value["id_user"];
+                }
 
                 if(password_verify($_POST["pass"],$pass)){
                     $_SESSION["login"] = true;
