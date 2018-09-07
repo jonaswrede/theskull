@@ -22,8 +22,6 @@ include "web_log_creator/log_creator.php";
                 <input type="SUBMIT" value="Logout" name="logout">
             </form>
             <?php
-                create_log("login","jonas",100);
-
 
                 if($_SESSION["usrgrp"]=="TSA"){
                     echo "Hello Admin";

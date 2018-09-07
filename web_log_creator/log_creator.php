@@ -12,6 +12,5 @@ function create_log($action,$user,$status){
     $ip = $_SERVER["REMOTE_ADDR"];
     $log = "\n".$time.";".$user.";".$status.";".$ip;
     file_put_contents($path,$log, FILE_APPEND);
-    echo $path."<br>";
 
 }

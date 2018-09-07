@@ -17,16 +17,17 @@ session_start();
             $user_name = 'dbo748804796';
             $password = 'Tml321Bmg()=';
             $connect = new mysqli($host_name, $user_name, $password, $database);
-            $result = $connect->query("SELECT lname,pass,id_group from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
+            $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 
             if (mysqli_num_rows($result)>0){
 
-                foreach ($result as $value){
-                    $pass = $value["pass"];
-                    $group = $value["id_group"];
-                    $uname = $value["lname"];
-                }
+             #   foreach ($result as $value){
+                    $pass = $result[0]["pass"];
+                    $group = $result[0]["id_group"];
+                    $uname = $result[0]["lname"];
+                    $uid = $result[0]["id_user"];
+             #   }
 
                 if(password_verify($_POST["pass"],$pass)){
                     $_SESSION["login"] = true;
