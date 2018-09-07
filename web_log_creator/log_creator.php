@@ -13,4 +13,6 @@ function create_log($action,$id,$user,$status){
     $log = "\n".$time.";".$id.";".$user.";".$status.";".$ip;
     file_put_contents($path,$log, FILE_APPEND);
 
+    echo"<script>alert('log');</script>";
+
 }
