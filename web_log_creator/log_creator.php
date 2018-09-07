@@ -9,18 +9,9 @@
 function create_log($action,$user,$status){
     $time = date('m/d/Y h:i:s a', time());
     $path = "web_logs/".$action."_log.txt";
-    $log = "\n".$time."\t".$user."\t".$status;
-
+    $ip = $_SERVER["REMOTE_ADDR"];
+    $log = "\n".$time.";".$user.";".$status.";".$ip;
     file_put_contents($path,$log, FILE_APPEND);
-
-
-    $fcontent= file_get_contents($path,true);
-
     echo $path."<br>";
-
-
-
-
-    echo $fcontent."\t\t\t";
 
 }
