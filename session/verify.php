@@ -1,6 +1,6 @@
 <?php
 session_start();
-#ob_start();
+include_once "../web_log_creator/log_creator.php";
 #$_SESSION["last_action"] = "login";
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
@@ -32,7 +32,7 @@ session_start();
                 if(password_verify($_POST["pass"],$pass)){
                     $_SESSION["login"] = true;
                     $_SESSION["uname"] = $uname;
-                    $_SESSION["status"] = 100;
+                    $status = "100 SUCCESS";
 
                     if($group == "1"){
                         $_SESSION["usrgrp"] = "TSA";
@@ -45,15 +45,19 @@ session_start();
                         $_SESSION["time"] = (string)$time;
                     }
 
+                    create_log("login",$uid,$uname,$status);
                     header("location: ../index.php");
                 }
                 else{
-                    $_SESSION["STATUS"] = 200;
+                    $status = "200 ERROR PWD";
+                    create_log("login",$uid,$uname,$status);
                     echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
                 }
             }
             else{
-                $_SESSION["STATUS"] = 250;
+                $status = "250 ERROR USR N.Exist";
+
+                create_log("login",$uid=0,$_POST["username"],$status);
                 echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
 
             }

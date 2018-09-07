@@ -6,11 +6,11 @@
  * Time: 18:16
  */
 
-function create_log($action,$user,$status){
+function create_log($action,$id,$user,$status){
     $time = date('m/d/Y h:i:s a', time());
     $path = "web_logs/".$action."_log.txt";
     $ip = $_SERVER["REMOTE_ADDR"];
-    $log = "\n".$time.";".$user.";".$status.";".$ip;
+    $log = "\n".$time.";".$id.";".$user.";".$status.";".$ip;
     file_put_contents($path,$log, FILE_APPEND);
 
 }
