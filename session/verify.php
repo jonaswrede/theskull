@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once "../web_log_creator/log_creator.php";
-#$_SESSION["last_action"] = "login";
+ob_start();
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
