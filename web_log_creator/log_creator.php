@@ -12,13 +12,13 @@ function create_log($action,$id,$user,$status){
     $ip = $_SERVER["REMOTE_ADDR"];
     $log = "\n".$time.";".$id.";".$user.";".$status.";".$ip;
     if(file_put_contents($path,$log, FILE_APPEND)){
-        echo "yes";
+       $_SESSION["log"] = "yes";
         ECHO $log;
 
     }
     else{
-        echo "no";
-        ECHO $log;
+        $_SESSION["log"] = "no";
+        $_SESSION["log_text"] = $log;
     };
 
 
