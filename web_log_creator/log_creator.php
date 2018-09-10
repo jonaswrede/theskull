@@ -11,7 +11,15 @@ function create_log($action,$id,$user,$status){
     $path = "web_logs/".$action."_log.txt";
     $ip = $_SERVER["REMOTE_ADDR"];
     $log = "\n".$time.";".$id.";".$user.";".$status.";".$ip;
-    $_SESSION["LOG"] = var_dump(file_put_contents($path,$log, FILE_APPEND));
+    if(file_put_contents($path,$log, FILE_APPEND)){
+        echo "yes";
+        ECHO $log;
+
+    }
+    else{
+        echo "no";
+        ECHO $log;
+    };
 
 
 
