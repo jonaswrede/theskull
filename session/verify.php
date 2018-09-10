@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../web_log_creator/log_creator.php";
+include "../web_log_creator/log_creator.php";
 ob_start();
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
