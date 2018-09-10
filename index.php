@@ -23,6 +23,8 @@ include "web_log_creator/log_creator.php";
             </form>
             <?php
 
+            echo $_SESSION["LOG"];
+
          #   create_log("login",$uid=0,$uname="test",$status="TEST");
                 if($_SESSION["usrgrp"]=="TSA"){
                     echo "Hello Admin";
