@@ -1,7 +1,6 @@
 <?php
 session_start();
 include "../web_log_creator/log_creator.php";
-ob_start();
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
@@ -32,6 +31,7 @@ ob_start();
                 if(password_verify($_POST["pass"],$pass)){
                     $_SESSION["login"] = true;
                     $_SESSION["uname"] = $uname;
+                    $_SESSION["uid"] = $uid;
                     $status = "100 SUCCESS";
 
                     if($group == "1"){

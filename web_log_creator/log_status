@@ -2,3 +2,4 @@
 200;"Invalid password"
 250;"Invalid user"
 300;"Banned user"
+150;"Logout"

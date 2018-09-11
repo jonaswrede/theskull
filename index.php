@@ -22,24 +22,6 @@ include "web_log_creator/log_creator.php";
                 <input type="SUBMIT" value="Logout" name="logout">
             </form>
             <?php
-            $time = date('m/d/Y h:i:s a', time());
-
-            $path = "web_logs/login_log.txt";
-            $ip = $_SERVER["REMOTE_ADDR"];
-            $log = "\nTESTTESTTEST";
-            if(file_put_contents($path,$log, FILE_APPEND)){
-                $_SESSION["log"] = "yes";
-                ECHO $log;
-
-            }
-            else{
-                $_SESSION["log"] = "no";
-                $_SESSION["log_text"] = $log;
-            };
-
-            echo $_SESSION["log"]."<br>";
-            echo  $_SESSION["log_text"];
-
              #   create_log("login",$uid=0,$uname="test",$status="TEST");
                 if($_SESSION["usrgrp"]=="TSA"){
                     echo "Hello Admin";
