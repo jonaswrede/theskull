@@ -23,7 +23,7 @@ if($_SESSION["login"]!=true || $_SESSION["usrgrp"]!="TSA") {
         <form method="post" action="create.php">
             <input type="text" placeholder="Username" name="user" required><br>
             <input type="password" placeholder="Password" name="password" required><br>
-            <input type="checkbox" value="Admin" name="grp">
+             Admin <input type="checkbox" value="Admin" name="grp">
             <input type="submit" value="Create" name="create">
         </form>
     </body>
