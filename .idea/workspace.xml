@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/session/verify.php" afterPath="$PROJECT_DIR$/session/verify.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="198">
+              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -78,13 +80,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verify.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/session/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="174">
+              <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+              <caret line="51" column="50" lean-forward="true" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
               <folding>
-                <marker date="1536598675742" expanded="true" signature="702:836" ph="SELECT lname... login" />
+                <marker date="1536658201882" expanded="true" signature="702:836" ph="SELECT lname... login" />
               </folding>
             </state>
           </provider>
@@ -125,8 +128,8 @@
         <option value="$PROJECT_DIR$/web_log_creator/login_log_creator.php" />
         <option value="$PROJECT_DIR$/web_logs/login_log.txt" />
         <option value="$PROJECT_DIR$/web_log_creator/log_creator.php" />
-        <option value="$PROJECT_DIR$/session/verify.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/session/verify.php" />
       </list>
     </option>
   </component>
@@ -245,7 +248,7 @@
       <workItem from="1535553478624" duration="388000" />
       <workItem from="1535636499974" duration="8593000" />
       <workItem from="1535963705102" duration="3599000" />
-      <workItem from="1536657891797" duration="115000" />
+      <workItem from="1536657891797" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -258,7 +261,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60677000" />
+    <option name="totallyTimeSpent" value="60880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,17 +274,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="576" y="1073" width="1434" height="824" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.49256507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4950678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26886144" sideWeight="0.3821839" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26200274" sideWeight="0.38577586" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26200274" sideWeight="0.6178161" order="9" side_tool="false" content_ui="tabs" x="866" y="1389" width="865" height="191" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26200274" sideWeight="0.61422414" order="9" side_tool="false" content_ui="tabs" x="866" y="1389" width="865" height="191" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18534483" sideWeight="0.50743496" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -335,7 +337,7 @@
         <state relative-caret-position="330">
           <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
-            <marker date="1536598675742" expanded="true" signature="702:836" ph="SELECT lname... login" />
+            <marker date="1536658201882" expanded="true" signature="702:836" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -367,7 +369,7 @@
         <state relative-caret-position="315">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <marker date="1536598675742" expanded="true" signature="702:836" ph="SELECT lname... login" />
+            <marker date="1536658201882" expanded="true" signature="702:836" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -398,7 +400,7 @@
         <state relative-caret-position="180">
           <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="67" />
           <folding>
-            <marker date="1536598675742" expanded="true" signature="702:836" ph="SELECT lname... login" />
+            <marker date="1536658201882" expanded="true" signature="702:836" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -420,7 +422,7 @@
         <state relative-caret-position="90">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1536598675742" expanded="true" signature="702:836" ph="SELECT lname... login" />
+            <marker date="1536658201882" expanded="true" signature="702:836" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -516,16 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session/verify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <marker date="1536598675742" expanded="true" signature="702:836" ph="SELECT lname... login" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_log_creator/log_creator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -536,9 +528,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="198">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session/verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <caret line="51" column="50" lean-forward="true" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <marker date="1536658201882" expanded="true" signature="702:836" ph="SELECT lname... login" />
+          </folding>
         </state>
       </provider>
     </entry>
