@@ -9,7 +9,7 @@ session_start();
 
 include "../web_log_creator/log_creator.php";
 
-create_log("logout",$_SESSION["uname"],$_SESSION["uid"],"150 Logout");
+create_log("logout",$_SESSION["uid"],$_SESSION["uname"],"150 Logout");
 
 session_destroy();
 
