@@ -46,7 +46,20 @@ ob_start();
                     }
 
                     #create_log("login",$uid,$uname,$status);
+                    $time = date('m/d/Y h:i:s a', time());
 
+                    $path = "../web_logs/login_log.txt";
+                    $ip = $_SERVER["REMOTE_ADDR"];
+                    $log = "\nTESTTESTTEST";
+                    if(file_put_contents($path,$log, FILE_APPEND)){
+                        $_SESSION["log"] = "yes";
+                        ECHO $log;
+
+                    }
+                    else{
+                        $_SESSION["log"] = "no";
+                        $_SESSION["log_text"] = $log;
+                    };
 
                     header("location: ../index.php");
                 }
