@@ -7,9 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/session/connect.php" afterPath="$PROJECT_DIR$/adapter/connect.php" />
-      <change beforePath="$PROJECT_DIR$/session/verify.php" afterPath="$PROJECT_DIR$/session/verify.php" />
-      <change beforePath="$PROJECT_DIR$/user/create.php" afterPath="$PROJECT_DIR$/user/create.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,10 +107,10 @@
       <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/session/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="210">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
-                <marker date="1536744284790" expanded="true" signature="478:612" ph="SELECT lname... login" />
+                <marker date="1536744401556" expanded="true" signature="525:659" ph="SELECT lname... login" />
               </folding>
             </state>
           </provider>
@@ -298,7 +295,7 @@
       <workItem from="1535553478624" duration="388000" />
       <workItem from="1535636499974" duration="8593000" />
       <workItem from="1535963705102" duration="3599000" />
-      <workItem from="1536657891797" duration="5530000" />
+      <workItem from="1536657891797" duration="5723000" />
     </task>
     <task id="LOCAL-00001" summary="test php storm git">
       <created>1533760623812</created>
@@ -311,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66092000" />
+    <option name="totallyTimeSpent" value="66285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,7 +407,7 @@
         <state relative-caret-position="315">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <marker date="1536744284790" expanded="true" signature="478:612" ph="SELECT lname... login" />
+            <marker date="1536744401556" expanded="true" signature="525:659" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -441,7 +438,7 @@
         <state relative-caret-position="180">
           <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="67" />
           <folding>
-            <marker date="1536744284790" expanded="true" signature="478:612" ph="SELECT lname... login" />
+            <marker date="1536744401556" expanded="true" signature="525:659" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -463,7 +460,7 @@
         <state relative-caret-position="90">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1536744284790" expanded="true" signature="478:612" ph="SELECT lname... login" />
+            <marker date="1536744401556" expanded="true" signature="525:659" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
@@ -600,10 +597,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/session/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
-            <marker date="1536744284790" expanded="true" signature="478:612" ph="SELECT lname... login" />
+            <marker date="1536744401556" expanded="true" signature="525:659" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>

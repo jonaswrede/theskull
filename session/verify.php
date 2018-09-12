@@ -13,11 +13,14 @@ include "../web_log_creator/log_creator.php";
         }
         else{
             include  "../adapter/connect.php";
+
             $connect = get_connection();
             $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 
-            if (mysqli_num_rows($result)>0){
+            $check = mysqli_num_rows($result);
+
+            if ($check==1){
 
                 foreach ($result as $value){
                     $pass = $value["pass"];
