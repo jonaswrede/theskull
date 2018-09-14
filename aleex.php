@@ -18,6 +18,9 @@
         <h2 align="center">
             Du bist die besteee
         </h2>
+    <div align="center">
+        <img src="webcam-toy-foto1.jpg" alt="aleex">
+    </div>
 
 
 
