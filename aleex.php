@@ -19,11 +19,6 @@
             Du bist die besteee
         </h2>
     <div align="center">
-        <img src="webcam-toy-foto1.jpg" alt="aleex">
-    </div>
-
-
-
-
+        <img src="webcam-toy-foto1.jpg" alt="Smiley face" height="42" width="42">    </div>
     </body>
 </html>
