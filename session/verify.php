@@ -18,18 +18,16 @@ include "../web_log_creator/log_creator.php";
             $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 
-            $check = mysqli_num_rows($result);
 
-            if ($check==1){
-
+            if (mysqli_num_rows($result)==1){
                 foreach ($result as $value){
                     $pass = $value["pass"];
                     $group = $value["id_group"];
                     $uname = $value["lname"];
                     $uid = $value["id_user"];
                 }
-
-                if(password_verify($_POST["pass"],$pass)){
+                if(password_verify($_POST["pass"],$pass))
+                {
                     $_SESSION["login"] = true;
                     $_SESSION["uname"] = $uname;
                     $_SESSION["uid"] = $uid;

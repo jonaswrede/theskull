@@ -9,8 +9,6 @@ if($_SESSION["login"]!= true)
 include "web_log_creator/log_creator.php";
 
 ?>
-
-
 <html>
     <head>
         <title>
@@ -22,7 +20,6 @@ include "web_log_creator/log_creator.php";
                 <input type="SUBMIT" value="Logout" name="logout">
             </form>
             <?php
-             #   create_log("login",$uid=0,$uname="test",$status="TEST");
                 if($_SESSION["usrgrp"]=="TSA"){
                     echo "Hello Admin";
                     ?>

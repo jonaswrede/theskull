@@ -15,7 +15,7 @@
  *
  *
  * $file -> Login & Logout Logs sollen beide ins login_log.txt file geschrieben werden.
- *          Da die der Dateipfad auf der Action basiert, muss abegrafgt werden ob action=logout. Wenn
+ *          Da die der Dateipfad auf der Action basiert, muss abegrafgt werden ob action=logout ist. Wenn
  *          dies der Fall ist, wird $file auf Login gesetzt.
  *
  */
