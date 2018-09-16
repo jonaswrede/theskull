@@ -27,7 +27,7 @@ function create_log($action,$id,$user,$status){
         $file = $action;
     }
     $time = date('m/d/Y h:i:s a', time());
-    $path = "../web_logs/".$file."_log.txt";
+    $path = "../../../web_logs/".$file."_log.txt";
     $ip = $_SERVER["REMOTE_ADDR"];
     $log = "\n".$time.";".$id.";".$user.";".$status.";".$ip;
     file_put_contents($path,$log, FILE_APPEND);
