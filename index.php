@@ -3,10 +3,10 @@ session_start();
 
 if($_SESSION["login"]!= true)
 {
-    header("location: session/login_page.php");
+    header("location: module/login/view/login_page.php");
 }
 
-include "web_log_creator/log_creator.php";
+include "logs/log_creator.php";
 
 ?>
 <html>
@@ -23,7 +23,7 @@ include "web_log_creator/log_creator.php";
                 if($_SESSION["usrgrp"]=="TSA"){
                     echo "Hello Admin";
                     ?>
-                    <form method="post" action="user/create_user.php">
+                    <form method="post" action="module/user/create_user.php">
                         <input type="Submit" value="Create User" name="create_user">
                     </form>
                 <?php

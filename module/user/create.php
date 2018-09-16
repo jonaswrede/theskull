@@ -5,7 +5,7 @@
  * Date: 30.08.18
  * Time: 18:40
  */
-
+/*
 session_start();
 
 if($_SESSION["login"]==true && $_SESSION["usrgrp"]=="tsa") {
