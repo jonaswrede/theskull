@@ -11,7 +11,7 @@ namespace TSDBase;
 
 use mysqli;
 
- class tsdb
+ class tsdb extends mysqli
 {
 
     private $host = "db748804796.db.1and1.com";
