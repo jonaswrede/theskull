@@ -2,7 +2,6 @@
 session_start();
 
 
-use Adapter\tsdb;
 include "../../../adapter/tsdb.php";
 include "../../../web_logs/log_creator.php";
 
