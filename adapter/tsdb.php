@@ -11,6 +11,8 @@ namespace TSDBase;
 
 use mysqli;
 
+
+
  class tsdb extends mysqli
 {
 
@@ -35,8 +37,6 @@ use mysqli;
 
      public function select_user($query){
          $result = $this->connect->query($query);
-
-         var_dump( $result);
 
          return $result;
      }

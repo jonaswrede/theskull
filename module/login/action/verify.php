@@ -7,7 +7,6 @@ session_start();
 include "../../../adapter/tsdb.php";
 
 
-
 include "../../../web_logs/log_creator.php";
 
 /**
