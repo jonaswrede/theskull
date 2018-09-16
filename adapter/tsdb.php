@@ -14,10 +14,10 @@ use mysqli;
  class tsdb extends mysqli
 {
 
-    private $host = "db748804796.db.1and1.com";
-    private $db = "db748804796";
-    private $user="dbo748804796";
-    private $pw="Tml321Bmg()='";
+    private $host_name = 'db748804796.db.1and1.com';
+    private $database = 'db748804796';
+    private $user_name = 'dbo748804796';
+    private $password = 'Tml321Bmg()=';
 
     public $connect;
 
@@ -25,17 +25,17 @@ use mysqli;
       * @return mysqli
       */
      public function __construct(){
-         $host_name = 'db748804796.db.1and1.com';
-         $database = 'db748804796';
-         $user_name = 'dbo748804796';
-         $password = 'Tml321Bmg()=';
-         $connect = mysqli_connect($host_name, $user_name, $password, $database);
 
-         if (mysqli_connect_errno()) {
+         $connect = mysqli_connect($this->host_name, $this->user_name, $this->password, $this->database);
+
+         if (mysqli_connect_errno()){
              die('<p>Verbindung zum MySQL Server fehlgeschlagen: '.mysqli_connect_error().'</p>');
-         } else {
+         }
+         else {
              echo '<p>Verbindung zum MySQL Server erfolgreich aufgebaut.</p >';
-         $this->connect=$connect;}
+
+             $this->connect=$connect;
+         }
 
 
          return $this->connect;
@@ -48,7 +48,7 @@ use mysqli;
      public function select_user($query){
          $result = $this->connect->query($query);
 
-         return $result;
+         var_dump( $result);
      }
 
 }

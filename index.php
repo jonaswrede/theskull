@@ -16,17 +16,12 @@ include "web_logs/log_creator.php";
         </title>
     </head>
         <body>
-            <form method ="POST" action="session/kill_session.php">
+            <form method ="POST" action="module/login/action/logout.php">
                 <input type="SUBMIT" value="Logout" name="logout">
             </form>
             <?php
                 if($_SESSION["usrgrp"]=="TSA"){
                     echo "Hello Admin";
-                    ?>
-                    <form method="post" action="module/user/create_user.php">
-                        <input type="Submit" value="Create User" name="create_user">
-                    </form>
-                <?php
                 }
                 echo "<br> Session started at ". $_SESSION["time"];
             ?>
