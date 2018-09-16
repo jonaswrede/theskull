@@ -22,8 +22,12 @@ var_dump($result);
 $tsdb = new \TSDBase\tsdb();
 echo"<br>";
 
+$query="SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user";
 
-$result2 = $tsdb->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user");
+$result2 = $tsdb->query($query);
 
 var_dump($result2);
+
+
+var_dump($tsdb->select_user($query));
 ?>

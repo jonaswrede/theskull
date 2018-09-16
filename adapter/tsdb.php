@@ -33,14 +33,12 @@ use mysqli;
          return $this->connect;
     }
 
-     /**
-      * @param $query
-      * @return bool|\mysqli_result
-      */
      public function select_user($query){
          $result = $this->connect->query($query);
 
          var_dump( $result);
+
+         return $result;
      }
 
 }
