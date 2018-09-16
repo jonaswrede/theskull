@@ -1,12 +1,13 @@
 <?php
 
-use TSDBase\tsdb;
-use mysqli;
+
+
 
 session_start();
-
-
 include "../../../adapter/tsdb.php";
+
+
+
 include "../../../web_logs/log_creator.php";
 
 /**
@@ -19,7 +20,7 @@ include "../../../web_logs/log_creator.php";
             echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
         }
         else{
-            $connect = new TSDBase\tsdb();
+            $connect = new \TSDBase\tsdb();
             $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 
