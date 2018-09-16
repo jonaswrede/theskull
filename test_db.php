@@ -33,6 +33,8 @@ $a=$tsdb->select_user($query);
 var_dump($a);
 
 foreach ($a as $b)
+{
+    var_dump($b);
+}
 
-    echo $b["lname"];
 ?>
