@@ -25,10 +25,10 @@ use mysqli;
       * @return mysqli
       */
      public function __construct(){
-         $connect = new mysqli($this->host, $this->db, $this->user, $this->pw);
+         $this->connect = new mysqli($this->host, $this->db, $this->user,$this->pw);
+
          /** @var mysqli $connect */
 
-         $this->connect = $connect;
          return $this->connect;
     }
 
