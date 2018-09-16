@@ -16,7 +16,7 @@ include "../../../web_logs/log_creator.php";
             echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
         }
         else{
-            $connect = new Adapter\tsdb();
+            $connect = new tsdb();
             $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 

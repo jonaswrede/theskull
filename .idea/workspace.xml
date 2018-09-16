@@ -45,10 +45,10 @@
       <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/login/action/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="152">
+              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
               <folding>
-                <marker date="1537070151825" expanded="true" signature="500:634" ph="SELECT lname... login" />
+                <marker date="1537070284408" expanded="true" signature="508:642" ph="SELECT lname... login" />
               </folding>
             </state>
           </provider>
@@ -266,7 +266,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74855000" />
+    <option name="totallyTimeSpent" value="74941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,10 +464,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/login/action/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="152">
+          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
           <folding>
-            <marker date="1537070151825" expanded="true" signature="500:634" ph="SELECT lname... login" />
+            <marker date="1537070284408" expanded="true" signature="508:642" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
