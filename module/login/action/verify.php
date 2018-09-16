@@ -60,13 +60,14 @@ include "../../../web_logs/log_creator.php";
                     #echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
 
                     var_dump($result);
+                    echo "200";
                 }
             }
             else{
                 $status = "250 ERROR USR N.Exist";
-
+                var_dump($result);echo "250";
                 create_log("login",$uid=0,$_POST["username"],$status);
-                echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
+                #echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
 
             }
         }
