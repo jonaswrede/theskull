@@ -13,7 +13,7 @@ include "../../../web_logs/log_creator.php";
     if(isset($_POST["login"]) || $_SESSION["login"]!= true)
     {
         if(empty($_POST["username"]) || empty($_POST["pass"])){
-            echo "<script> alert('Username or password not set!'); window.location.href='login_page.php'</script>";
+            echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
         }
         else{
             $connect = new Adapter\tsdb();
@@ -49,24 +49,24 @@ include "../../../web_logs/log_creator.php";
                     create_log("login",$uid,$uname,$status);
 
 
-                    header("location: ../index.php");
+                    header("location: /");
                 }
                 else{
                     $status = "200 ERROR PWD";
                     create_log("login",$uid,$uname,$status);
-                    echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
+                    echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
                 }
             }
             else{
                 $status = "250 ERROR USR N.Exist";
 
                 create_log("login",$uid=0,$_POST["username"],$status);
-                echo "<script>alert('Credentials not correct !'); window.location.href='login_page.php'</script>";
+                echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
 
             }
         }
     }
     else{
-        echo"<script>alert('Please login'); window.location.href='login_page.php'</script>";
+        echo"<script>alert('Please login'); window.location.href='../view/login_page.php'</script>";
     }
 ?>
