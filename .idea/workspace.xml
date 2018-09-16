@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40a61aa9-9c6b-4f8e-843b-db23aa3db822" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/module/login/action/verify.php" afterPath="$PROJECT_DIR$/module/login/action/verify.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,10 +46,10 @@
       <file leaf-file-name="verify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/login/action/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="244">
+              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
-                <marker date="1537070284408" expanded="true" signature="508:642" ph="SELECT lname... login" />
+                <marker date="1537070379604" expanded="true" signature="500:634" ph="SELECT lname... login" />
               </folding>
             </state>
           </provider>
@@ -266,7 +267,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74941000" />
+    <option name="totallyTimeSpent" value="75015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,10 +465,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/login/action/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+        <state relative-caret-position="244">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
-            <marker date="1537070284408" expanded="true" signature="508:642" ph="SELECT lname... login" />
+            <marker date="1537070379604" expanded="true" signature="500:634" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
