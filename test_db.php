@@ -18,4 +18,8 @@ if (mysqli_connect_errno()) {
 $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user");
 
 var_dump($result);
+
+$tsdb = new tsdb();
+echo"<br>";
+var_dump($tsdb);
 ?>
