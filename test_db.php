@@ -34,5 +34,5 @@ var_dump($a);
 
 foreach ($a as $b)
 
-    echo $a["lname"];
+    echo $b["lname"];
 ?>
