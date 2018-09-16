@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/adapter/tsdb.php" afterPath="$PROJECT_DIR$/adapter/tsdb.php" />
       <change beforePath="$PROJECT_DIR$/module/login/action/logout.php" afterPath="$PROJECT_DIR$/module/login/action/logout.php" />
       <change beforePath="$PROJECT_DIR$/module/login/action/verify.php" afterPath="$PROJECT_DIR$/module/login/action/verify.php" />
-      <change beforePath="$PROJECT_DIR$/test_db.php" afterPath="$PROJECT_DIR$/test_db.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +48,8 @@
       <file leaf-file-name="log_creator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_logs/log_creator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="300">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -59,7 +58,7 @@
       <file leaf-file-name="verify.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/login/action/verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
+            <state relative-caret-position="-45">
               <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
               <folding>
                 <marker date="1537088409816" expanded="true" signature="537:671" ph="SELECT lname... login" />
@@ -181,8 +180,8 @@
         <option value="$PROJECT_DIR$/module/login/view/login_page.php" />
         <option value="$PROJECT_DIR$/test_db.php" />
         <option value="$PROJECT_DIR$/adapter/tsdb.php" />
-        <option value="$PROJECT_DIR$/module/login/action/logout.php" />
         <option value="$PROJECT_DIR$/module/login/action/verify.php" />
+        <option value="$PROJECT_DIR$/module/login/action/logout.php" />
       </list>
     </option>
   </component>
@@ -337,7 +336,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83350000" />
+    <option name="totallyTimeSpent" value="83757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,8 +349,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1434" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19181034" sideWeight="0.49256507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19181034" sideWeight="0.49256507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4950678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26200274" sideWeight="0.10560345" order="7" side_tool="true" content_ui="tabs" />
@@ -498,32 +498,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/log_creator.php" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/login/view/login_page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <marker date="1537084481467" expanded="true" signature="468:540" ph="SELECT lname... login" />
-            <marker date="1537084481467" expanded="true" signature="468:547" ph="SELECT lname... login" />
-            <marker date="1537084481467" expanded="true" signature="468:585" ph="SELECT lname... login" />
-            <marker date="1537084481467" expanded="true" signature="663:780" ph="SELECT lname... login" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,21 +522,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_logs/log_creator.php">
+    <entry file="file://$PROJECT_DIR$/test_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="416">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <marker date="1537084481467" expanded="true" signature="468:540" ph="SELECT lname... login" />
+            <marker date="1537084481467" expanded="true" signature="468:547" ph="SELECT lname... login" />
+            <marker date="1537084481467" expanded="true" signature="468:585" ph="SELECT lname... login" />
+            <marker date="1537084481467" expanded="true" signature="663:780" ph="SELECT lname... login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/login/action/verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
+        <state relative-caret-position="-45">
           <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
           <folding>
             <marker date="1537088409816" expanded="true" signature="537:671" ph="SELECT lname... login" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_logs/log_creator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
