@@ -28,15 +28,6 @@ use mysqli;
 
          $connect = mysqli_connect($this->host_name, $this->user_name, $this->password, $this->database);
 
-         if (mysqli_connect_errno()){
-             die('<p>Verbindung zum MySQL Server fehlgeschlagen: '.mysqli_connect_error().'</p>');
-         }
-         else {
-             echo '<p>Verbindung zum MySQL Server erfolgreich aufgebaut.</p >';
-
-             $this->connect=$connect;
-         }
-
 
          return $this->connect;
     }
