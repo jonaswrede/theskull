@@ -23,7 +23,7 @@ use mysqli;
       * @return mysqli
       */
      public function __construct(){
-
+        ::mysqli::construct();
         $connect = new mysqli($this->host, $this->db, $this->user, $this->pw);
 
         return $connect;

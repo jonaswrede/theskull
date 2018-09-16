@@ -1,6 +1,7 @@
 <?php
 
 use TSDBase\tsdb;
+use mysqli;
 
 session_start();
 
