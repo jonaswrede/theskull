@@ -24,9 +24,18 @@ use mysqli;
       */
      public function __construct(){
          $connect = new mysqli($this->host, $this->db, $this->user, $this->pw);
-
          /** @var mysqli $connect */
          return $connect;
     }
+
+     /**
+      * @param $query
+      * @return bool|\mysqli_result
+      */
+     public function select_user($query){
+         $result = parent::query($query);
+
+         return $result;
+     }
 
 }

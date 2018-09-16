@@ -20,7 +20,7 @@ include "../../../web_logs/log_creator.php";
         }
         else{
             $connect = new TSDBase\tsdb();
-            $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
+            $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 
 
