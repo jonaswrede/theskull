@@ -9,6 +9,8 @@
 
 namespace TSDBase;
 
+use mysqli;
+
  class tsdb
 {
 
