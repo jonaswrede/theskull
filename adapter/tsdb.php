@@ -19,13 +19,17 @@ use mysqli;
     private $user="dbo748804796";
     private $pw="Tml321Bmg()='";
 
+    public $connect;
+
      /**
       * @return mysqli
       */
      public function __construct(){
          $connect = new mysqli($this->host, $this->db, $this->user, $this->pw);
          /** @var mysqli $connect */
-         return $connect;
+
+         $this->connect = $connect;
+         return $this->connect;
     }
 
      /**
@@ -33,7 +37,7 @@ use mysqli;
       * @return bool|\mysqli_result
       */
      public function select_user($query){
-         $result = parent::query($query);
+         $result = $this->connect->query($query);
 
          return $result;
      }
