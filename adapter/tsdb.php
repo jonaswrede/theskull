@@ -28,6 +28,7 @@ use mysqli;
 
          $connect = mysqli_connect($this->host_name, $this->user_name, $this->password, $this->database);
 
+         $this->connect=$connect;
 
          return $this->connect;
     }
