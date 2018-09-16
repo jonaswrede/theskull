@@ -1,7 +1,7 @@
 <?php
 
-
 include "adapter/tsdb.php";
+
 $host_name = 'db748804796.db.1and1.com';
 $database = 'db748804796';
 $user_name = 'dbo748804796';
@@ -19,7 +19,11 @@ $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to
 
 var_dump($result);
 
-$tsdb = new tsdb();
+$tsdb = new \TSDBase\tsdb();
 echo"<br>";
-var_dump($tsdb);
+
+
+$result2 = $tsdb->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user");
+
+var_dump($result2);
 ?>
