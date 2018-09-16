@@ -14,20 +14,25 @@ if (mysqli_connect_errno()) {
     echo '<p>Verbindung zum MySQL Server erfolgreich aufgebaut.</p >';
 }
 
-
+/*
 $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user");
 
 var_dump($result);
 
-$tsdb = new \TSDBase\tsdb();
-echo"<br>";
+*/$tsdb = new \TSDBase\tsdb();
+echo"query";
 
 $query="SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user";
-
-$result2 = $tsdb->query($query);
-
-var_dump($result2);
+echo 1;
+var_dump($result2 = $tsdb->query($query));
 
 
-var_dump($tsdb->select_user($query));
+echo "select user <br>";
+$a=$tsdb->select_user($query);
+
+var_dump($a);
+
+foreach ($a as $b)
+
+    echo $a["lname"];
 ?>
