@@ -7,7 +7,7 @@
  */
 
 
-
+namespace TSDBase;
 
  class tsdb
 {
