@@ -11,7 +11,7 @@ namespace TSDBase;
 
 use mysqli;
 
- class tsdb extends mysqli
+ class tsdb
 {
 
     private $host = "db748804796.db.1and1.com";
@@ -23,10 +23,10 @@ use mysqli;
       * @return mysqli
       */
      public function __construct(){
-         mysqli
-        $connect = new mysqli($this->host, $this->db, $this->user, $this->pw);
+         $connect = new mysqli($this->host, $this->db, $this->user, $this->pw);
 
-        return $connect;
+         /** @var mysqli $connect */
+         return $connect;
     }
 
 }
