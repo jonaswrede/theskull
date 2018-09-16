@@ -4,7 +4,7 @@ session_start();
 
 use Adapter\tsdb;
 
-include "../../web_logs/log_creator.php";
+include "../../../web_logs/log_creator.php";
 
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)

@@ -6,7 +6,7 @@ if($_SESSION["login"]!= true)
     header("location: module/login/view/login_page.php");
 }
 
-include "logs/log_creator.php";
+include "web_logs/log_creator.php";
 
 ?>
 <html>

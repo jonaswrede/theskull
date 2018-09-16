@@ -23,7 +23,7 @@ if($_SESSION["login"]){
     </title>
 </head>
     <body>
-        <form action="/module/login/action/verify.php"  method="post">
+        <form action="../action/verify.php"  method="post">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="pass" placeholder="Password" required>
             <input type="Submit" name="login" value="Login">
