@@ -6,10 +6,8 @@
  * Time: 04:01
  */
 
-namespace Adapter;
 
 
- use mysqli;
 
  class tsdb
 {
