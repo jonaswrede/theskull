@@ -15,7 +15,7 @@ include "../../../module/user/User.php";
             echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
         }
         else{
-            $user = new User($_POST["username"],$_POST["pass"]));
+            $user = new User($_POST["username"],$_POST["pass"]);
 
 
             $connect = new \TSDBase\tsdb();
