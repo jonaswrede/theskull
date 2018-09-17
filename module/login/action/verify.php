@@ -1,12 +1,7 @@
 <?php
 
-
-
-
 session_start();
 include "../../../adapter/tsdb.php";
-
-
 include "../../../web_logs/log_creator.php";
 
 /**
@@ -52,23 +47,21 @@ include "../../../web_logs/log_creator.php";
                     create_log("login",$uid,$uname,$status);
 
 
-                    header("location: /");
+                    header("location: /index");
                 }
                 else{
                     $status = "200 ERROR PWD";
                     create_log("login",$uid,$uname,$status);
-                    #echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
-
-                    var_dump($result);
-                    echo "200";
+                    echo
+                    "<script>
+                            alert('Credentials not correct !');
+                            window.location.href='../view/login_page.php';
+                    </script>";
                 }
             }
             else{
                 $status = "250 ERROR USR N.Exist";
-                var_dump($result);echo "250";
-                create_log("login",$uid=0,$_POST["username"],$status);
-                #echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
-
+                echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
             }
         }
     }
