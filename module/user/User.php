@@ -5,7 +5,7 @@
  * Date: 16.09.18
  * Time: 14:34
  */
-include "/../../../adapter/tsdb.php";
+include "../../adapter/tsdb.php";
 
 
 /**
@@ -67,19 +67,21 @@ class User
 
     /**
      * User constructor.
-     * @param $uid
-     * @param $sid
-     * @param $gip
+     * @param $uname
+     * @param $pw
      */
-    public function __construct($uid, $sid, $gip=null)
+    public function __construct($uname, $pw)
     {
-        $this->uid = $uid;
-        $this->sid = $sid;
-        $this->gip = $gip;
+        $this->uname = $uname;
+        $this->upw = $pw;
+
+        return $this;
     }
 
 
     public function check_credentials($name){
+
+        $db = new \TSDBase\tsdb();
 
     }
 
