@@ -53,10 +53,7 @@ include "../../../web_logs/log_creator.php";
                     $status = "200 ERROR PWD";
                     create_log("login",$uid,$uname,$status);
                     echo
-                    "<script>
-                            alert('Credentials not correct !');
-                            window.location.href='../view/login_page.php';
-                    </script>";
+                    "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
                 }
             }
             else{
