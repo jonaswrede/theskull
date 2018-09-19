@@ -2,6 +2,17 @@
 
 include "../adapter/TSDb.php";
 
+
+
+
+
+
+$user = new User("a","b");
+
+$user->check_credentials();
+
+var_dump($user);
+/*
 $host_name = 'db748804796.db.1and1.com';
 $database = 'db748804796';
 $user_name = 'dbo748804796';
@@ -19,7 +30,7 @@ $result = $connect->query("SELECT lname,pass,id_group,id_user from login,user_to
 
 var_dump($result);
 
-*/$tsdb = new TSDb();
+$tsdb = new TSDb();
 echo"query";
 
 $query="SELECT lname,pass,id_group,id_user from login,user_to_group where lname= 'jonas' AND login.id = user_to_group.id_user";
@@ -38,3 +49,5 @@ foreach ($a as $b)
 }
 
 ?>
+
+

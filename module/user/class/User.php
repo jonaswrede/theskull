@@ -17,6 +17,8 @@ class User
     protected $sid;
     protected $gip;
     protected $uname;
+    private $upw;
+    public $status;
 
     /**
      * @return mixed
@@ -25,7 +27,7 @@ class User
     {
         return $this->uname;
     }
-    private $upw;
+
 
     /**
      * @return mixed
@@ -111,12 +113,12 @@ class User
                     $this->uname = $value["lname"];
                     $this->uid = $value["id_user"];
 
-                    return true;
+                    return $this->status = true;
                 }
             }
         }
         else {
-            return false;
+            return $this->status = false;
         }
     }
 }
