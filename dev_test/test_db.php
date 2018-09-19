@@ -1,6 +1,7 @@
 <?php
 
 include "../adapter/TSDb.php";
+include "../module/user/class/User.php";
 
 
 
@@ -49,5 +50,5 @@ foreach ($a as $b)
 }
 
 ?>
-
+*/
 
