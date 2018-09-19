@@ -8,7 +8,7 @@ include "../module/user/class/User.php";
 
 
 
-$user = new User("a","b");
+$user = new User("jonas","Toshibalol80!");
 
 $user->check_credentials();
 
