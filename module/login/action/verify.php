@@ -1,9 +1,9 @@
 <?php
 
 session_start();
-include "../../../adapter/tsdb.php";
+include "../../../adapter/TSDb.php";
 include "../../../web_logs/log_creator.php";
-include "../../../module/user/User.php";
+include "../../../module/user/class/User.php";
 
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
@@ -15,11 +15,11 @@ include "../../../module/user/User.php";
             echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
         }
         else{
-            $user = new User($_POST["username"],$_POST["pass"]);
 
 
-            $connect = new \TSDBase\tsdb();
-            $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
+
+            $connect = new TSDb();
+            $result = $connect->ts_query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
 
 

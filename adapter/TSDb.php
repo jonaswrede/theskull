@@ -7,14 +7,7 @@
  */
 
 
-namespace TSDBase;
-
-use mysqli;
-
-
-
- class tsdb extends mysqli
-{
+ class TSDb extends mysqli{
 
     private $host_name = 'db748804796.db.1and1.com';
     private $database = 'db748804796';
@@ -28,14 +21,17 @@ use mysqli;
       */
      public function __construct(){
 
-         $connect = mysqli_connect($this->host_name, $this->user_name, $this->password, $this->database);
+         $this->connect = mysqli_connect($this->host_name, $this->user_name, $this->password, $this->database);
 
-         $this->connect=$connect;
-
-         return $this->connect;
+         return $this;
     }
 
-     public function select_user($query){
+     /**
+      * @param string $query
+      * @return bool|mysqli_result
+      */
+
+     public function ts_query($query){
          $result = $this->connect->query($query);
 
          return $result;
