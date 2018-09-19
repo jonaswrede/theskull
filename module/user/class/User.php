@@ -108,7 +108,7 @@ class User
 
                 $pas = $value["pass"];
 
-                if (password_verify($_POST["pass"], $pas)) {
+                if (password_verify($this->upw, $pas)) {
                     $this->gip = $value["id_group"];
                     $this->uname = $value["lname"];
                     $this->uid = $value["id_user"];

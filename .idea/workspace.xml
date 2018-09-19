@@ -59,10 +59,10 @@
       <file leaf-file-name="test_db.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev_test/test_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="70">
+              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding>
-                <marker date="1537372272342" expanded="true" signature="778:895" ph="SELECT lname... login" />
+                <marker date="1537372339325" expanded="true" signature="794:911" ph="SELECT lname... login" />
               </folding>
             </state>
           </provider>
@@ -375,7 +375,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99291000" />
+    <option name="totallyTimeSpent" value="99354000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -649,10 +649,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_test/test_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        <state relative-caret-position="70">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
-            <marker date="1537372272342" expanded="true" signature="778:895" ph="SELECT lname... login" />
+            <marker date="1537372339325" expanded="true" signature="794:911" ph="SELECT lname... login" />
           </folding>
         </state>
       </provider>
