@@ -102,23 +102,13 @@ class User
         $result = $db->ts_query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $_POST['username'] . "' AND login.id = user_to_group.id_user");
         $db->close();
 
-
         if (mysqli_num_rows($result) == 1) {
             foreach ($result as $value) {
-
-                $pas = $value["pass"];
-
-                if (password_verify($this->upw, $pas)) {
-                    $this->gip = $value["id_group"];
-                    $this->uname = $value["lname"];
-                    $this->uid = $value["id_user"];
-
-                    return $this->status = true;
-                }
+                var_dump($value);
             }
         }
-        else {
-            return $this->status = false;
-        }
     }
+
+
+
 }
