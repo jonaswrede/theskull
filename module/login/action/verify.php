@@ -1,13 +1,9 @@
 <?php
 
-
-
-
 session_start();
-include "../../../adapter/tsdb.php";
-
-
+include "../../../adapter/TSDb.php";
 include "../../../web_logs/log_creator.php";
+include "../../../module/user/class/User.php";
 
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
@@ -19,10 +15,9 @@ include "../../../web_logs/log_creator.php";
             echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
         }
         else{
-            $connect = new \TSDBase\tsdb();
-            $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
+            $connect = new TSDb();
+            $result = $connect->ts_query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
             $connect->close();
-
 
             if (mysqli_num_rows($result)==1){
                 foreach ($result as $value){
@@ -52,12 +47,12 @@ include "../../../web_logs/log_creator.php";
                     create_log("login",$uid,$uname,$status);
 
 
-                    header("location: /");
+                    header("location: /index");
                 }
                 else{
                     $status = "200 ERROR PWD";
                     create_log("login",$uid,$uname,$status);
-                    echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
+                    echo "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
                 }
             }
             else{

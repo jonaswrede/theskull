@@ -13,6 +13,6 @@ create_log("logout",$_SESSION["uid"],$_SESSION["uname"],"150 Logout");
 
 session_destroy();
 
-header("location: ../../../index.php");
+header("location: /index.php");
 
 ?>
