@@ -7,6 +7,7 @@
  */
 
 
+
  class TSDb extends mysqli{
 
     private $host_name = 'db748804796.db.1and1.com';
