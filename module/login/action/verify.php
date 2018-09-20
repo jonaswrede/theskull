@@ -1,24 +1,22 @@
 <?php
-
 session_start();
-include "../../../adapter/TSDb.php";
+include "../../../adapter/tsdb.php";
 include "../../../web_logs/log_creator.php";
 include "../../../module/user/class/User.php";
-
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
-
-    if(isset($_POST["login"]) || $_SESSION["login"]!= true)
-    {
-        if(empty($_POST["username"]) || empty($_POST["pass"])){
-            echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
-        }
-        else{
+if(isset($_POST["login"]) || $_SESSION["login"]!= true)
+{
+    if(empty($_POST["username"]) || empty($_POST["pass"])){
+        echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
+    }
+    else{
+        $user = new User($_POST["username"],$_POST["pass"]);
             $connect = new TSDb();
-            $result = $connect->ts_query("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '".$_POST['username']."' AND login.id = user_to_group.id_user");
-            $connect->close();
+            $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $_POST['username'] . "' AND login.id = user_to_group.id_user");
 
+            $connect->close();
             if (mysqli_num_rows($result)==1){
                 foreach ($result as $value){
                     $pass = $value["pass"];
@@ -32,7 +30,6 @@ include "../../../module/user/class/User.php";
                     $_SESSION["uname"] = $uname;
                     $_SESSION["uid"] = $uid;
                     $status = "100 SUCCESS";
-
                     if($group == "1"){
                         $_SESSION["usrgrp"] = "TSA";
                     }
@@ -43,26 +40,23 @@ include "../../../module/user/class/User.php";
                         $time = date('m/d/Y h:i:s a', time());
                         $_SESSION["time"] = (string)$time;
                     }
-
                     create_log("login",$uid,$uname,$status);
-
-
                     header("location: /index");
                 }
                 else{
                     $status = "200 ERROR PWD";
                     create_log("login",$uid,$uname,$status);
-                    echo "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
+                    echo
+                    "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
                 }
             }
             else{
                 $status = "250 ERROR USR N.Exist";
-                create_log("login",$uid=0,$_POST["username"],$status);
                 echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
             }
         }
-    }
-    else{
-        echo"<script>alert('Please login'); window.location.href='../view/login_page.php'</script>";
-    }
+}
+else{
+    echo"<script>alert('Please login'); window.location.href='../view/login_page.php'</script>";
+}
 ?>

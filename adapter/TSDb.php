@@ -32,7 +32,7 @@
       * @return bool|mysqli_result
       */
 
-     public function ts_query($query){
+     public function select_user($query){
          $result = $this->connect->query($query);
 
          return $result;
