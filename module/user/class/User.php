@@ -124,10 +124,13 @@ class User
                 {
                     $status="active";
                 }
+                else{
+                    $status="FAIL";
+                }
             }
         }
         else{
-            $status="FAIL";
+            $status="no username";
         }
         $this->setStatus($status);
     }
