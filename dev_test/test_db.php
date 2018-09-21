@@ -9,9 +9,9 @@ include "../module/user/class/User.php";
 
 
 $user = new User("jonas","Toshibalol80!");
-echo "user->check_credentials()";
 $user->check_credentials();
 
+echo "<br><br>";
 
 echo "<br>DUMP USER OBJECT</br>";
 var_dump($user);

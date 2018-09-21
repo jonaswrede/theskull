@@ -23,6 +23,22 @@ class User
     /**
      * @return mixed
      */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param mixed $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getUname()
     {
         return $this->uname;
@@ -104,9 +120,16 @@ class User
 
         if (mysqli_num_rows($result) == 1) {
             foreach ($result as $value) {
-                var_dump($value);
+                if(password_verify($value["pass"],$this->upw))
+                {
+                    $status="active";
+                }
             }
         }
+        else{
+            $status="FAIL";
+        }
+        $this->setStatus($status);
     }
 
 
