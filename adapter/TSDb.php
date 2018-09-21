@@ -31,11 +31,11 @@
      /**
       * @return bool|void
       */
-    public function  close()
+  /*  public function  close()
     {
         parent::close();
-        unset ($this);//
-    }
+        //unset ($this);//
+    }*/
 
      /**
       * @param string $query
