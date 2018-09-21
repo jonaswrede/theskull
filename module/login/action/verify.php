@@ -12,7 +12,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
         echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
     }
     else{
-      #  $user = new User($_POST["username"],$_POST["pass"]);
+        $user = new User($_POST["username"],$_POST["pass"]);
             $connect = new TSDb();
             $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $_POST['username'] . "' AND login.id = user_to_group.id_user");
 
@@ -24,7 +24,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
                     $uname = $value["lname"];
                     $uid = $value["id_user"];
                 }
-                if(password_verify($_POST["pass"],'$1$QNiYVT2j$IQJ2wLmFZku/E5QC1LNJa/'))
+                if(password_verify($_POST["pass"],$pass))
                 {
                     $_SESSION["login"] = true;
                     $_SESSION["uname"] = $uname;
