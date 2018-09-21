@@ -27,6 +27,16 @@
          return $this;
     }
 
+
+     /**
+      * @return bool|void
+      */
+    public function  close()
+    {
+        parent::close();
+        unset ($this);//
+    }
+
      /**
       * @param string $query
       * @return bool|mysqli_result

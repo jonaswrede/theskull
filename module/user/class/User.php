@@ -99,7 +99,7 @@ class User
 
         $db = new TSDB();
 
-        $result = $db->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $_POST['username'] . "' AND login.id = user_to_group.id_user");
+        $result = $db->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $this->uname . "' AND login.id = user_to_group.id_user");
         $db->close();
 
         if (mysqli_num_rows($result) == 1) {
