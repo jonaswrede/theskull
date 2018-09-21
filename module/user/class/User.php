@@ -120,6 +120,8 @@ class User
 
         if (mysqli_num_rows($result) == 1) {
             foreach ($result as $value) {
+                echo $value["pass"]." ".$this->upw;
+
                 if(password_verify($value["pass"],$this->upw))
                 {
                     $status="active";
