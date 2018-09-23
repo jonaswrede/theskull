@@ -58,7 +58,7 @@ if($_SESSION["login"]){
             <div class="row-fluid">
                 <div class="centering text-center">
                     <form action="../action/verify.php"  method="post">
-                        <input type="text" name="username" placeholder="Username" required><br>
+                        <input type="text" name="username" placeholder="Username" required><br>    <br>
                         <input type="password" name="pass" placeholder="Password" required><br>
                         <input type="Submit" name="login" value="Login">
                     </form>
