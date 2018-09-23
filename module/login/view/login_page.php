@@ -28,12 +28,23 @@ if($_SESSION["login"]){
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-            .vertical-center {
-                min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-                min-height: 100vh; /* These two lines are counted as one :-)       */
 
-                display: flex;
-                align-items: center;
+            html, body{height:100%; margin:0;padding:0}
+
+            .container-fluid{
+                height:100%;
+                display:table;
+                width: 100%;
+                padding: 0;
+            }
+
+            .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+
+
+            .centering {
+                float:none;
+                margin:0 auto;
             }
         </style>
 
@@ -42,13 +53,15 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body>
-        <div class="jumbotron vertical-center">
-            <div class="container">
-                <form action="../action/verify.php"  method="post">
-                    <input type="text" name="username" placeholder="Username" required>
-                    <input type="password" name="pass" placeholder="Password" required>
-                    <input type="Submit" name="login" value="Login">
-                </form>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="centering text-center">
+                    <form action="../action/verify.php"  method="post">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="pass" placeholder="Password" required>
+                        <input type="Submit" name="login" value="Login">
+                    </form>
+                </div>
             </div>
         </div>
     </body>
