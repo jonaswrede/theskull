@@ -54,12 +54,12 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid border">
             <div class="row-fluid">
                 <div class="centering text-center">
                     <form action="../action/verify.php"  method="post">
                         <input type="text" name="username" placeholder="Username" required><br>    <br>
-                        <input type="password" name="pass" placeholder="Password" required><br>
+                        <input type="password" name="pass" placeholder="Password" required><br> <br>
                         <input type="Submit" name="login" value="Login">
                     </form>
                 </div>
