@@ -57,6 +57,7 @@ if($_SESSION["login"]){
         <div class="container-fluid border">
             <div class="row-fluid">
                 <div class="centering text-center">
+                    <img src="../../../bullet_idea.jpeg" height="100px" width="100px">
                     <form action="../action/verify.php"  method="post">
                         <input type="text" name="username" placeholder="Username" required><br>    <br>
                         <input type="password" name="pass" placeholder="Password" required><br> <br>
