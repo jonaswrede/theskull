@@ -36,6 +36,7 @@ if($_SESSION["login"]){
                 display:table;
                 width: 100%;
                 padding: 0;
+                border: black;
             }
 
             .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
@@ -58,7 +59,7 @@ if($_SESSION["login"]){
                 <div class="centering text-center">
                     <form action="../action/verify.php"  method="post">
                         <input type="text" name="username" placeholder="Username" required>
-                        <input type="password" name="pass" placeholder="Password" required>
+                        <input type="password" name="pass" placeholder="Password" required><br>
                         <input type="Submit" name="login" value="Login">
                     </form>
                 </div>
