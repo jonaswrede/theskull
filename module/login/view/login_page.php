@@ -37,6 +37,7 @@ if($_SESSION["login"]){
                 width: 100%;
                 padding: 0;
                 border: 1px;
+                border-color: black;
             }
 
             .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
