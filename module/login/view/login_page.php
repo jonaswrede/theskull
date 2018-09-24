@@ -32,9 +32,9 @@ if($_SESSION["login"]){
             html, body{height:100%; margin:0;padding:0}
 
             .container-fluid{
-                height:250%;
+                height:100%;
                 display:table;
-                width: 40%;
+                width: 100%;
                 padding: 0;
                 border: 1px;
                 border-color: black;
