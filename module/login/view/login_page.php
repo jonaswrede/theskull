@@ -54,8 +54,8 @@ if($_SESSION["login"]){
     </head>
     <body>
     <span class="border border border-dark">
-      <!--  <div class="container-fluid">
-            <div class="row-fluid">-->
+        <div class="container-fluid">
+            <div class="row-fluid">
                 <div class="centering text-center">
                     <img src="../../../bullet_idea.jpeg" height="75px" width="75px" hspace="20" ">
                      <p><span style="font-size: 12pt;"><br /></span></p>
