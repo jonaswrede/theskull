@@ -52,7 +52,7 @@ if($_SESSION["login"]){
             Login
         </title>
     </head>
-    <body>
+    <body STYLE="background-color: black">
     <span class="border border border-dark">
         <div class="container-fluid">
             <div class="row-fluid">
