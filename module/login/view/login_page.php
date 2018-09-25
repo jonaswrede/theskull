@@ -33,7 +33,7 @@ if($_SESSION["login"]){
                 display:table;
                 width: 100%;
                 padding: 0;
-                    border: 5px solid gray;
+                  /**  border: 5px solid gray;*/
 
 
                 }
