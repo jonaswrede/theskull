@@ -58,6 +58,7 @@ if($_SESSION["login"]){
 
    <!-- <span class="border border border-dark">-->
                 <div class="centering text-center">
+                    <div class="container">
                     <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle">
                      <p><span style="font-size: 12pt;"><br /></span></p>
                     <form action="../action/verify.php"  method="post">
@@ -66,7 +67,7 @@ if($_SESSION["login"]){
                         <input type="Submit" name="login" value="Login">
                     </form>
                 </div>
-
+                    </div>
    <!-- </span> -->
             </div>
         </div>
