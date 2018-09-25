@@ -23,17 +23,17 @@ include "web_logs/log_creator.php";
             Index
         </title>
     </head>
-        <body>
+    <body>
+        <form method ="POST" action="module/login/action/logout.php">
+            <input type="SUBMIT" value="Logout" name="logout">
+        </form>
         <div class="container">
-            <form method ="POST" action="module/login/action/logout.php">
-                <input type="SUBMIT" value="Logout" name="logout">
-            </form>
             <?php
-                if($_SESSION["usrgrp"]=="TSA"){
-                    echo "Hello Admin";
-                }
+            if($_SESSION["usrgrp"]=="TSA"){
+                echo "Hello Admin";
+            }
                 echo "<br> Session started at ". $_SESSION["time"];
             ?>
-        </body>
-    </div>
+        </div>
+    </body>
 </html>
