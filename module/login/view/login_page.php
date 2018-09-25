@@ -53,9 +53,10 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body STYLE="background-color: black">
-    <span class="border border border-dark">
         <div class="container-fluid">
             <div class="row-fluid">
+
+    <span class="border border border-dark">
                 <div class="centering text-center">
                     <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle">
                      <p><span style="font-size: 12pt;"><br /></span></p>
@@ -65,9 +66,10 @@ if($_SESSION["login"]){
                         <input type="Submit" name="login" value="Login">
                     </form>
                 </div>
+
+    </span>
             </div>
         </div>
-    </span>
     </body>
 </html>
 
