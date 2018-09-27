@@ -19,7 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-/**
+
         html, body{height:100%; margin:0;padding:0}
 
         .container-fluid{
@@ -27,7 +27,7 @@
             display:table;
             width: 100%;
             padding: 0;
-            /**  border: 5px solid gray;
+            /**  border: 5px solid gray;*/
         }
 
         .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
@@ -35,7 +35,7 @@
         .centering {
             float:none;
             margin:0 auto;
-        }**/
+        }
     </style>
 
     <title>
