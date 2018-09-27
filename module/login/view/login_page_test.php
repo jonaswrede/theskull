@@ -58,13 +58,13 @@
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><span class="oi oi-person"></span>
-                            <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username"></span>
+                            <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
                         </div>
                     </div>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><span class="oi oi-lock-locked"></span>
-                            <input id="password" type="password" class="form-control m-4" name="password" placeholder="Password"></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password"></span>
                         </div>
                     </div>
                     <button class="btn btn-secondary m-5" type="submit">Sign in</button>
