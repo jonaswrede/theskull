@@ -56,19 +56,41 @@ if($_SESSION["login"]){
         <div class="container-fluid">
             <div class="row-fluid">
 
-   <!-- <span class="border border border-dark">-->
+                <!-- <span class="border border border-dark">-->
                 <div class="centering text-center">
                     <div class="container border border-dark">
-                    <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle" style="margin-top: 10px">
-                     <p><span style="font-size: 12pt;"><br /></span></p>
-                    <form action="../action/verify.php"  method="post">
-                        <input type="text" name="username" placeholder="Username" required><br>    <br>
-                        <input type="password" name="pass" placeholder="Password" required><br> <br>
-                        <input type="Submit" name="login" value="Login">
-                    </form>
-                </div>
+                        <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle" style="margin-top: 10px">
+                        <p><span style="font-size: 12pt;"><br /></span></p>
+                        <!-- Default form login -->
+                        <form class="text-center border border-light p-5" action="../action/verify.php" method="post">
+
+                            <p class="h4 mb-4">Sign in</p>
+
+                            <!-- Email -->
+                            <input type="text" id="defaultLoginFormEmail" name="username" class="form-control mb-4" placeholder="User">
+
+                            <!-- Password -->
+                            <input type="password" id="defaultLoginFormPassword" name="pass" class="form-control mb-4" placeholder="Password">
+
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <!-- Forgot password -->
+                                    <a href="">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <!-- Sign in button -->
+                            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+                            <!-- Register -->
+                            <p>Not a member?
+                                <a href="">Register</a>
+                            </p>
+
+                        </form>
+                        <!-- Default form login -->
                     </div>
-   <!-- </span> -->
+                </div>
             </div>
         </div>
     </body>
