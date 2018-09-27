@@ -61,8 +61,8 @@
                         <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username"></span>
                     </div>
                     <div class="input-group p-5">
-                        <span class="input-group-addon"><span class="oi oi-lock-locked"></span></span>
-                        <input id="password" type="password" class="form-control m-4" name="password" placeholder="Password">
+                        <span class="input-group-addon"><span class="oi oi-lock-locked"></span>
+                        <input id="password" type="password" class="form-control m-4" name="password" placeholder="Password"></span>
                     </div>
                     <button class="btn btn-secondary m-5" type="submit">Sign in</button>
 
