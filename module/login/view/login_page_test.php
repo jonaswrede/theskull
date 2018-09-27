@@ -39,7 +39,7 @@
         }
 
         .input-group {
-            align-content: center;
+           padding-left: 50%;
         }
     </style>
 
