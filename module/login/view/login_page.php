@@ -53,11 +53,13 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body STYLE="background-color: black">
+
         <div class="container-fluid">
             <div class="row-fluid">
 
                 <!-- <span class="border border border-dark">-->
                 <div class="centering text-center">
+                    <div class="container border border-dark">
                         <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle" style="margin-top: 10px">
                         <p><span style="font-size: 12pt;"><br /></span></p>
                         <!-- Default form login -->
