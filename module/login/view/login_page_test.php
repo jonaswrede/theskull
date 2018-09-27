@@ -57,13 +57,13 @@
                     <!-- Email -->
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="oi oi-person mr-1"></span>
+                            <span class="input-group-text"><span class="oi oi-person mr-5"></span>
                             <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
                         </div>
                     </div>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="oi oi-lock-locked pr-1"></span>
+                            <span class="input-group-text"><span class="oi oi-lock-locked pr-5"></span>
                             <input id="password" type="password" class="form-control" name="password" placeholder="Password"></span>
                         </div>
                     </div>
