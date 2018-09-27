@@ -81,7 +81,7 @@ if($_SESSION["login"]){
                             </div>
 
                             <!-- Sign in button -->
-                            <button class="btn btn-secondary "<!--btn-block my-4"-->type="submit">Sign in</button>
+                            <button class="btn btn-secondary" type="submit">Sign in</button>
 
                             <!-- Register -->
                             <p>Not a member?
