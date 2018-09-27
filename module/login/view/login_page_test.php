@@ -39,8 +39,7 @@
         }
 
         .input-group{
-            height: auto;
-            width: auto;
+            padding-left: auto;
         }
     </style>
 
