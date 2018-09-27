@@ -40,8 +40,6 @@ if($_SESSION["login"]){
 
             .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
-
-
             .centering {
                 float:none;
                 margin:0 auto;
@@ -56,20 +54,16 @@ if($_SESSION["login"]){
 
         <div class="container-fluid">
             <div class="row-fluid">
-
                 <!-- <span class="border border border-dark">-->
                 <div class="centering text-center">
                     <div class="container border border-dark">
                         <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle" style="margin-top: 10px">
                         <p><span style="font-size: 12pt;"><br /></span></p>
                         <!-- Default form login -->
-                        <form class="text-center border border-light p-5" action="../action/verify.php" method="post">
-
+                        <form class="text-center p-5" action="../action/verify.php" method="post">
                             <p class="h4 mb-4">Sign in</p>
-
                             <!-- Email -->
                             <input type="text" id="defaultLoginFormEmail" name="username" class="form-control mb-4" placeholder="User">
-
                             <!-- Password -->
                             <input type="password" id="defaultLoginFormPassword" name="pass" class="form-control mb-4" placeholder="Password">
 
