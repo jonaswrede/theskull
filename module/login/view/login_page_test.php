@@ -34,7 +34,6 @@
         .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
         .centering {
-            float:none;
             margin:50%;
         }
 
