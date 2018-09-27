@@ -55,13 +55,14 @@
                     <p class="h4 mb-4">Sign in</p>
                     <!-- Email -->
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="email" type="text" class="form-control m-4" name="username" placeholder="Username">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="icon-user"></i></span>
+                        <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username">
                     </div>
                     <div class="input-group p-5">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                         <input id="password" type="password" class="form-control m-4" name="password" placeholder="Password">
-                    </div>>
+                    </div>
                     <button class="btn btn-secondary m-5" type="submit">Sign in</button>
 
                     <!-- Register -->
