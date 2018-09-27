@@ -38,8 +38,14 @@
             margin:0 auto;
         }
 
-        .input-group {
+       /** .input-group {
            padding-left: 40%;
+        }**/
+
+        .center-block {
+            display: table;  /* Instead of display:block */
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 
@@ -59,7 +65,7 @@
                 <form class="text-center p-5" action="../action/verify.php" method="post">
                     <p class="h4 mb-4">Sign in</p>
                     <!-- Email -->
-                    <div class="centering text-center input-group">
+                    <div class="centering text-center input-group center-block">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><span class="oi oi-person mr-2"></span>
                             <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
