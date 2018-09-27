@@ -56,11 +56,11 @@
                     <!-- Email -->
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="email" type="text" class="form-control" name="username" placeholder="Email">
+                        <input id="email" type="text" class="form-control mb-5" name="username" placeholder="Email">
                     </div>
                     <div class="input-group p-5">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                        <input id="password" type="password" class="form-control mb-5" name="password" placeholder="Password">
                     </div>>
                     <button class="btn btn-secondary m-5" type="submit">Sign in</button>
 
