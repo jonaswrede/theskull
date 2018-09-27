@@ -35,7 +35,7 @@
 
         .centering {
             float:none;
-            margin:0 auto;
+            margin:50%;
         }
 
         .input-group{
