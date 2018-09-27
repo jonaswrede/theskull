@@ -34,7 +34,7 @@
         .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
         .centering {
-            margin:50%;
+            padding:50%;
         }
 
         .input-group{
