@@ -57,8 +57,8 @@
                     <!-- Email -->
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="oi oi-person"></span></span>
-                        <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username">
+                            <span class="input-group-text"><span class="oi oi-person"></span>
+                        <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username"></span>
                     </div>
                     <div class="input-group p-5">
                         <span class="input-group-addon"><span class="oi oi-lock-locked"></span></span>
