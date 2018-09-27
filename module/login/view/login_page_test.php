@@ -14,6 +14,7 @@
     <!-- Latest compiled and minified CSS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../ext/open-iconic-master/font/css/open-iconic-bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -56,7 +57,7 @@
                     <!-- Email -->
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="glyphicons glyphicons-user"></span></span>
+                            <span class="input-group-text"><span class="oi oi-person"></span>
                         <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username">
                     </div>
                     <div class="input-group p-5">
