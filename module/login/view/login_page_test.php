@@ -38,8 +38,8 @@
             margin:0 auto;
         }
 
-        .input-group{
-            padding-left:30%;
+        .input-group {
+            padding-left: auto
         }
     </style>
 
