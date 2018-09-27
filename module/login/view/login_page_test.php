@@ -67,7 +67,7 @@
                             <input id="password" type="password" class="form-control" name="password" placeholder="Password"></span>
                         </div>
                     </div>
-                    <button class="btn btn-secondary m-5" type="submit">Sign in</button>
+                    <button class="btn btn-secondary" type="submit">Sign in</button>
 
                     <!-- Register -->
                     <p>Not a member?
