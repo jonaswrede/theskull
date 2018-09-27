@@ -56,7 +56,7 @@
                     <!-- Email -->
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="icon-user"></i></span>
+                            <span class="input-group-text"><span class="glyphicons glyphicons-user"></span></span>
                         <input id="username" type="text" class="form-control m-4" name="username" placeholder="Username">
                     </div>
                     <div class="input-group p-5">
