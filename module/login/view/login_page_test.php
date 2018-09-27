@@ -55,7 +55,7 @@
                 <form class="text-center p-5" action="../action/verify.php" method="post">
                     <p class="h4 mb-4">Sign in</p>
                     <!-- Email -->
-                    <div class="input-group centering text-center">
+                    <div class="centering text-center input-group ">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><span class="oi oi-person mr-2"></span>
                             <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
