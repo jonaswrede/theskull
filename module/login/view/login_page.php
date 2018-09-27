@@ -56,7 +56,7 @@ if($_SESSION["login"]){
             <div class="row-fluid">
                 <!-- <span class="border border border-dark">-->
                 <div class="centering text-center">
-                    <div class="container border border-dark">
+                    <div class="container border border-dark mw-75">
                         <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                         <!-- Default form login -->
                         <form class="text-center p-5" action="../action/verify.php" method="post">
@@ -66,10 +66,10 @@ if($_SESSION["login"]){
                             <!-- Password -->
                             <input type="password" id="defaultLoginFormPassword" name="pass" class="form-control mb-4" placeholder="Password">
 
-                            <div class="d-flex justify-content-around">
+                  <!--          <div class="d-flex justify-content-around">
                                 <div>
                                     <!-- Forgot password -->
-                                    <a href="">Forgot password?</a>
+                             <!--       <a href="">Forgot password?</a>
                                 </div>
                             </div>
 
