@@ -34,11 +34,12 @@
         .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
         .centering {
-            padding:50%;
+            float:none;
+            margin:0 auto;
         }
 
         .input-group{
-            padding-left: auto;
+            padding-left:30%;
         }
     </style>
 
