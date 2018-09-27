@@ -57,7 +57,7 @@ if($_SESSION["login"]){
                 <!-- <span class="border border border-dark">-->
                 <div class="centering text-center">
                     <div class="container border border-dark">
-                        <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle" style="margin-top: 10px">
+                        <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                         <!-- Default form login -->
                         <form class="text-center p-5" action="../action/verify.php" method="post">
                             <p class="h4 mb-4">Sign in</p>
