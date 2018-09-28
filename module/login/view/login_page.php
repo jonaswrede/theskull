@@ -66,8 +66,8 @@
                                         <input class="form-control py-2 border" type="text" placeholder="Username">
                                     </div>
                                 </div>
-                                <div class="col-xs-2">
                                     <div class="input-group mb-3">
+                                        <div class="col-xs-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
                                         </div>
