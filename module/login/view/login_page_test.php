@@ -61,17 +61,24 @@
                 <form class="text-center p-5" action="../action/verify.php" method="post">
                     <p class="h4 mb-4">Sign in</p>
                     <!-- Email -->
-                    <div class="centering text-center input-group center-block">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="oi oi-person mr-2"></span>
-                            <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
+                    <div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><span class="oi oi-person mr-2"></span>
+                                <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="oi oi-lock-locked mr-2"></span>
-                            <input id="password" type="password" class="form-control" name="password" placeholder="Password"></span>
+                        <div class="input-group">
+                            <input class="form-control"
+                                   placeholder="Password">
+                            <div class="input-group-addon" ><i class="oi oi-lock-locked mr-2"></i></div>
                         </div>
+                   <!--     <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><span class="oi oi-lock-locked mr-2"></span>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Password"></span>
+                            </div>
+                        </div>-->
                     </div>
                     <button class="btn btn-secondary" type="submit">Sign in</button>
 
