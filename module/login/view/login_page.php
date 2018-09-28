@@ -58,8 +58,9 @@
                             <p class="h4 mb-4">Sign in</p>
                             <!-- Email -->
                             <div>
-                                <div class="col-xs-2">
+
                                     <div class="input-group mb-2">
+                                        <div class="col-xs-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
                                         </div>
