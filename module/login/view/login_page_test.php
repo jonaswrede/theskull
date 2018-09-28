@@ -55,7 +55,7 @@
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
         <div class="centering text-center">
-            <div class="container border border-dark mw-50">
+            <div class="container border border-dark">
                 <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                 <!-- Default form login -->
                 <form class="text-center p-2" action="../action/verify.php" method="post">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked"></i></div>
+                                <div style="width:411667px " class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked"></i></div>
                             </div>
                             <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
                         </div>
