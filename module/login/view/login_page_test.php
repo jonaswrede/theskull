@@ -52,7 +52,7 @@
 <body style="background-color: black">
 <div class="container centering text-center">
 <div class="container-fluid">
-    <div class="row">
+    <div class="row centering text-center">
         <div class="row-fluid">
             <img src="../../../theskull.png">
         </div>
