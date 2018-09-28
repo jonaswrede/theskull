@@ -50,7 +50,7 @@
     </title>
 </head>
 <body style="background-color: black">
-<div class="container">
+<div class="container centering text-center">
 <div class="container-fluid">
     <div class="row">
         <div class="row-fluid">
