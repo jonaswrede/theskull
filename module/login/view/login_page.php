@@ -47,6 +47,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <!-- <span class="border border border-dark">-->
+                <div class="container">
                 <div class="centering text-center">
                     <div class="container">
                         <img src="../../../theskull.png">
@@ -82,6 +83,7 @@
                         </form>
                         <!-- Default form login -->
                     </div>
+                </div>
                 </div>
             </div>
         </div>
