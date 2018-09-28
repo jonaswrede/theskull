@@ -50,14 +50,17 @@
     </title>
 </head>
 <body style="background-color: black">
-
+<div class="container centering text-center">
 <div class="container-fluid">
+    <div class="row">
+        <div class="row-fluid">
+            <img src="../../../theskull.png" class="centering text-center">
+        </div>
+    </div>
+    <div class="row">
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
         <div class="centering text-center">
-            <div class="container">
-                <img src="../../../theskull.png">
-            </div>
             <div class="container border border-dark" style="background-color: black">
                 <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                 <!-- Default form login -->
@@ -92,6 +95,7 @@
         </div>
     </div>
     </div>
+</div>
 </div>
 </body>
 </html>
