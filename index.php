@@ -24,6 +24,12 @@ include "web_logs/log_creator.php";
         </title>
     </head>
     <body>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/template/menu.html");
+        });
+    </script>
+    <div id="nav-placeholder"></div>
         <form method ="POST" action="module/login/action/logout.php">
             <input type="SUBMIT" value="Logout" name="logout">
         </form>
