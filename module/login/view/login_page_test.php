@@ -62,12 +62,6 @@
                     <p class="h4 mb-4">Sign in</p>
                     <!-- Email -->
                     <div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><span class="oi oi-person mr-2"></span>
-                                <input id="username" type="text" class="form-control" name="username" placeholder="Username"></span>
-                            </div>
-                        </div>
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-person"></i></div>
