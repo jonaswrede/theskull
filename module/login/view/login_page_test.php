@@ -58,7 +58,7 @@
             <div class="container border border-dark mw-50">
                 <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                 <!-- Default form login -->
-                <form class="text-center p-5" action="../action/verify.php" method="post">
+                <form class="text-center p-2" action="../action/verify.php" method="post">
                     <p class="h4 mb-4">Sign in</p>
                     <!-- Email -->
                     <div>
@@ -72,7 +72,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked"></i></div>
                             </div>
-                            <input class="form-control py-2 border-right-0 border" type="password" name="pass" placeholder="Password">
+                            <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
                         </div>
                    <!--     <div class="input-group">
                             <div class="input-group-prepend">
