@@ -59,10 +59,13 @@
                             <!-- Email -->
                             <div>
                                 <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
+
+                                    <div class="col-xs-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
+                                        </div>
+                                        <input class="form-control py-2 border" type="text" placeholder="Username">
                                     </div>
-                                    <input class="form-control py-2 border" type="text" placeholder="Username">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
