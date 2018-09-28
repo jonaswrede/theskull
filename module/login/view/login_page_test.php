@@ -88,6 +88,9 @@
             </div>
         </div>
     </div>
+    <div class="row-fluid">
+        <img src="../../../theskull.png">
+    </div>
 </div>
 </body>
 </html>
