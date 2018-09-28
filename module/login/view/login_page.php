@@ -47,7 +47,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <!-- <span class="border border border-dark">-->
-                <div class="container">
+                <div class="container-fluid">
                 <div class="centering text-center">
                     <div class="container">
                         <img src="../../../theskull.png">
