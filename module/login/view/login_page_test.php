@@ -21,7 +21,7 @@
 
     <style>
 
-        html, body{height:100%; margin:0;padding:0}
+        html, body{height:100%; margin:0;padding:0; background-color: black}
 
         .container-fluid{
             height:100%;
@@ -37,10 +37,6 @@
             float:none;
             margin:0 auto;
         }
-
-       /** .input-group {
-           padding-left: 40%;
-        }**/
 
         .center-block {
             display: table;  /* Instead of display:block */
