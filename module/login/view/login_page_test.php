@@ -66,7 +66,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-person"></i></div>
                             </div>
-                            <input class="form-control py-2 border-right-0 border" type="text" placeholder="Username">
+                            <input class="form-control py-2 border" type="text" placeholder="Username">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
