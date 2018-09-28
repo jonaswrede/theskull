@@ -21,7 +21,7 @@
 
     <style>
 
-        html, body{height:100%; margin:0;padding:0; background-color: black}
+        html, body{height:100%; margin:0;padding:0; background-color:}
 
         .container-fluid{
             height:100%;
@@ -69,9 +69,10 @@
                             </div>
                         </div>
                         <div class="input-group">
-                            <input class="form-control"
-                                   placeholder="Password">
-                            <div class="input-group-addon" ><i class="oi oi-lock-locked mr-2"></i></div>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="btnGroupAddon2"><i class="fa fa-search"></i></div>
+                            </div>
+                            <input class="form-control py-2 border-right-0 border" type="search" placeholder="Search">
                         </div>
                    <!--     <div class="input-group">
                             <div class="input-group-prepend">
