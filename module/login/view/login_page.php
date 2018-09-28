@@ -58,23 +58,19 @@
                             <p class="h4 mb-4">Sign in</p>
                             <!-- Email -->
                             <div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
+                                    </div>
+                                    <input class="form-control py-2 border" type="text" placeholder="Username">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
+                                    </div>
+                                    <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
+                                </div>
 
-                                    <div class="input-group mb-2">
-                                        <div class="col-xs-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
-                                        </div>
-                                        <input class="form-control py-2 border" type="text" placeholder="Username">
-                                    </div>
-                                </div>
-                                    <div class="input-group mb-3">
-                                        <div class="col-xs-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
-                                        </div>
-                                        <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
-                                    </div>
-                                </div>
                             </div>
                             <button class="btn btn-secondary mb-3" type="submit">Sign in</button>
 
