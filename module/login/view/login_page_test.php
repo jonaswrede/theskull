@@ -64,22 +64,17 @@
                     <div>
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                                <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-person-md"></i></div>
+                                <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-person"></i></div>
                             </div>
                             <input class="form-control py-2 border" type="text" placeholder="Username">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked-md"></i></div>
+                                <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked"></i></div>
                             </div>
                             <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
                         </div>
-                   <!--     <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><span class="oi oi-lock-locked mr-2"></span>
-                                <input id="password" type="password" class="form-control" name="password" placeholder="Password"></span>
-                            </div>
-                        </div>-->
+
                     </div>
                     <button class="btn btn-secondary mb-3" type="submit">Sign in</button>
 
