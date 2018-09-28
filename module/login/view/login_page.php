@@ -6,6 +6,13 @@
  * Time: 16:20
  */
 
+session_start();
+
+
+if($_SESSION["login"]){
+    header('Location: /index.php');
+}
+?>
 
 ?>
 
@@ -47,7 +54,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <!-- <span class="border border border-dark">-->
-                <div class="container" style="min-width: 100%">
+                <div class="container" style="alignment: center">
                 <div class="centering text-center">
                     <div class="container">
                         <img src="../../../theskull.png">
