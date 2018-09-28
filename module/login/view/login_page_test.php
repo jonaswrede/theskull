@@ -70,7 +70,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <div style="width:411667px " class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked"></i></div>
+                                <div class="input-group-text" id="btnGroupAddon2"><i class="oi oi-lock-locked"></i></div>
                             </div>
                             <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
                         </div>
