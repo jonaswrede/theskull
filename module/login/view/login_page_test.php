@@ -53,6 +53,11 @@
 
 <div class="container-fluid">
     <div class="row">
+        <div class="row-fluid">
+            <img src="../../../theskull.png">
+        </div>
+    </div>
+    <div class="row">
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
         <div class="centering text-center">
@@ -89,11 +94,6 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="row">
-        <div class="row-fluid">
-            <img src="../../../theskull.png">
-        </div>
     </div>
 </div>
 </body>
