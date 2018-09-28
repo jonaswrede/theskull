@@ -49,13 +49,13 @@
         Login
     </title>
 </head>
-<body>
+<body style="background-color: black">
 
 <div class="container-fluid">
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
         <div class="centering text-center">
-            <div class="container border border-dark" style="width: 75%;">
+            <div class="container border border-dark" style="background-color: white">
                 <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                 <!-- Default form login -->
                 <form class="text-center p-2" action="../action/verify.php" method="post">
