@@ -56,9 +56,9 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
         }
         else{
             $status = "250 ERROR USR N.Exist";
-
+            echo $username;
             create_log("login",$uid=0,$_POST["username"],$status);
-            echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
+            echo "<script>alert('Credentials not correct !');// window.location.href='../view/login_page.php'</script>";
         }
     }
 }
