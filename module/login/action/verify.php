@@ -49,6 +49,9 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
                 create_log("login",$uid,$uname,$status);
                 echo
                 "<script>alert('Credentials not correct".$username."!');window.location.href='../view/login_page.php';</script>";
+
+
+
             }
         }
         else{
