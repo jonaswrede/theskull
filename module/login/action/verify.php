@@ -13,7 +13,9 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
     }
     else{
         $connect = new TSDb();
-        $username = mysqli_real_escape_string($connect,$_POST["username"]);
+
+        $connect->set_charset("utf8");
+        $username = $connect->real_escape_string($_POST['username']);
         $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $username . "' AND login.id = user_to_group.id_user");
         $connect->close();
         if (mysqli_num_rows($result)==1){
