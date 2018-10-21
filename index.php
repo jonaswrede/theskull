@@ -26,12 +26,8 @@ include "web_logs/log_creator.php";
     <body>
     <div>
         <?php
-        echo getcwd();
-
         include getcwd()."/template/menu.html";
-
         ?>
-
     </div>
         <form method ="POST" action="module/login/action/logout.php">
             <input type="SUBMIT" value="Logout" name="logout">
