@@ -26,7 +26,7 @@ include "web_logs/log_creator.php";
     <body>
     <div>
         <?php
-        include getcwd()."/template/menu.html";
+        include getcwd() . "/template/menu.php";
         ?>
     </div>
         <form method ="POST" action="module/login/action/logout.php">
