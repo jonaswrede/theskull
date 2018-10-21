@@ -8,12 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            // get current URL path and assign 'active' class
-            <?php
-            $href_val = "/".basename($_SERVER["REQUEST_URI"]);
-            ?>
             var pathname = window.location.pathname;
-            alert(pathname);
             $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
         })
     </script>
@@ -34,7 +29,7 @@
                         <a class="nav-link" href="/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#" aria-disabled="true">SkuLLList</a>
                 </li>
             </ul>
         </div>
