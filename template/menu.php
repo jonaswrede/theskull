@@ -10,7 +10,7 @@
         $(document).ready(function() {
             // get current URL path and assign 'active' class
             <?php
-            $file = basename($_SERVER["REQUEST_URI"]);
+            $file = "/".basename($_SERVER["REQUEST_URI"]);
             ?>
             var pathname = window.location.pathname;
             alert("<?php echo $file?>");
