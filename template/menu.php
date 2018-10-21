@@ -13,7 +13,7 @@
             $file = basename($_SERVER["REQUEST_URI"], ".php");
             ?>
             var pathname = window.location.pathname;
-            alert(<?php echo $file?>);
+            alert("<?php echo $file?>");
             $('.navbar-nav > li > a[href="<?php echo $file?>"]').parent().addClass('active');
         })
     </script>
