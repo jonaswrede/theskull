@@ -26,7 +26,6 @@ include "web_logs/log_creator.php";
     <body>
     <div>
         <?php
-        echo "test";
         include getcwd()."/template/menu.html";
         ?>
     </div>
