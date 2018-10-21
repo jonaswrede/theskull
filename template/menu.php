@@ -13,8 +13,8 @@
             $href_val = "/".basename($_SERVER["REQUEST_URI"]);
             ?>
             var pathname = window.location.pathname;
-            alert("<?php echo $href_val?>");
-            $('.navbar-nav > li > a[href="<?php echo $href_val?>"]').parent().addClass('active');
+            alert(pathname);
+            $('.navbar-nav > li > a[href="+pathname+"]').parent().addClass('active');
         })
     </script>
 </head>
