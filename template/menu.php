@@ -7,8 +7,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-              <?php
-echo basename($_SERVER['REQUEST_URI'], ".php");
+<?php
+
+
+public function setMenuStatus($filename){
+    $current_file = basename($_SERVER['REQUEST_URI'], ".php");
+
+    if ($filename == $current_file){
+        echo  '<li class="nav-item active">';
+    }
+    else{
+        echo '<li class="nav-item">';
+    }
+
+}
 ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -17,14 +29,18 @@ echo basename($_SERVER['REQUEST_URI'], ".php");
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-
-                <li class="nav-item active">
+                <?php
+                    setMenuStatus("index")
+                ?>
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <?php
+                setMenuStatus("index")
+                ?>
                     <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
+                </li>                <?php
+                setMenuStatus("index")
+                ?>
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
             </ul>
