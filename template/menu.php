@@ -10,11 +10,11 @@
         $(document).ready(function() {
             // get current URL path and assign 'active' class
             <?php
-            $file = "/".basename($_SERVER["REQUEST_URI"]);
+            $href_val = "/".basename($_SERVER["REQUEST_URI"]);
             ?>
             var pathname = window.location.pathname;
-            alert("<?php echo $file?>");
-            $('.navbar-nav > li > a[href="<?php echo $file?>"]').parent().addClass('active');
+            alert("<?php echo $href_val?>");
+            $('.navbar-nav > li > a[href="<?php echo $href_val?>"]').parent().addClass('active');
         })
     </script>
 </head>
