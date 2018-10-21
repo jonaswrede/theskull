@@ -9,9 +9,12 @@
     <script>
         $(document).ready(function() {
             // get current URL path and assign 'active' class
+            <?php
+            $file = basename($_SERVER["REQUEST_URI"], ".php");
+            ?>
             var pathname = window.location.pathname;
             alert(pathname);
-            $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+            $('.navbar-nav > li > a[href="<?php echo $file?>"]').parent().addClass('active');
         })
     </script>
 </head>
