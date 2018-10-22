@@ -33,7 +33,7 @@
                     <a class="nav-link disabled" href="#">SkuLLList</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav pull-right">
+            <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link pull-right" href=""> Test</a> </li>
             </ul>
 
