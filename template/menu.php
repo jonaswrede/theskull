@@ -16,7 +16,7 @@
 </head>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,9 +33,8 @@
                     <a class="nav-link disabled" href="#">SkuLLList</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-                <li class="nav-item"><a class="nav-link" href=""> Test</a> </li>
-                <li class="nav-item"><a class="nav-link" href=""> Test2</a> </li>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link pull-right" href=""> Test</a> </li>
             </ul>
 
         </div>
