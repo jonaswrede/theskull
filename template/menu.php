@@ -30,7 +30,7 @@
                         <a class="nav-link" href="/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SkuLLList</a>
+                    <a class="nav-link disabled" href="#">SkuLLList</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
