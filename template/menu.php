@@ -34,13 +34,10 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-                <li class="nav-item">
-                    <a class="nav-link" href=""> Test </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href=""> Test2 </a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a> </li>
             </ul>
+
         </div>
     </nav>
 </html>
