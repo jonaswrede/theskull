@@ -10,7 +10,7 @@
         $(document).ready(function() {
             var pathname = window.location.pathname;
             alert(pathname);
-            $('.navbar-nav > li > a[href="..'+pathname+'"]').parent().addClass('active');
+            $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
         })
     </script>
 </head>
