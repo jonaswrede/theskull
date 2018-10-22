@@ -37,6 +37,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href=""> Test </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""> Test2 </a>
+                </li>
             </ul>
         </div>
     </nav>
