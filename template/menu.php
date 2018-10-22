@@ -9,6 +9,7 @@
     <script>
         $(document).ready(function() {
             var pathname = window.location.pathname;
+            alert(pathname);
             $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
         })
     </script>
@@ -29,7 +30,7 @@
                         <a class="nav-link" href="/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" aria-disabled="true">SkuLLList</a>
+                    <a class="nav-link" href="#">SkuLLList</a>
                 </li>
             </ul>
         </div>
