@@ -29,7 +29,7 @@
                 <li class="nav-item">
                         <a class="nav-link" href="/about.php">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item disabled">
                     <a class="nav-link disabled" href="#">SkuLLList</a>
                 </li>
             </ul>
