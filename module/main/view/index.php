@@ -26,7 +26,7 @@ if($_SESSION["login"]!= true)
     include "../../../template/menu.php";
     ?>
 </div>
-<div class="container-md container-fluid">
+<div class="container">
     <?php
     if($_SESSION["usrgrp"]=="TSA"){
         echo "Hello Admin";
