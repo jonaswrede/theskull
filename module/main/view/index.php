@@ -26,10 +26,7 @@ if($_SESSION["login"]!= true)
     include "../../../template/menu.php";
     ?>
 </div>
-<form method ="POST" action="../../login/action/logout.php">
-    <input type="SUBMIT" value="Logout" name="logout">
-</form>
-<div class="container">
+<div class="container-fluid">
     <?php
     if($_SESSION["usrgrp"]=="TSA"){
         echo "Hello Admin";
