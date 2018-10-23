@@ -28,7 +28,7 @@ if($_SESSION["login"]){
 
         <style>
 
-            html, body{height:100%; margin:0;padding:0; background-color:black}
+         /** html, body{height:100%; margin:0;padding:0; background-color:black}
 
             .container-fluid{
                 height:100%;
@@ -37,13 +37,13 @@ if($_SESSION["login"]){
                 padding: 0;
                 /**  border: 5px solid gray;*/
             }
-
+/**
             .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
             .centering {
                 float:none;
                 margin:0 auto;
-            }
+            } -->
         </style>
 
         <title>
