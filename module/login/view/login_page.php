@@ -51,8 +51,9 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body style="background-color: black">
-        <div class="container-fluid">
-            <div class="row-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col"
                 <!-- <span class="border border border-dark">-->
                 <div class="container" style="alignment: center">
                 <div class="centering text-center">
@@ -93,6 +94,7 @@ if($_SESSION["login"]){
                 </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>
