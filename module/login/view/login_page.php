@@ -14,7 +14,7 @@ if($_SESSION["login"]){
 }
 ?>
 
-?>
+
 
 <html>
     <head>
@@ -26,25 +26,6 @@ if($_SESSION["login"]){
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <style>
-
-         /** html, body{height:100%; margin:0;padding:0; background-color:black}
-
-            .container-fluid{
-                height:100%;
-                display:table;
-                width: 100%;
-                padding: 0;
-                /**  border: 5px solid gray;*/
-            }
-/**
-            .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
-
-            .centering {
-                float:none;
-                margin:0 auto;
-            } -->
-        </style>
 
         <title>
             Login
@@ -54,13 +35,13 @@ if($_SESSION["login"]){
         <div class="container">
             <div class="row">
                 <div class="col"
-                <!-- <span class="border border border-dark">-->
-                <div class="container" style="alignment: center">
-                <div class="centering text-center">
-                    <div class="container">
-                        <img src="../../../theskull.png">
-                    </div>
-                    <iv class="container border border-dark" style=" max-width:75% ">
+          <!--      <span class="border border-dark"> -->
+                    <div class="container" style="alignment: center">
+                        <div class="centering text-center">
+                            <div class="container">
+                                <img src="../../../theskull.png">
+                            </div>
+                    <div class="container border border-dark" style=" max-width:75% ">
                      <!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                         <!-- Default form login -->
                         <form class="text-center p-2" action="../action/verify.php" method="post">
@@ -91,10 +72,8 @@ if($_SESSION["login"]){
                         </form>
                         <!-- Default form login -->
                     </div>
-                </div>
-                </div>
+                </span>
             </div>
-        </div>
         </div>
     </body>
 </html>
