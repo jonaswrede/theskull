@@ -59,7 +59,7 @@ if($_SESSION["login"]){
                     <div class="container">
                         <img src="../../../theskull.png">
                     </div>
-                    <div class="container border border-dark" style="background-color: black; max-width:75% ">
+                    <div class="container border border-dark" style=" max-width:75% ">
                         <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                         <!-- Default form login -->
                         <form class="text-center p-2" action="../action/verify.php" method="post">
