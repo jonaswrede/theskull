@@ -32,7 +32,7 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body>
-        <div class="container">
+        <div class="container my-auto">
             <div class="row" style="background-color: red">
                 <div class="col">
                     <div class="container text-center">
