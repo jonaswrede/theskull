@@ -44,7 +44,7 @@ if($_SESSION["login"]){
             </div>
             <div class="row" style="background-color: blue">
                 <div class="col">
-                    <div class="container border border-dark" style=" width:200px; height:100px "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
+                    <div class="container border border-dark" style=" width:200px; height:100px; bottom: 0;left: 0;margin: auto;position: absolute;right: 0;top: 0; "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                            <!-- Default form login -->
                         <form class="text-center p-2" action="../action/verify.php" method="post">
                             <p class="h4 mb-4 mt-4">Sign in</p>
@@ -72,10 +72,6 @@ if($_SESSION["login"]){
                         </form>
                         <!-- Default form login -->
                     </div>
-                </div>
-            </div>
-            <div class="row" style="background-color: green">
-                <div class="col">
                 </div>
             </div>
         </div>
