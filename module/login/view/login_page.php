@@ -32,7 +32,7 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body>
-        <div class="d-flex align-content-center flex-wrap">
+        <div class=" container d-flex align-content-center flex-wrap">
             <div class="row" style="background-color: red">
                 <div class="col">
                     <div class="container text-center">
