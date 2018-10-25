@@ -36,7 +36,7 @@ if($_SESSION["login"]){
             <div class="row">
                 <div class="col">
                     <div class="container text-center">
-                        <!--<img src="../../../theskull.png">-->
+                        <img src="../../../theskull.png">
                     </div>
                 </div></div>
             <div class="row">
