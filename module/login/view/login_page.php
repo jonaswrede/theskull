@@ -33,13 +33,14 @@ if($_SESSION["login"]){
     </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row" style="background-color: red">
                 <div class="col">
                     <div class="container text-center">
                         <img src="../../../theskull.png">
                     </div>
-                </div></div>
-            <div class="row">
+                </div>
+            </div>
+            <div class="row" style="background-color: blue">
                 <div class="col">
                     <div class="container border border-dark" style=" max-width:75% "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                            <!-- Default form login -->
