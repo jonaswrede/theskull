@@ -38,39 +38,36 @@ if($_SESSION["login"]){
                     <div class=" container mx-auto">
                         <img src="../../../theskull.png">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="container border border-dark" style=" max-width:75% "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
-                            <!-- Default form login -->
-                            <form class="text-center p-2" action="../action/verify.php" method="post">
-                                <p class="h4 mb-4 mt-4">Sign in</p>
-                                <!-- Email -->
-                                <div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
-                                        </div>
-                                        <input class="form-control py-2 border" type="text" name="username" placeholder="Username">
+                </div></div>
+            <div class="row">
+                <div class="col">
+                    <div class="container border border-dark" style=" max-width:75% "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
+                           <!-- Default form login -->
+                        <form class="text-center p-2" action="../action/verify.php" method="post">
+                            <p class="h4 mb-4 mt-4">Sign in</p>
+                            <!-- Email -->
+                            <div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
                                     </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
-                                        </div>
-                                        <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
+                                    <input class="form-control py-2 border" type="text" name="username" placeholder="Username">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
                                     </div>
+                                    <input class="form-control py-2 border" type="password" name="pass" placeholder="Password"></div>
 
                                 </div>
                                 <button class="btn btn-secondary mb-3" type="submit">Sign in</button>
 
                                 <!-- Register -->
-                                <p>Not a member?
-                                    <a href="">Register</a>
-                                </p>
-
-                            </form>
-                            <!-- Default form login -->
-                        </div>
+                            <p>Not a member?
+                                <a href="">Register</a>
+                            </p>
+                        </form>
+                        <!-- Default form login -->
                     </div>
                 </div>
             </div>
