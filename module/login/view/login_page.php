@@ -35,7 +35,7 @@ if($_SESSION["login"]){
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="container mx-auto">
+                    <div class="mx-auto">
                         <img src="../../../theskull.png">
                     </div>
                     <div class="container border border-dark" style=" max-width:75% "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
