@@ -26,13 +26,15 @@ if($_SESSION["login"]){
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
+        <style>
+            .-fluid
+        </style>
         <title>
             Login
         </title>
     </head>
     <body>
-        <div class="container align-content-center">
+        <div class="container">
             <div class="row" style="background-color: red">
                 <div class="col">
                     <div class="container text-center">
@@ -42,7 +44,7 @@ if($_SESSION["login"]){
             </div>
             <div class="row" style="background-color: blue">
                 <div class="col">
-                    <div class="container border border-dark" style=" max-width:75% "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
+                    <div class="container border border-dark" style=" width:200px; height:100px "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                            <!-- Default form login -->
                         <form class="text-center p-2" action="../action/verify.php" method="post">
                             <p class="h4 mb-4 mt-4">Sign in</p>
