@@ -35,16 +35,13 @@ if($_SESSION["login"]){
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="container" style="alignment: center">
-                        <div class="centering text-center">
-                            <div class="container">
-                                <img src="../../../theskull.png">
-                            </div>
-                    <div class="container border border-dark" style=" max-width:75% ">
-                     <!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
+                    <div class="container mx-auto">
+                        <img src="../../../theskull.png">
+                    </div>
+                    <div class="container border border-dark" style=" max-width:75% "><!--   <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
                         <!-- Default form login -->
                         <form class="text-center p-2" action="../action/verify.php" method="post">
-                            <p class="h4 mb-4">Sign in</p>
+                            <p class="h4 mb-4 mt-4">Sign in</p>
                             <!-- Email -->
                             <div>
                                 <div class="input-group mb-2">
