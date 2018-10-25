@@ -34,8 +34,7 @@ if($_SESSION["login"]){
     <body>
         <div class="container">
             <div class="row">
-                <div class="col"
-          <!--      <span class="border border-dark"> -->
+                <div class="col">
                     <div class="container" style="alignment: center">
                         <div class="centering text-center">
                             <div class="container">
@@ -72,7 +71,6 @@ if($_SESSION["login"]){
                         </form>
                         <!-- Default form login -->
                     </div>
-                </span>
             </div>
         </div>
     </body>
