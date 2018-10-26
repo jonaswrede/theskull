@@ -6,7 +6,12 @@
  * Time: 16:20
  */
 
+session_start();
 
+
+if($_SESSION["login"]){
+    header('Location: /index.php');
+}
 ?>
 
 <html>
@@ -91,7 +96,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>
