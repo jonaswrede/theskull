@@ -11,8 +11,6 @@ if($_SESSION["login"]){
 }
 ?>
 
-?>
-
 <html>
 <head>
     <!-- Latest compiled and minified CSS -->
