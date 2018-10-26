@@ -42,8 +42,7 @@ if($_SESSION["login"]){
 <div class="container-fluid container-fluid-test">
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
-        <div class="container" style="alignment: center">
-            <div class="text-center">
+            <div class="container text-center">
                 <div class="container">
                     <img src="../../../theskull.png">
                 </div>
@@ -79,7 +78,6 @@ if($_SESSION["login"]){
                     <!-- Default form login -->
                 </div>
             </div>
-        </div>
     </div>
 </div>
 </body>
