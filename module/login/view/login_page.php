@@ -23,11 +23,9 @@ if($_SESSION["login"]){
 
     <style>
         html, body{height:100%; margin:0;padding:0; background-color:black}
-       .container-fluid{
+       .container-fluid-test{
             height:100%;
             display:table!important;
-            width: 100%;
-            padding: 0;
             /**  border: 5px solid gray;*/
         }
 
@@ -41,7 +39,7 @@ if($_SESSION["login"]){
     </title>
 </head>
 <body style="background-color: black">
-<div class="container-fluid">
+<div class="container-fluid container-fluid-test">
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
         <div class="container" style="alignment: center">
