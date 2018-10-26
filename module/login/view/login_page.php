@@ -21,7 +21,7 @@ if($_SESSION["login"]){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <style>/*
+    <style>
         html, body{height:100%; margin:0;padding:0; background-color:black}
         .container-fluid{
             height:100%;
@@ -46,7 +46,7 @@ if($_SESSION["login"]){
     <div class="row-fluid">
         <!-- <span class="border border border-dark">-->
         <div class="container" style="alignment: center">
-            <div class="centering text-center">
+            <div class="text-center">
                 <div class="container">
                     <img src="../../../theskull.png">
                 </div>
