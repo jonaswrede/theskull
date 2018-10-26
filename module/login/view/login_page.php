@@ -24,21 +24,21 @@ if($_SESSION["login"]){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-        /** html, body{height:100%; margin:0;padding:0; background-color:black}
-           .container-fluid{
-               height:100%;
-               display:table;
-               width: 100%;
-               padding: 0;
-               /**  border: 5px solid gray;*/
+        html, body{height:100%; margin:0;padding:0; background-color:black}
+        .container-fluid{
+            height:100%;
+            display:table;
+            width: 100%;
+            padding: 0;
+            /**  border: 5px solid gray;*/
         }
-        /**
-                    .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
-                    .centering {
-                        float:none;
-                        margin:0 auto;
-                    } **/
-</style>
+        .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+        .centering {
+            float:none;
+            margin:0 auto;
+        }
+    </style>
+
     <title>
         Login
     </title>
@@ -71,12 +71,15 @@ if($_SESSION["login"]){
                                 </div>
                                 <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
                             </div>
+
                         </div>
                         <button class="btn btn-secondary mb-3" type="submit">Sign in</button>
+
                         <!-- Register -->
                         <p>Not a member?
                             <a href="">Register</a>
                         </p>
+
                     </form>
                     <!-- Default form login -->
                 </div>
