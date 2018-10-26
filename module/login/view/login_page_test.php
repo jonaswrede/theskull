@@ -24,7 +24,7 @@ if($_SESSION["login"]){
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
+  <!--<style>
 
         html, body{height:100%; margin:0;padding:0}
 
@@ -44,7 +44,7 @@ if($_SESSION["login"]){
             float:none;
             margin:0 auto;
         }
-    </style>
+    </style> -->
 
     <title>
         Login
