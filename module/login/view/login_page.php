@@ -45,7 +45,7 @@ if($_SESSION["login"]){
         </title>
     </head>
     <body>
-        <div class="container-fluid container-make-table">
+        <div class="container container-make-table">
             <div class="row-fluid">
                 <!-- <span class="border border border-dark">-->
                 <div class="container text-center">
