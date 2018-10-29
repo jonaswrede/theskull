@@ -22,7 +22,7 @@ if($_SESSION["login"]){
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <style>
-            html, body{height:100%; margin:0;padding:0; background-color:black}
+            html, body{height:100%; width:100%;margin:0;padding:0;}
            .container-make-table{
                 height:100%;
                 display:table!important;
@@ -30,7 +30,7 @@ if($_SESSION["login"]){
             }
 
           /*  .test_display_table{display:table!important;}*/
-            .row-fluid {height: 100%; display:table-cell; vertical-align: middle;
+            .row-fluid {height: 100%; display:table-cell; vertical-align: middle; margin-left: -15px;margin-right: -15px;}
 
             @media (max-width: 768px) {
                 html, body {
@@ -44,7 +44,7 @@ if($_SESSION["login"]){
             Login
         </title>
     </head>
-    <body style="background-color: black">
+    <body>
         <div class="container container-make-table">
             <div class="row-fluid">
                 <!-- <span class="border border border-dark">-->
@@ -52,7 +52,7 @@ if($_SESSION["login"]){
                     <div class="container">
                         <img src="../../../theskull.png">
                     </div>
-                    <div class="container border border-dark" style="background-color: black; max-width:75% ">
+                    <div class="container border border-dark" style="max-width:75% ">
                         <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2 mt-2"">
                         <form class="p-2" action="../action/verify.php" method="post">
                             <p class="h4 mb-4">Sign in</p>
