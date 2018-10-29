@@ -30,8 +30,14 @@ if($_SESSION["login"]){
             }
 
           /*  .test_display_table{display:table!important;}*/
-            .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+            .row-fluid {height: 100%; display:table-cell; vertical-align: middle;
 
+            @media (max-width: 768px) {
+                html, body {
+                    width: auto !important;
+                    overflow-x: hidden !important;
+                }
+            }
         </style>
 
         <title>
