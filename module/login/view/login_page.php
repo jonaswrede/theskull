@@ -50,10 +50,10 @@ if($_SESSION["login"]){
                 <!-- <span class="border border border-dark">-->
                 <div class="container text-center">
                     <div class="container">
-                        <img src="../../../theskull.png">
+                        <img src="../../../theskull.png" alt="">
                     </div>
                     <div class="container border border-dark" style="max-width:75% ">
-                        <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2 mt-2"">
+                        <img src="../../../bullet_idea.jpeg" alt="" height="80px" width="80px" hspace="20" class="rounded-circle p-2 mt-2"">
                         <form class="p-2" action="../action/verify.php" method="post">
                             <p class="h4 mb-4">Sign in</p>
                             <div>
