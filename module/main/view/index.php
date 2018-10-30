@@ -27,13 +27,23 @@ if($_SESSION["login"]!= true)
     include "../../../template/menu.php";
     ?>
 </div>
-<div class="container">
-    <?php
-    if($_SESSION["usrgrp"]=="TSA"){
-        echo "Hello Admin";
-    }
-    echo "<br> Session started at ". $_SESSION["time"];
-    ?>
+<div class="container mt-2">
+    <div class="row">
+        <div class="column">
+            <?php
+                if($_SESSION["usrgrp"]=="TSA"){
+                    echo "Hello Admin";
+                }
+            ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <?php
+                echo "<br> Session started at ". $_SESSION["time"];
+            ?>
+        </div>
+    </div>
 </div>
 </body>
 </html>
