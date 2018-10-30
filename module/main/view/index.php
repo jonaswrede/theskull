@@ -40,7 +40,7 @@ if($_SESSION["login"]!= true)
     <div class="row">
         <div class="column">
             <?php
-                echo "<br> Session started at ". $_SESSION["time"];
+                echo "Session started at ". $_SESSION["time"];
             ?>
         </div>
     </div>
