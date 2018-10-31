@@ -41,7 +41,7 @@ if($_SESSION["login"]){
         </style>
 
         <title>
-            Login
+            Login test
         </title>
     </head>
     <body>
