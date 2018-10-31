@@ -28,6 +28,8 @@
                     <a class="nav-link disabled" href="#">SkuLLList</a>
                 </li>
             </ul>
+        </div>
+        <div>
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link pull-right" href="/module/login/action/logout.php"> Logout</a> </li>
             </ul>
