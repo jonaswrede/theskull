@@ -22,7 +22,7 @@
                     <a class="nav-link" href="/module/main/view/index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="/about.php">About</a>
+                        <a class="nav-link" href="/module/main/view/about.php">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">SkuLLList</a>
