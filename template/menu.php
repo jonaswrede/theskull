@@ -1,6 +1,4 @@
-<html>
-<head>
-    <meta charset="utf-8">
+
     <script>
         $(document).ready(function() {
             var pathname = window.location.pathname;
@@ -8,7 +6,6 @@
             $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
         })
     </script>
-</head>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Menu</a>
@@ -36,4 +33,3 @@
 
         </div>
     </nav>
-</html>
