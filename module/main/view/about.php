@@ -19,9 +19,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>
-                    comming soon
-                </h1>
+                <div class="text-center">
+                    <h1>
+                        comming soon
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
