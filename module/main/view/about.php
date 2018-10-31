@@ -13,7 +13,7 @@
 <body>
 <div>
     <?php
-    include getcwd() . "/template/menu.php";
+        include "../../../template/menu.php";
     ?>
 </div>
 
