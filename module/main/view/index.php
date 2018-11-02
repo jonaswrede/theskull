@@ -3,7 +3,7 @@ session_start();
 
 if($_SESSION["login"]!= true)
 {
-    header("location: module/login/view/login_page.php");
+    header("location: module/login/view/login_page.php"); //test
 }
 ?>
 <html>
