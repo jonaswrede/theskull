@@ -3,7 +3,10 @@ session_start();
 
 if($_SESSION["login"]!= true)
 {
-    header("location: module/login/view/login_page.php");
+    /**
+     * @todo change path
+     */
+    header("location: ../../login/view/login_page.php");
 }
 ?>
 <html>
