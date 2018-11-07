@@ -17,12 +17,17 @@
         ?>
     </div>
     <div class="container mt-2">
-        <div class="row">
-            <div class="col-12">
-                <div class="text-center">
+        <div class="text-center">
+            <div class="row">
+                <div class="col-12">
                     <h1>
                         comming soon
                     </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    This is a private project. More details will be comming soon!
                 </div>
             </div>
         </div>
