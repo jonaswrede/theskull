@@ -38,6 +38,12 @@ if($_SESSION["login"]){
                     overflow-x: hidden !important;
                 }
             }
+            @media (max-width: 450px) {
+                .container {
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+            }
         </style>
 
         <title>
@@ -47,33 +53,51 @@ if($_SESSION["login"]){
     <body>
         <div class="container container-make-table">
             <div class="row row-fluid">
-                <!-- <span class="border border border-dark">-->
-                <div class="container text-center">
-                    <div class="container">
-                        <img src="../../../theskull.png" alt="">
-                    </div>
-                    <div class="container border border-dark" style="max-width:75% ">
-                        <img src="../../../bullet_idea.jpeg" alt="" height="80px" width="80px" hspace="20" class="rounded-circle p-2 mt-2"">
-                        <form class="p-2" action="../action/verify.php" method="post">
-                            <p class="h4 mb-4">Sign in</p>
-                            <div>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
-                                    </div>
-                                    <input class="form-control py-2 border" type="text" name="username" placeholder="Username">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
-                                    </div>
-                                    <input class="form-control py-2 border" type="password" name="pass" placeholder="Password">
+                <div class="col">
+                    <!-- <span class="border border border-dark">-->
+                    <div class="container text-center">
+                        <div class="container">
+                            <img src="../../../theskull.png" alt="">
+                        </div>
+                        <div class="container border border-dark" style="max-width:75% ">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="../../../bullet_idea.jpeg" alt="" height="80px" width="80px" hspace="20" class="rounded-circle p-2 mt-2">
                                 </div>
                             </div>
-                            <button class="btn btn-secondary mb-3" type="submit">Sign in</button>
-                            <!-- Register -->
-                            <p>Not a member? <a href="">Register</a></p>
-                        </form>
+                            <form role="form" class="p-2 needs-validation" action="../action/verify.php" method="post" data-toggle="validator" novalidate>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="h4 mb-4">Sign in</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
+                                                </div>
+                                                <input class="form-control py-2 border" type="text" name="username" placeholder="Username" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
+                                                </div>
+                                                <input class="form-control py-2 border" type="password" name="pass" placeholder="Password" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-secondary mb-1" type="submit">Sign in</button>
+                                <!-- Register -->
+                                <p>Not a member? <a href="">Register</a></p>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

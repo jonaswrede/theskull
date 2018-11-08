@@ -16,7 +16,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
 
         $connect->set_charset("utf8");
         $username = $connect->real_escape_string($_POST['username']);
-        $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $username. "' AND login.id = user_to_group.id_user");
+        $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $_POST['username']. "' AND login.id = user_to_group.id_user");
         $connect->close();
         if (mysqli_num_rows($result)==1){
             foreach ($result as $value){
@@ -48,7 +48,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
                 $status = "200 ERROR PWD";
                 create_log("login",$uid,$uname,$status);
                 echo
-                "<script>alert('Credentials not correct".$username."!');window.location.href='../view/login_page.php';</script>";
+                "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
 
 
 
@@ -58,7 +58,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
             $status = "250 ERROR USR N.Exist";
             echo $username;
             create_log("login",$uid=0,$_POST["username"],$status);
-            echo "<script>alert('Credentials not correct !');// window.location.href='../view/login_page.php'</script>";
+            echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
         }
     }
 }
