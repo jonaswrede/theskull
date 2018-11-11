@@ -5,10 +5,7 @@
  * Date: 22.08.18
  * Time: 16:20
  */
-
 session_start();
-
-
 if($_SESSION["login"]){
     header('Location: /index.php');
 }
@@ -17,32 +14,39 @@ if($_SESSION["login"]){
 <html>
 <head>
     <!-- Latest compiled and minified CSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../ext/open-iconic-master/font/css/open-iconic-bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-
-        html, body{height:100%; margin:0;padding:0}
-
-        .container-fluid{
+        html, body{height:100%; width:100%;margin:0;padding:0;}
+        .container-make-table{
             height:100%;
-            display:table;
-            width: 100%;
-            padding: 0;
-            /**  border: 5px solid gray;*/
-
-
+            display:table!important;
         }
 
-        .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+        .row-fluid{
+            height: 100%;
+            display:table-cell;
+            vertical-align: middle;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
 
-        .centering {
-            float:none;
-            margin:0 auto;
+        @media (max-width: 768px) {
+            html, body {
+                width: auto !important;
+                overflow-x: hidden !important;
+            }
+        }
+        @media (max-width: 450px) {
+            .container {
+                padding-right: 0;
+                padding-left: 0;
+            }
         }
     </style>
 
@@ -50,45 +54,55 @@ if($_SESSION["login"]){
         Login
     </title>
 </head>
-<body STYLE="background-color: black">
-
-<div class="container-fluid">
-    <div class="row-fluid">
-        <!-- <span class="border border border-dark">-->
-        <div class="centering text-center">
-            <div class="container border border-dark mw-75">
-                <img src="../../../bullet_idea.jpeg" height="80px" width="80px" hspace="20" class="rounded-circle p-2" style="margin-top: 10px">
-                <!-- Default form login -->
-                <form class="text-center p-5" action="../action/verify.php" method="post">
-                    <p class="h4 mb-4">Sign in</p>
-                    <!-- Email -->
-                    <input type="text" id="defaultLoginFormEmail" name="username" class="form-control mb-4" placeholder="User">
-                    <!-- Password -->
-                    <input type="password" id="defaultLoginFormPassword" name="pass" class="form-control mb-4" placeholder="Password">
-
-                    <!--          <div class="d-flex justify-content-around">
-                                  <div>
-                                      <!-- Forgot password -->
-                    <!--       <a href="">Forgot password?</a>
-                       </div>
-                   </div>
-
-                   <!-- Sign in button -->
-                    <button class="btn btn-secondary m-5" type="submit">Sign in</button>
-
-                    <!-- Register -->
-                    <p>Not a member?
-                        <a href="">Register</a>
-                    </p>
-
-                </form>
-                <!-- Default form login -->
+<body>
+<div class="container container-make-table">
+    <div class="row row-fluid">
+        <div class="col">
+            <div class="container text-center">
+                <div class="container">
+                    <img src="../../../theskull.png" alt="">
+                </div>
+                <div class="container border border-dark" style="max-width:75% ">
+                    <div class="row">
+                        <div class="col">
+                            <img src="../../../bullet_idea.jpeg" alt="" height="80px" width="80px" hspace="20" class="rounded-circle p-2 mt-2">
+                        </div>
+                    </div>
+                    <form role="form" class="p-2 needs-validation" action="../action/verify_test_escape.php" method="post" data-toggle="validator" novalidate>
+                        <div class="row">
+                            <div class="col">
+                                <p class="h4 mb-4">Sign in</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-person" style="width: 10px"></i></div>
+                                        </div>
+                                        <input class="form-control py-2 border" type="text" name="username" placeholder="Username" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text pr-3" id="btnGroupAddon2"><i class="oi oi-lock-locked" style="width:10px"></i></div>
+                                        </div>
+                                        <input class="form-control py-2 border" type="password" name="pass" placeholder="Password" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary mb-2" name="login" type="submit">Sign in</button>
+                        <p>Not a member? <a href="">Register</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
 </body>
 </html>
-
-
-

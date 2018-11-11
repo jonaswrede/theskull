@@ -6,18 +6,20 @@ include "../../../module/user/class/User.php";
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
+
+error_reporting(-1);
+ini_set('display_errors', 'On');
 if(isset($_POST["login"]) || $_SESSION["login"]!= true)
 {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
         echo "<script> alert('Username or password not set!'); window.location.href='../view/login_page.php'</script>";
     }
     else{
-        $connect = new TSDb();
 
-        $connect->set_charset("utf8");
-        $username = $connect->real_escape_string($_POST['username']);
-        $result = $connect->select_user("SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $_POST['username']. "' AND login.id = user_to_group.id_user");
+        $connect = new TSDb();
+        $result = $connect->select_user($_POST["username"]);
         $connect->close();
+
         if (mysqli_num_rows($result)==1){
             foreach ($result as $value){
                 $pass = $value["pass"];
@@ -27,19 +29,20 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
             }
             if(password_verify($_POST["pass"],$pass))
             {
+
+                $time = date('m/d/Y h:i:s a', time());
+
                 $_SESSION["login"] = true;
                 $_SESSION["uname"] = $uname;
                 $_SESSION["uid"] = $uid;
+                $_SESSION["time"] = (string)$time;
                 $status = "100 SUCCESS";
+
                 if($group == "1"){
                     $_SESSION["usrgrp"] = "TSA";
                 }
                 else{
                     $_SESSION["usrgrp"]= "Standard User";
-                }
-                if(!$_SESSION["time"]) {
-                    $time = date('m/d/Y h:i:s a', time());
-                    $_SESSION["time"] = (string)$time;
                 }
                 create_log("login",$uid,$uname,$status);
                 header("location: /index");
@@ -56,9 +59,8 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
         }
         else{
             $status = "250 ERROR USR N.Exist";
-            echo $username;
             create_log("login",$uid=0,$_POST["username"],$status);
-            echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
+           # echo "<script>alert('Credentials not correct !'); window.location.href='../view/login_page.php'</script>";
         }
     }
 }

@@ -22,22 +22,19 @@ if($_SESSION["login"]){
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <style>
-            html, body{height:100%; width:100%;margin:0;padding:0;}
            .container-make-table{
                 height:100%;
                 display:table!important;
-                /**  border: 5px solid gray;*/
             }
 
-          /*  .test_display_table{display:table!important;}*/
-            .row-fluid {height: 100%; display:table-cell; vertical-align: middle; margin-left: -15px;margin-right: -15px;}
-
-            @media (max-width: 768px) {
-                html, body {
-                    width: auto !important;
-                    overflow-x: hidden !important;
-                }
+            .row-fluid{
+                height: 100%;
+                display:table-cell;
+                vertical-align: middle;
+                margin-left: -15px;
+                margin-right: -15px;
             }
+
             @media (max-width: 450px) {
                 .container {
                     padding-right: 0;
@@ -54,7 +51,6 @@ if($_SESSION["login"]){
         <div class="container container-make-table">
             <div class="row row-fluid">
                 <div class="col">
-                    <!-- <span class="border border border-dark">-->
                     <div class="container text-center">
                         <div class="container">
                             <img src="../../../theskull.png" alt="">
@@ -93,8 +89,7 @@ if($_SESSION["login"]){
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-secondary mb-1" type="submit">Sign in</button>
-                                <!-- Register -->
+                                <button class="btn btn-secondary mb-2" name="login" type="submit">Sign in</button>
                                 <p>Not a member? <a href="">Register</a></p>
                             </form>
                         </div>
