@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Form</title>
+<script language="javascript">
+function prefFieldCalc(cb)
+{
+	// Set Preference field value, Opt-in 100, Opt-out 1500
+	if (cb.checked === true){
+		document.getElementById(cb.getAttribute("id").replace("cb", "s")).value = 100;
+	}
+	else{
+		document.getElementById(cb.getAttribute("id").replace("cb", "s")).value = 1500;
+	}
+}
+</head>
+<body>
+<form method="post" action="http://x.newsletter.kaufland.de/ats/post.aspx">
+	<input type="hidden" name="cr" value="100290" />
+	<input type="hidden" name="fm" value="266" />
+	
+	<table cellspacing="0" cellpadding="3" border="0">
+		<tr>
+			<td>Property</td>
+			<td>Value</td>
+		</tr>
+		<tr>
+			<td align="right">email</td>
+			<td align="left"><input type="text" id="s_email" name="s_email" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">salutation</td>
+			<td align="left"><input type="text" id="s_salutation" name="s_salutation" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">firstname</td>
+			<td align="left"><input type="text" id="s_firstname" name="s_firstname" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">lastname</td>
+			<td align="left"><input type="text" id="s_lastname" name="s_lastname" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">street</td>
+			<td align="left"><input type="text" id="s_street" name="s_street" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">zip_code</td>
+			<td align="left"><input type="text" id="s_zip_code" name="s_zip_code" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">city</td>
+			<td align="left"><input type="text" id="s_city" name="s_city" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">guid</td>
+			<td align="left"><input type="text" id="s_guid" name="s_guid" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">housenumber</td>
+			<td align="left"><input type="text" id="s_housenumber" name="s_housenumber" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">pin</td>
+			<td align="left"><input type="text" id="s_pin" name="s_pin" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">ean</td>
+			<td align="left"><input type="text" id="s_ean" name="s_ean" value="" /></td>
+		</tr>
+		<tr>
+			<td align="right">serial</td>
+			<td align="left"><input type="text" id="s_serial" name="s_serial" value="" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="Submit" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+
