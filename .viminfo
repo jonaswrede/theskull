@@ -13,9 +13,9 @@
 # Command Line History (newest to oldest):
 :wq
 :q!
+:WQ
 :q1
 :Wq
-:WQ
 :q'!
 :wq!
 
@@ -34,19 +34,26 @@
 	        <div class="container align-content-center">
 
 # File marks:
-'0  1  4  ~/.gitignore
-'1  3  9  ~/.gitignore
-'2  1  0  ~/TheSkull/test.html
-'3  73  6  ~/TheSkull/test.html
-'4  81  0  ~/TheSkull/test.html
-'5  4  69  ~/php.ini
-'6  1  0  ~/test.php
-'7  3  2  ~/test.php
-'8  84  0  ~/composer.json
-'9  70  0  ~/module/login/action/verify.php
+'0  124  0  ~/TheSkull/module/login/view/login_page.php
+'1  1  0  ~/.gitignore
+'2  1  0  ~/.git/MERGE_MSG
+'3  2  0  ~/.ssh/rd_rsa.pub
+'4  52  0  ~/.ssh/id_rsa
+'5  3  9  ~/.gitignore
+'6  1  0  ~/TheSkull/test.html
+'7  73  6  ~/TheSkull/test.html
+'8  81  0  ~/TheSkull/test.html
+'9  4  69  ~/php.ini
 
 # Jumplist (newest first):
--'  1  4  ~/.gitignore
+-'  124  0  ~/TheSkull/module/login/view/login_page.php
+-'  1  0  ~/TheSkull/module/login/view/login_page.php
+-'  1  0  ~/.gitignore
+-'  1  0  ~/.git/MERGE_MSG
+-'  2  0  ~/.ssh/rd_rsa.pub
+-'  1  0  ~/.ssh/rd_rsa.pub
+-'  52  0  ~/.ssh/id_rsa
+-'  1  0  ~/.ssh/id_rsa
 -'  3  9  ~/.gitignore
 -'  1  0  ~/TheSkull/test.html
 -'  73  6  ~/TheSkull/test.html
@@ -138,21 +145,39 @@
 -'  1  0  /homepages/8/d748803726/htaccesslist
 -'  1  0  ~/module/login/view/login_page
 -'  1  0  ~/module/login/view/login_page_test.php
--'  1  0  ~/module/login/view/login_page_test.php
--'  66  53  ~/web_logs/login_log.txt
--'  1  0  ~/web_logs/login_log.txt
--'  21  0  ~/module/login/view/login_page_test.php
--'  79  5  ~/module/login/view/login_page.php
 
 # History of marks within files (newest to oldest):
 
+> ~/TheSkull/module/login/view/login_page.php
+	"	124	0
+	^	124	0
+	.	44	0
+	+	23	0
+	+	14	0
+	+	44	0
+
 > ~/.gitignore
-	"	1	4
+	"	1	0
 	^	1	5
 	.	1	4
 	+	1	4
 	+	3	10
 	+	1	4
+
+> ~/.git/MERGE_MSG
+	"	1	0
+
+> ~/.ssh/rd_rsa.pub
+	"	2	0
+	^	2	0
+	.	1	743
+	+	1	743
+
+> ~/.ssh/id_rsa
+	"	52	0
+	^	52	0
+	.	51	29
+	+	51	29
 
 > ~/TheSkull/test.html
 	"	1	0
@@ -209,9 +234,6 @@
 	+	45	0
 
 > ~/module/login/view/login_page_test.php
-	"	1	0
-
-> ~/.git/MERGE_MSG
 	"	1	0
 
 > ~/web_logs/login_log.txt
