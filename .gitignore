@@ -1,5 +1,5 @@
 .ssh/
 logs/
 TheSkull/adapter/local.php
-TheSkull/adapter/test_ignore.txt
+TheSkull/adapter/test_ignore
 TheSkull/weblogs/login_log.txt
