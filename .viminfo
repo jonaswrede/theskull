@@ -12,6 +12,7 @@
 
 # Command Line History (newest to oldest):
 :wq
+:q
 :q!
 :WQ
 :q1
@@ -34,27 +35,29 @@
 	        <div class="container align-content-center">
 
 # File marks:
-'0  124  0  ~/TheSkull/module/login/view/login_page.php
-'1  1  0  ~/.gitignore
-'2  1  0  ~/.git/MERGE_MSG
-'3  2  0  ~/.ssh/rd_rsa.pub
-'4  52  0  ~/.ssh/id_rsa
-'5  3  9  ~/.gitignore
-'6  1  0  ~/TheSkull/test.html
-'7  73  6  ~/TheSkull/test.html
-'8  81  0  ~/TheSkull/test.html
-'9  4  69  ~/php.ini
+'0  1  16  ~/TheSkull/.gitignore
+'1  3  26  ~/.gitignore
+'2  1  0  ~/TheSkull/module/login/action/verify.php
+'3  124  0  ~/TheSkull/module/login/view/login_page.php
+'4  1  0  ~/.gitignore
+'5  1  0  ~/.git/MERGE_MSG
+'6  2  0  ~/.ssh/rd_rsa.pub
+'7  52  0  ~/.ssh/id_rsa
+'8  1  0  ~/TheSkull/test.html
+'9  73  6  ~/TheSkull/test.html
 
 # Jumplist (newest first):
+-'  1  16  ~/TheSkull/.gitignore
+-'  3  26  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  1  0  ~/TheSkull/module/login/action/verify.php
 -'  124  0  ~/TheSkull/module/login/view/login_page.php
 -'  1  0  ~/TheSkull/module/login/view/login_page.php
--'  1  0  ~/.gitignore
 -'  1  0  ~/.git/MERGE_MSG
 -'  2  0  ~/.ssh/rd_rsa.pub
 -'  1  0  ~/.ssh/rd_rsa.pub
 -'  52  0  ~/.ssh/id_rsa
 -'  1  0  ~/.ssh/id_rsa
--'  3  9  ~/.gitignore
 -'  1  0  ~/TheSkull/test.html
 -'  73  6  ~/TheSkull/test.html
 -'  81  0  ~/TheSkull/test.html
@@ -142,11 +145,26 @@
 -'  1  0  ~/.htaccess
 -'  3  37  ~/.htaccsess
 -'  1  0  ~/.htaccsess
--'  1  0  /homepages/8/d748803726/htaccesslist
--'  1  0  ~/module/login/view/login_page
--'  1  0  ~/module/login/view/login_page_test.php
 
 # History of marks within files (newest to oldest):
+
+> ~/TheSkull/.gitignore
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> ~/.gitignore
+	"	3	26
+	^	3	27
+	.	3	26
+	+	1	4
+	+	3	10
+	+	1	4
+	+	3	26
+
+> ~/TheSkull/module/login/action/verify.php
+	"	1	0
 
 > ~/TheSkull/module/login/view/login_page.php
 	"	124	0
@@ -155,14 +173,6 @@
 	+	23	0
 	+	14	0
 	+	44	0
-
-> ~/.gitignore
-	"	1	0
-	^	1	5
-	.	1	4
-	+	1	4
-	+	3	10
-	+	1	4
 
 > ~/.git/MERGE_MSG
 	"	1	0

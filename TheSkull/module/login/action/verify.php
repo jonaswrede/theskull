@@ -3,6 +3,8 @@ session_start();
 include "../../../adapter/tsdb.php";
 include "../../../web_logs/log_creator.php";
 include "../../../module/user/class/User.php";
+
+    $conn = require_once "../../../adapter/local.php";
 /**
  * @TODO: ADD User Status (DATA BASE AND VERIFY)
  */
@@ -16,7 +18,7 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
     }
     else{
 
-        $connect = new TSDb();
+        $connect = new TSDb($conn);
         $result = $connect->select_user($_POST["username"]);
         $connect->close();
 
@@ -64,7 +66,8 @@ if(isset($_POST["login"]) || $_SESSION["login"]!= true)
         }
     }
 }
-else{
+else
+{
     echo"<script>alert('Please login'); window.location.href='../view/login_page.php'</script>";
 }
 ?>

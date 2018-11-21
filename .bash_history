@@ -1,18 +1,3 @@
-#
-git pull origin master
-git stash
-git stash
-git pull origin master
-cat web_logs/login_log.txt 
-vim module/login/action/verify.php 
-cat web_logs/login_log.txt 
-git pull origin master
-ls -al
-cd ..
-ls
-ls -al
-cd ..
-ls
 cd ..
 ls
 cd ..
@@ -498,3 +483,18 @@ touch test.html
 vim test.html 
 vim test.html 
 vim test.html 
+git stash
+git pull origin master
+git revert f964f23
+git revert d401ab9
+vim TheSkull/module/login/view/login_page.php 
+git pull origin master
+git revert 665baa8
+git stash
+git revert 665baa8
+git stash
+git pull origin master
+git stash
+vim .viminfo 
+git reset --hard d401ab9
+vim TheSkull/module/login/action/verify.php 
