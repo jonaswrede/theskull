@@ -3,9 +3,7 @@ session_start();
 include "../../../adapter/tsdb.php";
 include "../../../web_logs/log_creator.php";
 include "../../../module/user/class/User.php";
-/**
- * @TODO: ADD User Status (DATA BASE AND VERIFY)
- */
+
 $a = include "../../../adapter/local.php";
 
 error_reporting(-1);
