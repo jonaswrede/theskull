@@ -1,4 +1,4 @@
 .ssh/
 logs/
-/TheSkull/adapter/local.php
-/TheSkull/weblogs/login_log.txt
+TheSkull/adapter/local.php
+TheSkull/weblogs/login_log.txt
