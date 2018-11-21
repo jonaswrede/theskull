@@ -10,19 +10,16 @@ include "local.php";
 
 class TSDb extends mysqli{
 
-    public $host_name = 'db748804796.db.1and1.com';
-    public $database = 'db748804796';
-    public $user_name = 'dbo748804796';
-    public $password = 'Tml321Bmg()=';
 
     public $connect;
 
      /**
       * @return mysqli
       */
-     public function __construct(){
+     public function __construct(array $a){
 
-         $this->connect = mysqli_connect($this->host_name,$this->user_name,$this->password,$this->database);
+
+         $this->connect = mysqli_connect($a["host_name"],$a["user_name"],$a["password"],$a["database"]);
 
          return $this->connect;
 
