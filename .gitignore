@@ -2,4 +2,4 @@
 logs/
 TheSkull/adapter/local.php
 TheSkull/adapter/test_ignore
-TheSkull/weblogs/login_log.txt
+TheSkull/web_logs/login_log.txt
