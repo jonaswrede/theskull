@@ -6,6 +6,8 @@ include "../../../module/user/class/User.php";
 
 $a = include "../../../adapter/local.php";
 
+$ajax = isset($_POST['ajax'])?true:false;
+
 if(!isset($_SESSION["login"]))
 {
     if(empty($_POST["username"]) || empty($_POST["pass"])){
@@ -41,8 +43,9 @@ if(!isset($_SESSION["login"]))
                 else{
                     $_SESSION["usrgrp"]= "Standard User";
                 }
-                if($_POST["ajax"]=="true")
+                if($ajax==true)
                 {
+
                     echo "Success";
                 }
                 else
@@ -59,34 +62,30 @@ if(!isset($_SESSION["login"]))
                     echo "PW ERROR";
                 }
                 else {
-                    echo
-                    "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
+                    header("location: ../view/login_page.php?check=0");
                 }
-
-
             }
         }
         else{
             $status = "250 ERROR USR N.Exist";
             create_log("login",$uid=0,$_POST["username"],$status);
-            if($_POST["ajax"]=="true")
+            if($ajax==true)
             {
                 echo "USER ERROR";
             }
-            else {
-                echo
-                "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
-            }        }
+            else{
+                header('location: https://theskull.de/module/login/view/login_page.php?check=0');
+            }
+        }
     }
 }
 else{
-    if($_POST["ajax"]=="true")
+    if($ajax==true)
     {
         echo "Session already set";
     }
-    else {
-        echo
-        "<script>alert('Credentials not correct !');window.location.href='../view/login_page.php';</script>";
+    else{
+        header("location: ../view/login_page.php");
     }
 }
 ?>

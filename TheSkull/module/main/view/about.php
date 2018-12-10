@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../../ext/bootstrap.min.css">
     <script src="../../ext/jquery-3.2.1.slim.min.js"></script>
     <script src="../../ext/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
     <meta charset="utf-8">
@@ -31,6 +32,14 @@
                 <div class="col">
                     This is a private project. More details will be comming soon!
                 </div>
+            </div>
+            <div class="row">
+                <div class="col" style="border-width: 1px;
+                border-color: #761c19">
+                    <h1> Ich liebe dich Schatz!</h1>
+                    <img src="../../lara_and_me_love.jpg" class="rounded-circle" width="150" height="150" alt="Lara and me">
+            </div>
+            <div>
             </div>
         </div>
     </div>
