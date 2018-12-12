@@ -35,23 +35,47 @@ if($_SESSION["login"]!= true)
 <body>
 <div>
     <?php
-        include "../../../template/menu.php";
+    include "../../../template/menu.php";
     ?>
 </div>
-<div class="container mt-2">
+<div class="container mt-5">
     <div class="row">
-        <div class="column">
+        <div class="col-2">
+            UserID:
+        </div>
+        <div class="col">
             <?php
-                if($_SESSION["usrgrp"]=="TSA"){
-                    echo "Hello Admin";
-                }
+            echo $_SESSION["uid"];
             ?>
         </div>
     </div>
     <div class="row">
-        <div class="column">
+        <div class="col-2">
+            Username:
+        </div>
+        <div class="col">
             <?php
-                echo "Session started at ". $_SESSION["time"];
+            echo $_SESSION["uname"];
+            ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Usertyp:
+        </div>
+        <div class="col">
+            <?php
+                echo ($_SESSION["usrgrp"]=="TSA"?"Admin":"User");
+            ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Session start:
+        </div>
+        <div class="col">
+            <?php
+            echo $_SESSION["time"];
             ?>
         </div>
     </div>

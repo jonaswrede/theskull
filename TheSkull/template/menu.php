@@ -24,6 +24,9 @@
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">SkuLLList</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/module/main/view/info.php">Info</a>
+                </li>
             </ul>
         </div>
         <div>
