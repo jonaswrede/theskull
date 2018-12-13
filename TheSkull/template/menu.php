@@ -9,7 +9,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div>
-            <ul class="nav navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link pl-2" href="/module/login/action/logout.php"> Logout</a> </li>
             </ul>
 

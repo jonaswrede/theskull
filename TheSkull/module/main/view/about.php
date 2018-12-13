@@ -3,13 +3,14 @@
 <head>
     <link rel="stylesheet" href="../../ext/bootstrap.min.css">
     <script src="../../ext/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../ext/bootstrap.min.js"></script>
 
 
     <meta charset="utf-8">
     <meta name="description" content="Information about TheSkull">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>about</title>
+    <title>About</title>
 </head>
 <body>
     <div>
