@@ -21,11 +21,12 @@ if(!isset($_SESSION["login"]))
 
         if (mysqli_num_rows($result)==1){
             foreach ($result as $value){
-                $pass = $value["pass"];
+                $pass = $value["user_pw"];
                 $group = $value["id_group"];
-                $uname = $value["lname"];
+                $uname = $value["user_name"];
                 $uid = $value["id_user"];
             }
+
             if(password_verify($_POST["pass"],$pass))
             {
 

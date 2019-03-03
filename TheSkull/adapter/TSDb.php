@@ -34,7 +34,7 @@ class TSDb extends mysqli{
      public function select_user($username){
 
          $username = $this->connect->real_escape_string($username);
-         $query = "SELECT lname,pass,id_group,id_user from login,user_to_group where lname= '" . $username. "' AND login.id = user_to_group.id_user";
+         $query = "SELECT u.id_user,u.user_name,u.user_pw,utg.id_group from user as u,user_to_group as utg where u.user_name= '" . $username. "' AND u.id_user = utg.id_user";
          $result = $this->connect->query($query);
 
          return $result;
