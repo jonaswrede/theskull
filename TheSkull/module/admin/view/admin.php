@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if($_SESSION["login"]!= true && $_SESSION['usrgrp']=='TSA')
+{
+
+    header("location: ../../login/view/login_page.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,29 +30,52 @@
 </div>
 <div class="container mt-2">
     <div class="text-center">
-        <div class="row">
-            <div class="col-12">
-                <h1>
-                    comming soon
-                </h1>
+        <form method="post" action="admin.php">
+            <div class="row">
+                <div class="col">
+                    Username
+                </div>
+                <div class="col">
+                    <input type="text" name="name">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                This is a private project. More details will be comming soon!
+            <div class="row">
+                <div class="col">
+                    PW
+                </div>
+                <div class="col">
+                    <input type="text" name="pw">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col" style="border-width: 1px;
-                border-color: #761c19">
-                <h1> Ich liebe dich Schatz!</h1>
-                <img src="../../lara_and_me_love.jpg" class="rounded-circle" width="150" height="150" alt="Lara and me">
+            <div class="row">
+                <div class="col">
+                    E-Mail
+                </div>
+                <div class="col">
+                    <input type="text" name="email">
+                </div>
             </div>
-            <div>
+            <div class="row">
+                <div class="col">
+                    <input type="submit" name="submit">
+                </div>
+
             </div>
-        </div>
+        </form>
     </div>
 
+<?php
+    if (isset($_POST['submit'])){
+        include $_SERVER["DOCUMENT_ROOT"]."/adapter/TSDb.php";
+        include $_SERVER["DOCUMENT_ROOT"]."/adapter/local.php";
+        echo "post<br>";
+        $db = new TSDb($a);
+        $db->create_user($_POST["name"],$_POST["pw"],$_POST["email"]);
+        echo "<br>";
+
+    }
+
+?>
 
 </body>
 </html>

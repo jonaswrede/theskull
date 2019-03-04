@@ -1,7 +1,7 @@
 <?php
 $empfaenger = 'jonaswrede@aol.com';
 $betreff = 'Der Betreff';
-$nachricht = 'Hallo';
+$nachricht = "Hallo $empfaenger";
 $header = array(
     'From' => 'jonas.wrede@theskull.de',
     'Reply-To' => 'jonas.wrede@theskull.de',

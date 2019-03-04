@@ -8,8 +8,10 @@
     </script>
 
     <?php
-    if($_SESSION['usrgrp']=='TSA')
-        echo "<script>$('#admin').show();</script>";
+
+        var_dump($_SESSION);
+
+
 
     ?>
 
@@ -22,7 +24,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="module/main/view/index.php">Home</a>
+                    <a class="nav-link" href="/module/main/view/index.php">Home</a>
                 </li>
                 <li class="nav-item">
                         <a class="nav-link" href="/module/main/view/about.php">About</a>
@@ -34,7 +36,7 @@
                     <a class="nav-link" href="/module/main/view/info.php">Info</a>
                 </li>
 
-                <li class="nav-item" id="admin" style="display: none">
+                <li class="nav-item" id="admin" style="display: <?php echo $_SESSION['usrgrp']=='TSA'?'block':'none'?>">
                     <a class="nav-link" href="/module/admin/view/admin.php">Admin</a>
                 </li>
             </ul>

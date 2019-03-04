@@ -34,13 +34,76 @@ class TSDb extends mysqli{
      public function select_user($username){
 
          $username = $this->connect->real_escape_string($username);
-         $query = "SELECT u.id_user,u.user_name,u.user_pw,utg.id_group from user as u,user_to_group as utg where u.user_name= '" . $username. "' AND u.id_user = utg.id_user";
+         $query = "SELECT u.id_user,u.user_name,u.user_pw,u.status,utg.id_group from user as u,user_to_group as utg where u.user_name= '" . $username. "' AND u.id_user = utg.id_user";
          $result = $this->connect->query($query);
 
          return $result;
      }
 
+    /**
+     * @param $username
+     * @return mixed
+     */
 
+    public function select_user_id($username){
+
+        $username = $this->connect->real_escape_string($username);
+        $query = "SELECT u.id_user from user as u where u.user_name= '" . $username. "'";
+        $result = $this->connect->query($query);
+
+        foreach ($result as $row){
+            $id  = $row["id_user"];
+        }
+
+        return $id;
+    }
+
+    /**
+     * @param $a
+     * @param $b
+     */
+    public function create_user($a, $b,$c){
+         echo "class func<br>";
+
+         $b = password_hash($b,PASSWORD_BCRYPT);
+         $sql = "INSERT INTO user (user_name,user_pw) VALUES ('$a', '$b')";
+
+         if ($this->connect->query($sql) === TRUE) {
+             echo "New record created successfully ($a,$b)";;
+             $empfaenger = $c;
+             $betreff = 'Bestätigen Sie ihre Regestrierung';
+             $userid= $this->select_user_id($a);
+             if($userid > 0){
+                 echo "<script>alert('SELECT USER ID SUCCESS')</script>";
+             }
+             $nachricht = "Hallo $a, Vielen Dank für Ihre Regsitrierung. Bitte bestästigen Sie Ihre E-Mail Adresse durch Klick auf folgenden Link:";
+             $nachricht .= "https://theskull.de/module/login/action/verify_email.php?u=$userid";
+
+             $header = array(
+                 'From' => 'jonas.wrede@theskull.de',
+                 'Reply-To' => 'jonas.wrede@theskull.de',
+                 'X-Mailer' => 'PHP/' . phpversion(),
+                 "Content-type: text/html; charset=utf-8\r\n",
+                 "MIME-Version: 1.0\r\n"
+             );
+
+             if(mail($empfaenger, $betreff, $nachricht, $header)){
+                 echo "<br>mail sent to $empfaenger";
+             }
+         }
+         else{
+             echo "Not inserted";
+         }
+     }
+
+
+     public function verify_user($userid){
+         $query = "UPDATE user SET status = '1' WHERE id_user=$userid";
+         if ($this->connect->query($query)===true)
+             return true;
+         else
+             return false;
+     }
     /**
      * @return bool
      */

@@ -24,10 +24,11 @@ if(!isset($_SESSION["login"]))
                 $pass = $value["user_pw"];
                 $group = $value["id_group"];
                 $uname = $value["user_name"];
+                $ustatus = $value["status"];
                 $uid = $value["id_user"];
             }
 
-            if(password_verify($_POST["pass"],$pass))
+            if(password_verify($_POST["pass"],$pass) && $ustatus==1)
             {
 
                 $time = date('m/d/Y h:i:s a', time());
@@ -60,6 +61,11 @@ if(!isset($_SESSION["login"]))
                 create_log("login",$uid,$uname,$status);
                 if($_POST["ajax"]=="true")
                 {
+                    if($ustatus==0){
+                        echo "NOT_VERIFIED";
+
+                    }
+                    else
                     echo "PW ERROR";
                 }
                 else {

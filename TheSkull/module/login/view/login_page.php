@@ -62,6 +62,11 @@ if($_SESSION["login"]){
 
                                 response = "USER ERROR";
                             }
+                            else if (xmlhttp.response ==="NOT_VERIFIED"){
+                                $("#not-verified").show();
+
+                                response = "NOT_VERIFIED";
+                            }
                             else if (xmlhttp.response ==="VAR ERROR"){
 
                                  response = "Session already exist";
@@ -135,6 +140,9 @@ if($_SESSION["login"]){
                                     ?>
                                     <div class="alert alert-danger" id="wrong-cred" style="display: none" role="alert">
                                         Credentials not correct!
+                                    </div>
+                                    <div class="alert alert-danger" id="not-verified" style="display: none" role="alert">
+                                        Bitte E-Mail Adresse bestätigen.
                                     </div>
                                     <div class="form-row">
                                         <div class="col">
